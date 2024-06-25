@@ -13,27 +13,39 @@ cp ./data/rules/whitelist.txt ./tmp/allow01.txt
 
 cd tmp
 
+#下载AdguardTeam_DNSFilter
+curl https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt > rules001.txt
+sed -i '/#/d' rules001.txt
+
+#下载StevenBlack_UnifiedHosts
+curl https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts > rules002.txt
+sed -i '/0.0.0.0 /!d; s/0\.0\.0\.0 /||/; s/$/\^/' rules002.txt
+
+#下载jdlingyu_ad-wars
+curl https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts > rules003.txt
+sed -i '/视频/d; /爱奇艺/d; /微信/d; /localhost/d; /127.0.0.1 /{s/127\.0\.0\.1 /||/; s/$/\^/}' rules003.txt
+
 echo '下载规则'
 rules=(
-  "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt" #基础过滤器
-  "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt" #AdGuard中文过滤器
-  "https://perflyst.github.io/PiHoleBlocklist/SmartTV-AGH.txt" #Tv规则
-  "https://easylist-downloads.adblockplus.org/easylist.txt" #EasyList
-  "https://easylist-downloads.adblockplus.org/easylistchina.txt" #EasyList China
-  "https://easylist-downloads.adblockplus.org/easyprivacy.txt" #EasyPrivacy隐私保护规则
-  "https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt" #去APP下载提示规则
-  "https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.adblock" #d3ward规则
-  "https://small.oisd.nl/" #oisd规则
-  "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt" #秋风规则
-  "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt" #乘风规则
-  "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt" #CJX's Annoyance List
+  "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt" #TG-Twilight_AWAvenue-Ads-Rule
+  "https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.adblock" #d3ward_Toolz
+  "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt" #malware-filter_Malicious-URL-Blocklist
+  "https://malware-filter.gitlab.io/malware-filter/phishing-filter-agh.txt" #malware-filter_Phishing URL Blocklist
+  "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt" #AdguardTeam_Base
+  "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt" #AdguardTeam_Chinese
+  "https://github.com/AdguardTeam/FiltersRegistry/raw/master/filters/filter_11_Mobile/filter.txt" #AdguardTeam_Mobile
+  "https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt" #damengzhu_banad
+  "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt" #xinggsf_MV
+  "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt" #AdguardTeam_TrackingProtection
+  "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt" #AdguardTeam_Annoyances
+  "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt" #cjx82630_CJX-Annoyances
+  "https://secure.fanboy.co.nz/fanboy-annoyance.txt" #ryanbr_Fanboy-Annoyances
+  "https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt" #Noyllopa_NoAppDownload
+  "https://easylist.to/easylist/easyprivacy.txt" #EasyList_EasyPrivacy
+  "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt" #EasyList_AdblockWarningRemovalList
  )
 
 allow=(
-  "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/allowlist.txt"
-  "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/allowlist.txt"
-  "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/TurkishFilter/sections/allowlist.txt"
-  "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/allowlist.txt"
 )
 
 for i in "${!rules[@]}" "${!allow[@]}"
