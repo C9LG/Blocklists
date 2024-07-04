@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
 ! Title: Blocklists
 ! Homepage: https://github.com/C9LG/Blocklists
-! Version: 2024-07-04 03:12:37（北京时间）
+! Version: 2024-07-04 11:19:46（北京时间）
 ! Description: 适用于AdGuard的去广告规则
-! Total count: 17051
+! Total count: 17053
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -2132,6 +2132,8 @@
 @@||app.sebitti.fi/maestrojukebox2/lib/Controllers/AdController.js$domain=app.sebitti.fi
 @@||app.sendgrid.com$document
 @@||app.sendgrid.com^$elemhide,jsinject
+@@||app.termly.io/embed-policy.min.js$script,domain=trinityschool.org
+@@||app.termly.io/policy-viewer/iframe-content.html$subdocument,domain=trinityschool.org
 @@||app.tirelocator.ca/static/scripts/google-analytics.js
 @@||app.titsx.com*/search$domain=porn-plus.com
 @@||app.typetopia.com/media/ad/*.mp3|
