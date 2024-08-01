@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
 ! Title: Blocklists
 ! Homepage: https://github.com/C9LG/Blocklists
-! Version: 2024-08-01 19:15:39（北京时间）
+! Version: 2024-08-02 03:12:44（北京时间）
 ! Description: 适用于AdGuard的去广告规则
-! Total count: 17185
+! Total count: 17190
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -663,6 +663,7 @@
 @@||1plus1.video/tvguide/embed/*?autoplay=$stealth
 @@||1plus1.video/video/embed/$stealth,~script,~xmlhttprequest,~other
 @@||1point3acres.com^$generichide
+@@||1qwebplay.xyz/*.php$stealth=referrer
 @@||1trackapp.com/static/tracking/$script,stylesheet,~third-party
 @@||1trackapp.com^$stealth,xmlhttprequest,domain=1track.ru
 @@||1ttv.net/iframe.php$stealth
@@ -913,6 +914,7 @@
 @@||account.adobe.com^$document,domain=services.adobe.com,stealth=useragent
 @@||account.leagueoflegends.com/pm.html$jsinject,elemhide
 @@||account.mail.ru^$stealth
+@@||account.mcid.mynavi.jp^$stealth=referrer
 @@||account.microsoft.com/?refd=$stealth
 @@||account.microsoft.com/auth/$stealth
 @@||account.withings.com^$stealth
@@ -3709,6 +3711,7 @@
 @@||cdn.snigelweb.com/adengine/imagetotext.info/loader.js$domain=imagetotext.info
 @@||cdn.snigelweb.com/adengine/paraphraser.io/loader.js$domain=paraphraser.io
 @@||cdn.sophi.io/assets/$script,domain=nationalpost.com
+@@||cdn.sophi.io/assets/demeter/*/stable/*.js$domain=nationalpost.com
 @@||cdn.spilcloud.com/*/fuckadblock.js
 @@||cdn.spotxcdn.com/integration/directsdk/*.js$domain=bloomberg.com
 @@||cdn.spotxcdn.com/media/videos/orig/*.mp4$xmlhttprequest,domain=rakuten.tv
@@ -9220,6 +9223,7 @@
 @@||keizai.biz^$generichide
 @@||kemono.su/.well-known/ddos-guard/mark/|
 @@||keneti.com/public/web_assets/js/gdpr.js
+@@||kenitv.me/*embed$stealth=referrer
 @@||kenoshanews.com^$generichide
 @@||kentucky.com/mistats/finalizestats.js
 @@||keran.co/*/js/advertisement.js
@@ -9484,7 +9488,6 @@
 @@||leporno.org^$generichide
 @@||lequipe.fr/thirdparty/didomi.js$domain=lequipe.fr
 @@||leroymerlin.ro/build/assetic/core/common/js/cookie-policy-acceptance*.js
-@@||leroymerlin.ru^$urlblock
 @@||lesacasino.com^*/EMERPEventCollector.$script,subdocument
 @@||lesechos.com/*/dfp.js^
 @@||lesinrocks.com^$generichide
@@ -13973,6 +13976,7 @@
 @@||securepubads.g.doubleclick.net^$app=jp.naver.line.android
 @@||securepubads.g.doubleclick.net^$domain=hoyts.com.au
 @@||secureservercdn.net/*.myftpupload.com/wp-content/themes/jannah/assets/js/advertisement.js$domain=sailuniverse.com
+@@||securetoken.googleapis.com^$stealth=referrer
 @@||securevideotoken.tmgrup.com.tr/webtv/secure^$stealth
 @@||securitykiss.com$document
 @@||securitytrails.com/app/api/$domain=securitytrails.com
@@ -16497,6 +16501,7 @@
 @@||wakudan.seesaa.net^$generichide
 @@||walla.co.il^$csp
 @@||walla.co.il^$generichide
+@@||walletkeyslocker.me/?scode=*&stream=$stealth=referrer
 @@||walletkeyslocker.me/?stream$stealth=referrer
 @@||walletkeyslocker.me^$domain=nolive.me,stealth=referrer
 @@||wallpaper-house.com^$generichide
