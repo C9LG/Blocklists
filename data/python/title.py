@@ -20,13 +20,13 @@ for file_path in file_list:
 
     # 在文件顶部插入内容
     new_content = f"[Adblock Plus 2.0]\n" \
-                  f"! Title: GOODBYEADS\n" \
-                  f"! Homepage: https://github.com/8680/GOODBYEADS\n" \
-                  f"! Expires: 12 Hours\n" \
+                  f"! Title: Blocklists\n" \
+                  f"! Homepage: https://github.com/C9LG/Blocklists\n" \
                   f"! Version: {beijing_time}（北京时间）\n" \
-                  f"! Description: 适用于AdGuard的去广告规则，合并优质上游规则并去重整理排列\n" \
+                  f"! Description: 适用于AdGuard的去广告规则\n" \
                   f"! Total count: {line_count}\n" \
                   f"{content}"
+
 
     # 将更新后的内容写入文件
     with open(file_path, 'w') as file:
