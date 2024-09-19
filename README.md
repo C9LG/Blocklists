@@ -33,9 +33,9 @@ DNS拦截规则数量: 126866
 <ul>
 
 - **[拦截规则（Github）](https://raw.githubusercontent.com/C9LG/Blocklists/master/data/rules/adblock.txt)**
-- **[拦截规则（国内加速）](https://mirror.ghproxy.com/raw.githubusercontent.com/C9LG/Blocklists/master/data/rules/adblock.txt)**
+- **[拦截规则（国内加速）](https://ghp.ci/raw.githubusercontent.com/C9LG/Blocklists/master/data/rules/adblock.txt)**
 - **[DNS拦截规则（Github）](https://raw.githubusercontent.com/C9LG/Blocklists/master/data/rules/dns.txt)**
-- **[DNS拦截规则（国内加速）](https://mirror.ghproxy.com/raw.githubusercontent.com/C9LG/Blocklists/master/data/rules/dns.txt)**
+- **[DNS拦截规则（国内加速）](https://ghp.ci/raw.githubusercontent.com/C9LG/Blocklists/master/data/rules/dns.txt)**
 
 </ul>
 </details>
