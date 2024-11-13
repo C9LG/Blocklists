@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
 ! Title: Blocklists
 ! Homepage: https://github.com/C9LG/Blocklists
-! Version: 2024-11-13 11:20:04（北京时间）
+! Version: 2024-11-13 19:13:25（北京时间）
 ! Description: 适用于AdGuard的去广告规则
-! Total count: 17344
+! Total count: 17345
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -919,6 +919,7 @@
 @@||accounts.google.com^$generichide
 @@||accounts.google.com^$jsinject,generichide
 @@||accounts.google.com^$popup
+@@||accounts.home.id/authui/client/assets/vendors/new-relic.min.js$~third-party
 @@||accounts.intuit.com/fe_logger?$~third-party
 @@||accounts.login.idm.telekom.com^$stealth
 @@||accounts.nintendo.com^$stealth
@@ -5418,7 +5419,6 @@
 @@||driverdestek.com^$generichide
 @@||driverfix.com^*/index_src.php?tracking=$~third-party
 @@||driverseddirect.com/html5/$document
-@@||drm.6cloud.fr^$domain=6play.fr,stealth=3p-auth
 @@||drnasserelbatal.com/assets/js/prebid-ads.js
 @@||droidtk.com^$generichide
 @@||dronedj.com/wp-content/themes/9to5-2015/assets/js/adsbygoogle.js
@@ -9131,6 +9131,7 @@
 @@||jimstatic.com/cookieControl.js$domain=msa-berlin.de|sahne-band.de
 @@||jimstatic.com/cookieControl.js$domain=yaxi.jp
 @@||jin10.com^$generichide
+@@||jin115.com^$generichide
 @@||jinyongci.com^$generichide
 @@||jiocinema.com^$generichide
 @@||jiovod.wdrm.cdn.jio.com^$stealth
@@ -9523,7 +9524,6 @@
 @@||lavocedimanduria.it/TemplateLive/app/assets/js/prebid-ads.js
 @@||lavoz.com.ar^$generichide
 @@||layer13.net^$generichide
-@@||layout.6cloud.fr/front/*/token-web$domain=6play.fr,stealth=3p-auth
 @@||lcdn.tsyndicate.com/sdk/*/ad.js
 @@||lcs.naver.com/*?u=*service_id$image,domain=smartstore.naver.com
 @@||lcs.naver.com/m?u=$domain=smartstore.naver.com
@@ -11541,6 +11541,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=fc-lc.xyz
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=fcportables.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=fctvlive.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=fetchpik.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=ff14angler.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=filecr.com,important
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=filerice.com
@@ -11796,6 +11797,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=rendimentibtp.it
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=replica-watch.info
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=repo.hackyouriphone.org
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=reverse-dictionary.virock.org
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=rimworldbase.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=rjno1.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=rockmods.net
@@ -11886,6 +11888,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=tejtime24.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=temp-mail.org
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=temp-phone-number.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=tempatwisata.pro
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=terabox.fun|hotmediahub.com|teralink.me|teraearn.com|terashare.me|fansonlinehub.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=testserver.pro
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=texture-packs.com|xdarom.com|katoikos.world
@@ -12260,7 +12263,6 @@
 @@||parlament.mt/scripts/easy-social-share.js
 @@||parsely.com/keys/$script,domain=wmmr.com|wrif.com
 @@||partner-api.jobbio.com/channels/data$xmlhttprequest,third-party,domain=jobs.dailymail.com
-@@||partner-api.sddan.com/api/*/segment-$domain=6play.fr
 @@||partner.googleadservices.com/gpt/pubads_$domain=mlb.com
 @@||partner.googleadservices.com/gpt/pubads_$domain=nat-geo.ru
 @@||partner.googleadservices.com/gpt/pubads_$domain=video.foxnews.com|video.foxbusiness.com
@@ -13775,7 +13777,6 @@
 @@||sdk.privacy-center.org^$domain=lequipe.fr
 @@||sdk.privacy-center.org^$domain=lesechos.fr
 @@||sdk.privacy-center.org^$domain=lesoir.be
-@@||sdk.privacy-center.org^$domain=m6.fr
 @@||sdk.privacy-center.org^$domain=marmiton.org
 @@||sdk.privacy-center.org^$domain=mein-mmo.de
 @@||sdk.privacy-center.org^$domain=moviepilot.de
