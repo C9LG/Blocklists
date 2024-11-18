@@ -41,12 +41,12 @@ adblock = [
   "https://github.com/AdguardTeam/FiltersRegistry/raw/master/filters/filter_11_Mobile/filter.txt", #AdguardTeam_Mobile
   "https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt", #damengzhu_banad
   "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt", #xinggsf_MV
-# "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt", #AdguardTeam_TrackingProtection
+  "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt", #AdguardTeam_TrackingProtection
   "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt", #AdguardTeam_Annoyances
   "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt", #cjx82630_CJX-Annoyances
   "https://secure.fanboy.co.nz/fanboy-annoyance.txt", #ryanbr_Fanboy-Annoyances
   "https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt", #Noyllopa_NoAppDownload
-# "https://easylist.to/easylist/easyprivacy.txt", #EasyList_EasyPrivacy
+  "https://easylist.to/easylist/easyprivacy.txt", #EasyList_EasyPrivacy
   "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt", #EasyList_AdblockWarningRemovalList
   "https://malware-filter.gitlab.io/malware-filter/phishing-filter-ag.txt" #malware-filter_Phishing URL Blocklist
 ]
