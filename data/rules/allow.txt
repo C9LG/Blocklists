@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
 ! Title: Blocklists
 ! Homepage: https://github.com/C9LG/Blocklists
-! Version: 2024-11-18 11:30:24（北京时间）
+! Version: 2024-11-18 19:14:25（北京时间）
 ! Description: 适用于AdGuard的去广告规则
-! Total count: 17366
+! Total count: 17377
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -444,6 +444,7 @@
 @@/tracks-v1a1/*$xmlhttprequest,stealth=referrer,domain=olalivehdplay.ru|topembed.pw|poscishd.online|pkpakiplay.xyz
 @@/uk-cookie-consent/*$domain=bytescout.com
 @@/unadblock/adjs_$domain=hepan.com
+@@/uploads/*$image,stealth=referrer,domain=zonatmo.com|culturanimation.com|recetasmaria.com|techobras.com|babynombres.com|sombracycling.com
 @@/uploads/*.m3u8$stealth,domain=agemys.net
 @@/uploads/ads/*$domain=newauto46.ru
 @@/urchin.js$domain=on.cc
@@ -2482,6 +2483,7 @@
 @@||b92.yahoo.co.jp^$app=jp.co.alc.eow
 @@||b97.yahoo.co.jp^$app=jp.co.alc.eow
 @@||babiato.co^$generichide
+@@||babynombres.com^$stealth=referrer
 @@||bachhoaxanh.com^$stealth=dpi
 @@||backerkit.com/backer/survey$stealth
 @@||backpacker.com^$stealth=dpi
@@ -4837,6 +4839,7 @@
 @@||ctv.ca/players/mediaplayer/*/comscorebeacon.js
 @@||cubehosting.me^$generichide
 @@||cults3d.com/packs/js/quantcast-$~third-party
+@@||culturanimation.com^$stealth=referrer
 @@||cumberlink.com^$generichide
 @@||curiositystream.com^$generichide
 @@||custhelp.com/owda/*/Tealeaf.js$domain=custhelp.com
@@ -8285,6 +8288,7 @@
 @@||iclickcdn.com/tag.min.js$domain=gifans.com
 @@||icloud.com^$generichide
 @@||icloud.com^$stealth
+@@||ico.es^$stealth=dpi
 @@||iconfinder.com/data/icons/$~third-party
 @@||iconizer.net/files/*_social_$image
 @@||iconmonstr.com^$generichide
@@ -8845,6 +8849,7 @@
 @@||imgfx02.xyz/chapters/$stealth,image
 @@||imgonline.com.ua/*advert*.js
 @@||imgtaxi.com/img-*.html
+@@||imgtmo.com^$stealth=referrer
 @@||imgtn.bdimg.com^$stealth
 @@||imgur.com/desktop-assets/js/floaty_rotator.*.bundle.js
 @@||imgur.com/min/px.js$~third-party
@@ -11936,6 +11941,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=twcc.fr
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=udemydownload.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=ufacw.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=uiadmin.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=ujszo.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=unityassets4free.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=unlimitdownloads.com
@@ -13217,6 +13223,7 @@
 @@||receivesms.cc^$generichide
 @@||receivesms.co/js/fuckadblock.js
 @@||receivesmsonline.net/ads.js
+@@||recetasmaria.com^$stealth=referrer
 @@||recommender.scarabresearch.com/merchants/$domain=nkd.com
 @@||record-video-online.com^$generichide
 @@||recs.richrelevance.com/rrserver/$domain=askul.co.jp
@@ -14530,6 +14537,7 @@
 @@||som.aeroplan.com/b/ss/
 @@||sombex.com/ads.js
 @@||sombex.com^$generichide
+@@||sombracycling.com^$stealth=referrer
 @@||somewheresouth.net/banner/banner.php$image
 @@||somosbinarios.es^$generichide
 @@||sonar.viously.com^$domain=clubic.com
@@ -15435,6 +15443,7 @@
 @@||technode.com/wp-content/plugins/newspack-popups/dist/view.css
 @@||technologyreview.com/*/adsense-
 @@||techobest.com^$generichide
+@@||techobras.com^$stealth=referrer
 @@||techonthenet.com/javascript/advert-min.js
 @@||techoreels.com^$generichide
 @@||techperiod.com/wp-content/cache/min/*/wp-content/themes/TechPeriod/js/ads-*.js
@@ -16153,6 +16162,7 @@
 @@||ugdturner.com/xd.sjs$domain=nba.com
 @@||ugdturner.com/xd.sjs$domain=tbs.com
 @@||ui.ads.microsoft.com^$~third-party
+@@||uiadmin.net^$generichide
 @@||uim.tifbs.net/js/$script,domain=web.de
 @@||uim.tifbs.net/js/*.js$domain=web.de|gmx.net|gmx.ch|gmx.at
 @@||uim.tifbs.net/js/3423.js$domain=top.de
@@ -17346,6 +17356,7 @@
 @@||znanija.com/app/scripts/wp-banners.js
 @@||zohopublic.com^*/ADManager_$subdocument,xmlhttprequest,domain=manageengine.com|zohopublic.com
 @@||zombicide.com^$stealth
+@@||zonatmo.com/index.php/view_uploads/$stealth=referrer
 @@||zone.msn.com/js/gameplayer/admanager.js$domain=zone.msn.com
 @@||zonebourse.com/js/googleads.js
 @@||zonegfx.com^$generichide
