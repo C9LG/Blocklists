@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
 ! Title: Blocklists
 ! Homepage: https://github.com/C9LG/Blocklists
-! Version: 2024-12-20 03:12:24（北京时间）
+! Version: 2024-12-20 11:20:52（北京时间）
 ! Description: 适用于AdGuard的去广告规则
-! Total count: 17237
+! Total count: 17230
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -547,7 +547,6 @@
 @@truyen$stealth,image,domain=blogtruyen.vn
 @@weather.gov/xml/$document
 @@ws://localhost^$stealth,domain=play.sooplive.co.kr
-@@www.any.gs$urlblock
 @@yandex.*/user-id?$stealth=referrer|searchqueries
 @@|/wp-content/plugins/*/assets/fuckadblock.js
 @@|blob:https://www.twitch.tv
@@ -1304,7 +1303,6 @@
 @@||adserver.skiresort-service.com/www/delivery/spcjs.php?$script,domain=skiresort.de|skiresort.fr|skiresort.info|skiresort.it|skiresort.nl
 @@||adservice.google.*/adsid/integrator.js$domain=m.rp5.ru|m.rp5.by|m.rp5.kz|m.rp5.co.uk|rp5.md
 @@||adservice.google.*/adsid/integrator.js$domain=paramountplus.com
-@@||adservice.google.*/adsid/integrator.js$domain=reuters.com
 @@||adservice.google.*/adsid/integrator.js$domain=soranews24.com
 @@||adservice.google.*/adsid/integrator.js$domain=thehouseofportable.com
 @@||adservice.google.*/adsid/integrator.js?domain=dl.ccbluex.net$domain=dl.ccbluex.net
@@ -3727,15 +3725,15 @@
 @@||cdn.segment.com/analytics.js/*/analytics.min.js$domain=stacksocial.com
 @@||cdn.segment.com/analytics.js/*/analytics.min.js$domain=surfline.com
 @@||cdn.segment.com/analytics.js/v*/*/analytics.min.js$domain=learning.edx.org
-@@||cdn.segment.com/analytics.js/v*/*/analytics.min.js$domain=reuters.com
 @@||cdn.segment.com/analytics.js/v1/*/analytics.min.js$domain=shop.fender.com
 @@||cdn.segment.com/analytics.js^$domain=authenticate.trustpilot.com
 @@||cdn.segment.com/analytics.js^$domain=creativemarket.com
 @@||cdn.segment.com/analytics.js^$domain=crunchyroll.com
 @@||cdn.segment.com/analytics.js^$domain=freshly.com
+@@||cdn.segment.com/next-integrations/actions/*.js$domain=reuters.com
 @@||cdn.segment.com/next-integrations/integrations/
-@@||cdn.segment.com/v*/projects/*/settings$domain=reuters.com
 @@||cdn.segment.com/v1/projects/
+@@||cdn.segment.com/v1/projects/*/settings$domain=reuters.com
 @@||cdn.segmentify.com/*/segmentify.js$domain=gratis.com
 @@||cdn.segmentify.com^$domain=gratis.com
 @@||cdn.segmentify.com^$domain=mediamarkt.com.tr
@@ -4459,6 +4457,7 @@
 @@||consent.cookiebot.com/uc.js$domain=dasinvestment.com
 @@||consent.cookiebot.com/uc.js$domain=deadwalk.io
 @@||consent.cookiebot.com/uc.js$domain=dimensione.com
+@@||consent.cookiebot.com/uc.js$domain=globalis.se
 @@||consent.cookiebot.com/uc.js$domain=goldpreis.de
 @@||consent.cookiebot.com/uc.js$domain=jagex.com
 @@||consent.cookiebot.com/uc.js$domain=lootboy.de
@@ -10674,7 +10673,6 @@
 @@||natalie.mu^$generichide
 @@||nationwide.co.uk/_/js/webAnalytics.js
 @@||nationwide.com/myaccount/includes/images/x.gif$~third-party
-@@||native-english.ru/i/ads/ads.js
 @@||native.propellerclick.com/1?z=^$domain=swatchseries.to
 @@||native.sharethrough.com/assets/sfp.js$domain=looper.com
 @@||natlawreview.com^$generichide
@@ -10688,7 +10686,6 @@
 @@||nazolog.com^$generichide
 @@||nb-music.net^$generichide
 @@||nbaapi.neulion.com/api_nba/$stealth,domain=nba.com
-@@||nbc.com/generetic/scripts/ads.js
 @@||nbcolympics.com/profiles/olympics/*$domain=nbcolympics.com
 @@||nbcume.sc.omtrdc.net/id?d_visid_ver=$domain=nbcdfw.com,important
 @@||nbe.com.eg/NBEeChannelManager/CallMW.aspx$~third-party
@@ -13199,7 +13196,6 @@
 @@||retrogames.cc/js/cookieconsent.min.js$~third-party
 @@||retronetwork.net/images/*_banner.gif
 @@||retweetpicker.com^$generichide
-@@||reuters.com/ads.js|
 @@||reuters.com^$generichide
 @@||reutersmedia.net/resources^
 @@||reutersmedia.net/resources_v*/js/rcom-scroll-tracker.js$domain=reuters.com
@@ -13781,7 +13777,6 @@
 @@||securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1$domain=gq-magazine.co.uk
 @@||securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1$domain=joe.ie|joe.co.uk
 @@||securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1$domain=mope.io
-@@||securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1$domain=reuters.com
 @@||securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1$domain=thedailybeast.com
 @@||securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1$domain=vogue.ru
 @@||securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1$domain=wired.com
@@ -13810,7 +13805,6 @@
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=nbcsports.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=plug.dj
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=rappler.com
-@@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=reuters.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=southwalesargus.co.uk
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=techadvisor.co.uk
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=tvmovie.de
@@ -15713,7 +15707,6 @@
 @@||tpc.googlesyndication.com/pagead/js/$domain=googleads.g.doubleclick.net
 @@||tpc.googlesyndication.com/pagead/js/adsbygoogle.js$domain=sportshub.to
 @@||tpc.googlesyndication.com/safeframe/*/html/container.html$domain=diep.io
-@@||tpc.googlesyndication.com/safeframe/*/html/container.html$domain=reuters.com
 @@||tpc.googlesyndication.com/safeframe/*/html/container.html$xmlhttprequest,domain=megainteresting.com
 @@||tpc.googlesyndication.com/simgad/$domain=a2zapk.io,image
 @@||tpc.googlesyndication.com/simgad/$domain=dropgalaxy.com
