@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
 ! Title: Blocklists
 ! Homepage: https://github.com/C9LG/Blocklists
-! Version: 2025-01-09 11:30:04（北京时间）
+! Version: 2025-01-09 19:01:04（北京时间）
 ! Description: 适用于AdGuard的去广告规则
-! Total count: 17280
+! Total count: 17286
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -355,6 +355,7 @@
 @@/live/*/*jpeg|$xmlhttprequest,stealth=referrer,domain=weakspell.org|weakspell.to
 @@/log/report/*$script,domain=bilibili.com
 @@/mangakakalot/*$stealth,image,domain=mangakakalot.com
+@@/media/*$image,stealth=referrer,domain=bato.to
 @@/media/*/js/adblock_detector.js$domain=eska.pl|eskarock.pl|voxfm.pl|vibefm.pl|radiosupernova.pl
 @@/mobileads.$domain=naviking.localking.com.tw
 @@/mono.m3u8$stealth=referrer
@@ -1963,6 +1964,7 @@
 @@||api.its-mo.com^$stealth
 @@||api.joara.com/v1/banner/main_popup.joa$app=com.joara.mobile
 @@||api.lab.amplitude.com/v1/vardata?$domain=gaiagps.com
+@@||api.lab.amplitude.com^$domain=watch.outsideonline.com
 @@||api.leanplum.com^$app=com.dolap.android
 @@||api.leanplum.com^$app=com.thetrainline
 @@||api.mapbox.com/*/mapbox.mapbox-terrain-*,mapbox.mapbox-streets-*^$stealth
@@ -2051,6 +2053,7 @@
 @@||api.usercentrics.eu/settings^$domain=studycheck.de
 @@||api.usercentrics.eu/tcf2/*.json$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de|sat1.at
 @@||api.usercentrics.eu/tcf2/*.json$domain=wetter.com|kabeleinsdoku.de|kabeleinsdoku.at
+@@||api.usercentrics.eu/tcfac/acp.json$domain=joyn.de
 @@||api.usercentrics.eu/translations/
 @@||api.usercentrics.eu/translations/*.json$domain=wetter.com
 @@||api.usercentrics.eu/translations/translations-*.json$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de|sat1.at
@@ -2451,7 +2454,6 @@
 @@||b.delivery.consentmanager.net/delivery/cmp.php$domain=abendblatt.de
 @@||b.delivery.consentmanager.net/delivery/cmp.php$domain=morgenpost.de|wp.de
 @@||b.delivery.consentmanager.net/delivery/cmp.php$domain=siemens-home.bsh-group.com
-@@||b.karte.io/event$domain=rentio.jp
 @@||b.kavanga.ru/exp?sid=$domain=deita.ru
 @@||b.marfeel.com/statics/marfeel/gardac.js$domain=applesencia.com
 @@||b.marfeelcache.com/statics/marfeel/prebid-worker/webworker.js$domain=ghacks.net
@@ -6044,6 +6046,7 @@
 @@||fivemturk.com^$generichide
 @@||fjhsjkfhwqeirusdfjkh.azureedge.net/ads/ads.js
 @@||fjhsjkfhwqeirusdfjkh.azureedge.net/adv/ads.js
+@@||flag.lab.amplitude.com^$domain=watch.outsideonline.com
 @@||flair.be/js/default/*_jq.$script
 @@||flattr.com^$generichide
 @@||flickr.com/cookie_$stealth
@@ -8953,6 +8956,7 @@
 @@||int.mwbbiz.com/static/*/videoShow.js$domain=91porny.com
 @@||integrate2cloudapps.com/wp-content/uploads/*/*-480x120$image
 @@||integration.plarium.com^$stealth
+@@||intelyvale.com.mx/ads/images/$domain=valesdegasolina.mx
 @@||intercelestial.com^$generichide
 @@||interia.hit.gemius.pl/hitredir/$domain=interia.pl
 @@||interia.hit.gemius.pl/redot.gif?$domain=m.interia.pl
@@ -10601,6 +10605,7 @@
 @@||muzlan.top^$generichide
 @@||muzu.tv/flash/*tracking
 @@||mvastorage.microsoft.com/public/scripts/cookieConsent-*.js
+@@||mvcat.com^$generichide
 @@||mvz.hufeland.de^$stealth=dpi
 @@||mx-sh.net/advertisements.js
 @@||mx-sh.net^$generichide
@@ -14928,6 +14933,7 @@
 @@||static.surfe.pro/js/net.js^$domain=coinfola.com
 @@||static.telegraph.co.uk/*/ads.js
 @@||static.telegraph.co.uk/telegraph-advertising/tmg-gpt.min.js$domain=telegraph.co.uk
+@@||static.terratraf.io^$domain=rabbitstom.ru
 @@||static.tornadomovies.co/images/
 @@||static.trafficjunky.com/ab/ads_test.js$domain=adelaidepawnbroker.com|bztube.com|hotovs.com|insuredhome.org|nudegista.com|pornluck.com|vidd.se|redtube.*|youpornru.com|tube8.com|tube8.es|tube8.fr|tube8.net|pornhub.com|pornhub.org|pornhub.net
 @@||static.truex.com/js/client.js$domain=schoolcheats.net
