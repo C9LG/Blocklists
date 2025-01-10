@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
 ! Title: Blocklists
 ! Homepage: https://github.com/C9LG/Blocklists
-! Version: 2025-01-10 19:01:14（北京时间）
+! Version: 2025-01-11 03:00:55（北京时间）
 ! Description: 适用于AdGuard的去广告规则
-! Total count: 17292
+! Total count: 17294
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -387,6 +387,7 @@
 @@/pubads*theguardian.com
 @@/pubads.$script,other,~third-party,domain=bicycling.com|menshealth.com|prevention.com|rodalesorganiclife.com|rodalewellness.com|runnersworld.com|womenshealthmag.com
 @@/pubads_impl.js$domain=mytvsuper.com|tvb.com|tvbs.com.tw
+@@/remote_control.php?file=$stealth=referrer|ip
 @@/rwd_cap.js$domain=ibf.tw
 @@/s_code_acdc.js$domain=adobe.com
 @@/script/advert.js$domain=sunbtc.space|weatherx.co.in
@@ -1985,6 +1986,7 @@
 @@||api.mercari.jp^$stealth
 @@||api.mghubcdn.com/graphql$stealth
 @@||api.mi-img.com^$stealth=referrer
+@@||api.mindbox.ru/scripts/v1/tracker.js$domain=xcom-shop.ru
 @@||api.minecraftservices.com^$stealth
 @@||api.mixpanel.com/engage/?data=$xmlhttprequest,domain=deezer.com
 @@||api.mixpanel.com/track/*$domain=etcher.io
@@ -7634,6 +7636,7 @@
 @@||googletagmanager.com/gtm.js$domain=wutangclan.net
 @@||googletagmanager.com/gtm.js$domain=www3.nissan.co.jp
 @@||googletagmanager.com/gtm.js$domain=x-kom.pl|al.to
+@@||googletagmanager.com/gtm.js$domain=xcom-shop.ru
 @@||googletagmanager.com/gtm.js$domain=xn--80adinvscgek9d.xn--p1ai
 @@||googletagmanager.com/gtm.js$domain=yankeecandle.com
 @@||googletagmanager.com/gtm.js$domain=yargici.com
@@ -8899,6 +8902,7 @@
 @@||inevent.com/js/wizard/pushNotification.js$script,~third-party
 @@||inews.co.uk^$generichide
 @@||infectiousmedia.com/iab^$domain=youronlinechoices.com
+@@||infinityfree.com^$generichide
 @@||infinityscans.*/*.js$script,domain=infinityscans.xyz|infinityscans.net|infinityscans.org
 @@||inflight.pacwisp.net^
 @@||info-desk.co.za^$generichide
@@ -13388,7 +13392,6 @@
 @@||rv.treehousei.com/prm/js/*/public.min.js$domain=partnerportal.fortinet.com
 @@||rwaag.org^$generichide
 @@||ryanair.com/static/
-@@||rykoeb.com/remote_control.php^$stealth
 @@||rymg.net^$image,stealth=referrer,domain=mangasehri.net
 @@||rzd.ru^$stealth
 @@||s*-prod.glasgowlive.co.uk/*/prebid.js$domain=glasgowlive.co.uk
@@ -16411,7 +16414,6 @@
 @@||video.snidigital.com/*/AdManager.swf$domain=video.snidigital.com
 @@||video.unrulymedia.com/native/native-loader.js$domain=mothership.sg
 @@||video.weibocdn.com^$stealth
-@@||video.xpembed.me/remote_control.php$stealth
 @@||videoadept.com^$generichide
 @@||videobug.se/advertisement.js
 @@||videocore.tv/playlist.smil$document
