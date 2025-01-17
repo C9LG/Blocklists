@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
 ! Title: Blocklists
 ! Homepage: https://github.com/C9LG/Blocklists
-! Version: 2025-01-17 11:09:45（北京时间）
+! Version: 2025-01-17 19:00:56（北京时间）
 ! Description: 适用于AdGuard的去广告规则
-! Total count: 17301
+! Total count: 17306
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -60,6 +60,7 @@
 @@.jpg?$image,domain=el7l.tv
 @@.m3u8$stealth,domain=luluvdo.com
 @@.mp4$domain=crunchyroll.com,stealth
+@@.mp4$media,stealth=referrer,domain=api.animeuzayi.com
 @@.mp4$media,stealth=referrer,domain=sekai.one
 @@.myvi.ru^$stealth
 @@.net/click-$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
@@ -1883,6 +1884,7 @@
 @@||api.ads.tvb.com^
 @@||api.aliagents.ai/api/v1/activity$~third-party,xmlhttprequest
 @@||api.amplitude.com^$xmlhttprequest,domain=insiderintelligence.com
+@@||api.animeuzayi.com/api/$stealth=referrer
 @@||api.anivideo.fun/file/$stealth
 @@||api.apolomedia.com/static/libs/event-tracking.min.js$script
 @@||api.app.mobilelocker.eu/api/latest/application-environment/ahoy/events$~third-party
@@ -2119,6 +2121,7 @@
 @@||app.clarity.so^$~third-party
 @@||app.clickfunnels.com/assets/lander.js$script,domain=propanefitness.com
 @@||app.conceptboard.com^*/SocialIcons.js$xmlhttprequest
+@@||app.datapacket.com^$content
 @@||app.erevie.pl/assets/CookieConsent-$~third-party
 @@||app.erevie.pl/assets/CookieConsent-*.js
 @@||app.eu.usercentrics.eu^$domain=loewenbraeukeller.com
@@ -2645,6 +2648,7 @@
 @@||beta.speedtest.net/api/
 @@||beta.speedtest.net/dist/
 @@||betaplayer.site/embed/$stealth=referrer
+@@||betaprofiles.com^$generichide
 @@||betterads.org/hubfs/$image,~third-party
 @@||betterads.org/hubfs/Mobile-Web-Ad-Experiences-Ranking-*.jpg
 @@||betterworldbooks.com/app/components/cookieNotice.js
@@ -16033,6 +16037,7 @@
 @@||tvn.hit.gemius.pl/xgemius.js$domain=uwaga.tvn.pl
 @@||tvn24.pl^$generichide
 @@||tvnturbo.pl^$generichide
+@@||tvonline123.com^$generichide
 @@||tvpgapl.hit.gemius.pl/*.js$domain=tvp.pl|swipeto.pl|tvp.info|tvpparlament.pl
 @@||tvplayer.com^$stealth
 @@||tvppl.hit.gemius.pl/*.js$domain=tvp.pl|swipeto.pl|tvp.info|tvpparlament.pl
