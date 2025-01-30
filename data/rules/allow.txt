@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
 ! Title: Blocklists
 ! Homepage: https://github.com/C9LG/Blocklists
-! Version: 2025-01-30 19:01:03（北京时间）
+! Version: 2025-01-31 03:01:01（北京时间）
 ! Description: 适用于AdGuard的去广告规则
-! Total count: 17354
+! Total count: 17356
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -85,10 +85,11 @@
 @@.porntube.com^$stealth
 @@.ru.com/*/tracks-$xmlhttprequest,stealth
 @@.ru/mylivetv/stream-*.php$stealth=referrer
-@@.ru/premiumtv/*.php*$subdocument,xmlhttprequest,stealth=referrer
+@@.ru/premiumtv/*.php$subdocument,xmlhttprequest,stealth=referrer
 @@.ts^$stealth
 @@.vaughnsoft.net/abvs.php?a=
 @@.vmall.com/oauth
+@@.xyz/premiumtv/*.php$subdocument,xmlhttprequest,stealth=referrer
 @@/*/*-*/*.png$stealth,xmlhttprequest,domain=dizibox.tv
 @@/*/*-*/*.png$stealth=referrer,xmlhttprequest,domain=dbx.molystream.org
 @@/*/*.jpg$stealth,image,domain=mangarawjp.com
@@ -3144,6 +3145,7 @@
 @@||cdn*.vb*rexhammond.pw/stream*/cdn*$stealth
 @@||cdn-*.convertexperiments.com/js^$domain=xda-developers.com
 @@||cdn-a.yieldlove.com/yieldlove-bidder.js?meczyki.pl_mobile$domain=meczyki.pl
+@@||cdn-aitg.widerplanet.com/js/wp_astg_$script,domain=larocheposay.co.kr
 @@||cdn-cookieyes.com/client_data/$script,xmlhttprequest,domain=ilovefreegle.org|tribexr.com
 @@||cdn-cookieyes.com^$domain=money.it
 @@||cdn-gl.imrworldwide.com/conf/*.js#name=nlsnInstance$domain=joyn.de
@@ -12407,6 +12409,7 @@
 @@||pic*.cdncl.net^$stealth,domain=cowlevel.net
 @@||piccool.com/2home/phpAdsNew/
 @@||pichive.online^$subdocument,xmlhttprequest,stealth=referrer
+@@||picjs.xyz^$stealth=referrer,domain=vikacg.com
 @@||picmix.com/js/fuckadblock.js
 @@||picmix.com/wp-banners.js
 @@||pico.tools/load/build.js$script,domain=escapistmagazine.com
@@ -15180,7 +15183,6 @@
 @@||suntory.co.jp/beer/kinmugi/img/ad/$image,~third-party
 @@||super-ethanol.com^$generichide
 @@||supercloudsms.com/js/ad
-@@||superpsx.com^$generichide
 @@||superrichthailand.com/cookie-policy/cookie-policy.js
 @@||superrichthailand.com/privacy-policy/privacy-policy.js
 @@||supersoluce.com^$generichide
