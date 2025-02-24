@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
 ! Title: Blocklists
 ! Homepage: https://github.com/C9LG/Blocklists
-! Version: 2025-02-24 19:00:46（北京时间）
+! Version: 2025-02-25 03:01:01（北京时间）
 ! Description: 适用于AdGuard的去广告规则
-! Total count: 17436
+! Total count: 17432
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -506,6 +506,7 @@
 @@://www.sinya.com.tw^$stealth=ip
 @@://www3.doubleclick.net^|$xmlhttprequest
 @@://www3.doubleclick.net^|$xmlhttprequest,domain=sshkit.com
+@@://xhamster.*.js?v=$script,~third-party
 @@=mywebloadt1&$domain=myweb.hinet.net
 @@?adType=$domain=taotaosou.com
 @@?sid=ads$domain=126.com|mail.163.com
@@ -953,7 +954,6 @@
 @@||ad-delivery.net/px.gif?$domain=linuxcapable.com
 @@||ad-delivery.net/px.gif?ch=1&*&adslot=$domain=nwdb.info|ygoprodeck.com
 @@||ad-doge.com^$generichide
-@@||ad-emea.doubleclick.net/ad/*$domain=channel4.com
 @@||ad-emea.doubleclick.net/clk
 @@||ad-maven.com^$domain=ad-maven.com
 @@||ad.*.ch^$xmlhttprequest,other,script,domain=tio.ch
@@ -3350,7 +3350,7 @@
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=liveabout.com
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=mcdonalds.com
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=mtvuutiset.fi
-@@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=nationalgeographic.de
+@@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=nationalgeographic.de|nationalgeographic.es
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=rtl.nl
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=servustv.com
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=sn.at
@@ -3477,7 +3477,6 @@
 @@||cdn.honor.ru/pms/pages/adsImages/$domain=honor.ru
 @@||cdn.howtofixwindows.com/wp-content/*/better-adsmanager/js/advertising.min-*.js
 @@||cdn.hsmedia.ru/dist/$stealth,domain=maximonline.ru|woman.ru|parents.ru|vokrugsveta.ru|psychologies.ru|ellegirl.ru|wday.ru|elle.ru|marieclaire.ru
-@@||cdn.http.anno.channel4.com^$domain=channel4.com
 @@||cdn.idevbase.com/static/$stealth,domain=ohttps.com
 @@||cdn.interactivemedia.net/live/Med1.de/live/globalAdTag.min.js$domain=med1.de
 @@||cdn.interactivemedia.net/live/t-o-auto/live/globalAdTag.min.js$domain=tanken.t-online.de
@@ -10640,7 +10639,6 @@
 @@||mssl.fwmrm.net/libs/adm/*/LinkTag2.js$domain=play.tv3.lt
 @@||mssl.fwmrm.net/libs/adm/*/LinkTag2.js$domain=tv3play.skaties.lv
 @@||mssl.fwmrm.net/p/abc_live/AdManager.js$domain=abc.go.com
-@@||mssl.fwmrm.net/p/c4_live/*.swf$object,domain=channel4.com
 @@||mssl.fwmrm.net/p/msn_live/AdManager.swf$domain=msn.com
 @@||mssl.fwmrm.net/p/nbcu_*/AdManager.js$domain=nbcsports.com
 @@||mssl.fwmrm.net/p/nbcu_*/AdManager.js$domain=rottentomatoes.com
@@ -13509,7 +13507,6 @@
 @@||s-nbcnews.com/*/FreeWheelAdManagerLoader.swf$domain=today.com
 @@||s-plugins.wordpress.org
 @@||s-pt.ppstatic.pl/o/js/pp-ads/ads.js
-@@||s-static.innovid.com/*/config/*.xml$object,domain=channel4.com
 @@||s.206ads.com/core.js$domain=androidauthority.com
 @@||s.206ads.com/helper.js$domain=androidauthority.com
 @@||s.206ads.com/js/data/androidauthority.com.js$domain=androidauthority.com
@@ -14246,7 +14243,6 @@
 @@||services.vlitag.com/adv1/?q=$domain=mangasco.com
 @@||servicescape.com/*.asp?content=$document
 @@||servicio-software.net^$generichide
-@@||serving-sys.com/Serving/adServer.bs?$popup,domain=spaargids.be
 @@||serving-sys.com/serving/adServer.bs?$popup,domain=hongkongcard.com
 @@||serving-sys.com^$domain=mylifetime.com
 @@||seselah.com^$generichide
@@ -15369,6 +15365,7 @@
 @@||tag.aticdn.net/piano-analytics.js$domain=cerbahealthcare.it
 @@||tag.aticdn.net/piano-analytics.js$domain=choisirleservicepublic.gouv.fr
 @@||tag.aticdn.net/piano-analytics.js$domain=futura-sciences.com
+@@||tag.aticdn.net/piano-analytics.js$domain=taughtie.campusfrance.org
 @@||tag.aticdn.net/piano-analytics.js$domain=yourstory.com
 @@||tag.aticdn.net/piano-analytics.js$script,domain=boerzoektvrouw.kro-ncrv.nl
 @@||tag.aticdn.net/piano-analytics.js$script,domain=toureiffel.paris
@@ -16416,6 +16413,7 @@
 @@||v.fwmrm.net/ad/g/1?$domain=funimation.com
 @@||v.fwmrm.net/ad/g/1?$domain=play.tv3.lt
 @@||v.fwmrm.net/ad/g/1?$domain=ruutu.fi
+@@||v.fwmrm.net/ad/g/1?$xmlhttprequest,domain=channel4.com
 @@||v.fwmrm.net/ad/g/1?$xmlhttprequest,domain=www.mycanal.fr
 @@||v.fwmrm.net/ad/g/1?*DiscoveryIntl_BrightcoveJ*&csid=VVVVID_ITALY_*vast
 @@||v.fwmrm.net/ad/g/1?*mtv_desktop$xmlhttprequest
@@ -16424,7 +16422,6 @@
 @@||v.fwmrm.net/ad/l/1$domain=bold.dk
 @@||v.fwmrm.net/ad/l/1$domain=tv3sport.dk,important
 @@||v.fwmrm.net/ad/l/1$domain=viasatsport.se
-@@||v.fwmrm.net/ad/l/1?$object,domain=channel4.com
 @@||v.fwmrm.net/ad/p/1?$domain=cc.com|channel5.com|cmt.com|eonline.com|foodnetwork.com|nbcnews.com|ncaa.com|player.theplatform.com|simpsonsworld.com|today.com
 @@||v.fwmrm.net/ad/p/1?$domain=cdn.watch.aetnd.com
 @@||v.fwmrm.net/ad/p/1?$domain=channel4.com
@@ -17163,7 +17160,6 @@
 @@||xfinity.com^$stealth
 @@||xfreehd.com^$generichide
 @@||xg4ken.com/trk/*&adgroupid=
-@@||xhamster*.*/*/ads$xmlhttprequest,~third-party
 @@||xhamster.com/ajax/
 @@||xhcdn.com/*.mp4$domain=xhamster.com
 @@||xhcdn.com/*/fonts$font
