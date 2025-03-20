@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
 ! Title: Blocklists
 ! Homepage: https://github.com/C9LG/Blocklists
-! Version: 2025-03-20 19:00:56（北京时间）
+! Version: 2025-03-21 03:00:55（北京时间）
 ! Description: 适用于AdGuard的去广告规则
-! Total count: 17545
+! Total count: 17548
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -282,6 +282,7 @@
 @@/favicon.ico$domain=avaxhome.co
 @@/favicon.ico$domain=lubetube.com
 @@/favicon.ico$third-party,domain=thehouseofportable.com
+@@/file2/*==/*$xmlhttprequest,stealth=referrer,domain=megacloud.*
 @@/fingerprint.$domain=abchina.com
 @@/fingerprint2.js$domain=fangcloud.com|fx678.com|gxpf.cn|hnair.com|pop-fashion.com
 @@/fingerprint2.min.js$domain=csdn.net|neets.cc|passport.vpgame.com|shixiseng.com
@@ -2118,6 +2119,7 @@
 @@||apibhx.tgdd.vn^$domain=bachhoaxanh.com,stealth=3p-auth
 @@||apiblogger.xyz/blogger/video-play.mp4$stealth
 @@||apikeys.civiccomputing.com^$xmlhttprequest,domain=videogameschronicle.com
+@@||apim.canadiantire.ca^$stealth=referrer
 @@||apim.prd.natlot.be^$stealth
 @@||apis.google.com/js/plusone.js$domain=pornhub.com
 @@||apis.kostprice.com/fapi/$script,domain=gadgets.ndtv.com
@@ -2730,6 +2732,7 @@
 @@||bigmotoringworld.co.uk^*/plugins/cookieconsent-292.js$~third-party
 @@||bigspeeds.com/ajax/advertisement.js
 @@||bigten.org/common/templates/dfp/dfp-component-template.html
+@@||bigwon-*.aliyuncs.com/product-pic/$image,stealth=referrer
 @@||bihoku-minpou.co.jp/img/ad_top.jpg$~third-party
 @@||bikeforums.net/clientscript/vbulletin_analytics.js
 @@||bikeperfect.com^$generichide
@@ -10350,7 +10353,7 @@
 @@||mega-debrid.eu/JS/advertisement.js
 @@||mega-debrit.com^$generichide
 @@||mega-p2p.net^$generichide
-@@||megacloud.tv/embed-$stealth=referrer
+@@||megacloud.*/embed-$stealth=referrer
 @@||megacuriosidades.pw^$generichide
 @@||megadrive-emulator.com^$generichide
 @@||megafilmestorrenthd.net^$generichide
