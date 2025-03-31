@@ -707,14 +707,8 @@ go.com#@#.has-ad
 ! https://github.com/uBlockOrigin/uAssets/issues/4226
 ||computerworld.com/*/gpt_includes.js$script,redirect-rule=googletagservices_gpt.js
 
-! https://www.reddit.com/r/uBlockOrigin/comments/a3r5e1/site_not_rendering_properly_with_ublockorigin/
-@@||adverts.ie/css/$css,1p
-
 ! https://github.com/uBlockOrigin/uAssets/issues/4275
 riderplanet-usa.com#@##ad_1
-
-! https://www.winboard.org/threads/interaktion-auf-website-nicht-moeglich-wwm-trainigslager.250843/
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wwm.rtl.de
 
 ! https://forums.lanik.us/viewtopic.php?p=144166#p144166
 hwupgrade.it#@#a[href^="https://www.amazon."][href*="tag="]
@@ -728,9 +722,6 @@ hdblog.it#@#a[href^="https://www.amazon."][href*="tag="]
 
 ! https://forums.lanik.us/viewtopic.php?p=144333#p144333
 ||marketo.com^$badfilter
-
-! https://github.com/uBlockOrigin/uAssets/issues/4484
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=classicreload.com
 
 ! https://github.com/uBlockOrigin/uAssets/pull/4486
 @@||easyweb.td.com/*/loggingService.js$script,1p
@@ -822,10 +813,6 @@ nypost.com,pagesix.com#@#.recirc
 ! fix goducks.com
 ! broken by '/js/analytics.' in EasyPrivacy
 ||goducks.com/components/js/analytics.js$script,1p,redirect=noopjs
-
-! https://www.reddit.com/r/uBlockOrigin/comments/awb85y/radiocom_streaming_doesnt_work_with_ublockorigin/
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=player.radio.com
-@@||live.streamtheworld.com/*banners$media,domain=player.radio.com
 
 ! https://forums.lanik.us/viewtopic.php?p=146140#p146140
 ||tags.bluekai.com/$script,redirect=noopjs,domain=6abc.com|abc30.com|abc7.com|abc7chicago.com|abc7news.com|abc7ny.com|abc11.com|abc13.com
@@ -937,17 +924,11 @@ kzstock.blogspot.com#@##ad-target
 ! https://forums.lanik.us/viewtopic.php?p=147310#p147310
 ||hawk.pcgamer.com^$badfilter
 
-! https://github.com/uBlockOrigin/uAssets/issues/5499
-@@||viu.tv/assets/js/comScore.*.min.js$script,1p
-
 ! https://github.com/NanoMeow/QuickReports/issues/1160
 @@||adobedtm.com^*/satellitelib-$script,domain=skysportaustria.at
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5533
 ||miniusa.com/etc/designs/mini/js/vendor/tracking/*$script,1p,redirect=noopjs
-
-! https://github.com/NanoAdblocker/NanoFilters/issues/323
-@@||d8rk54i4mohrb.cloudfront.net/js/video.js$script,domain=forbes.com
 
 ! scrolling broken drstevenlin .com
 drstevenlin.com##html:style(overflow: auto !important;)
@@ -5765,3 +5746,7 @@ play.diziyou5.com##+js(aopr, player.vroll)
 ! EL Germany
 ! https://github.com/uBlockOrigin/uAssets/issues/27787
 spartanien.de#@#.firstload
+
+! https://github.com/uBlockOrigin/uAssets/issues/27809
+||adsdk.microsoft.com/ast/ast.js$script,redirect=noopjs,domain=prisjakt.no,important
+prisjakt.no##+js(set, apntag.refresh, noopFunc)
