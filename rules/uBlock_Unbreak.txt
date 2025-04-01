@@ -30,7 +30,6 @@
 ||cdn.krxd.net^$script,redirect=noopjs,domain=video.foxnews.com
 @@||akamaihd.net/player/*/akamai/amp/prebid/*$script,domain=static.foxnews.com
 @@||global.fncstatic.com^*/ads.js$script,domain=foxnews.com
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=insider.foxnews.com
 ! https://github.com/uBlockOrigin/uAssets/issues/22160
 ! https://github.com/uBlockOrigin/uAssets/issues/22385
 !#if env_firefox
@@ -511,7 +510,7 @@ britannica.com###md-media-overlay-ad
 ||nostv.pt/Scripts/fingerprint2.min.js$script,redirect=noopjs,1p
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/93ztf6/how_to_block_ad_but_still_stream_content/
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=iheartradio.ca
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=iheartradio.ca
 @@||iheartradio.ca^$ghide
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3115
@@ -595,13 +594,6 @@ warszawawpigulce.pl##.eklama
 ! https://github.com/uBlockOrigin/uAssets/issues/3540
 @@||geoip.nekudo.com/api/*$xhr,domain=opentable.com
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=41793
-@@||backend.worldoftulo.com/$script,domain=barometern.se
-
-! https://github.com/NanoMeow/QuickReports/issues/133
-! https://github.com/NanoMeow/QuickReports/issues/181
-@@||surveywall-api.survata.com^$domain=survata.net
-
 ! https://github.com/NanoMeow/QuickReports/issues/180
 @@||publicwww.com/images/labels$image,1p
 
@@ -667,9 +659,6 @@ tubewolf.com##.bnnr
 ! https://github.com/uBlockOrigin/uAssets/issues/3955
 @@||github.com/*/contributors$xhr,1p
 @@||gitlab.com^$xhr,1p
-
-! https://github.com/uBlockOrigin/uAssets/issues/3975
-@@||monero.crypto-webminer.com/monero.html$frame,domain=monero-miner.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3995
 ||p.jwpcdn.com/*/vast.js$script,important,domain=timesnownews.com
@@ -755,9 +744,6 @@ hdblog.it#@#a[href^="https://www.amazon."][href*="tag="]
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=42539
 @@||dev.visualwebsiteoptimizer.com^$script,domain=cars.usnews.com
-
-! https://github.com/uBlockOrigin/uAssets/issues/4784#issuecomment-459778667
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=chicagotribune.com|mcall.com
 
 ! ranker.com breakage (prev / next)
 @@||cdn.zidedge.com/zp/ranker/$script,domain=ranker.com
@@ -880,7 +866,7 @@ nypost.com,pagesix.com#@#.recirc
 ! https://github.com/NanoAdblocker/NanoFilters/issues/287
 ||linetv.tw/public/scripts/ads.js$important,1p
 @@||google-analytics.com/analytics.js$script,domain=linetv.tw
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=linetv.tw
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=linetv.tw
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/ba52ij/vlive_site_preventing_streaming_while_ublock_is/
 ! https://www.reddit.com/r/uBlockOrigin/comments/jli3g7/workaround_vlivetv_update_infinite_loading_again/
@@ -1024,9 +1010,6 @@ carbuzz.com##.cb-post-block-images-swiper .cb-post-block__comments .collapseable
 carbuzz.com##.cb-post-block-images-swiper .cb-post-block__comments:style(margin-bottom: 0 !important; top: -97px !important;)
 carbuzz.com##.cb-post-block-images-swiper .collapseable-comments__collapseable:style(margin-bottom: -80px !important;)
 carbuzz.com##.cb-post-block__comments:style(padding-bottom: 0 !important;)
-
-! https://forums.lanik.us/viewtopic.php?f=64&t=43181&p=148363#p148363
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=player.sdpg.tv
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=43131
 #@#a[href^="https://badoinkvr.com/"]
@@ -1707,10 +1690,6 @@ examiner.com.au,theadvocate.com.au,thecourier.com.au##.subscribe-truncate:style(
 ! https://github.com/uBlockOrigin/uAssets/issues/7156
 ||widgets.outbrain.com/outbrain.js$script,redirect=noopjs,domain=bongino.com
 
-! https://www.mariogames.be/es-Super_Bomberman_5_Snes_Game
-mariogames.be#@##adsContainer
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=mariogames.be
-
 ! elpais.com
 @@||epimg.net^$image,domain=elpais.com
 @@||epimg.net/js/comun/comun.min.js$script,domain=elpais.com
@@ -1965,7 +1944,7 @@ getcoloringpages.com#@#.adsBlock
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/gy800s/larenait_videos_are_broken/
 @@||media.larena.it/media/lib/cmp/quantcast.js$script,1p
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=larena.it
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=larena.it
 *$script,domain=larena.it,redirect-rule=noopjs
 
 ! https://github.com/NanoMeow/QuickReports/issues/4078
@@ -2018,9 +1997,6 @@ saltspringexchange.com#@#.single-ad
 
 ! https://github.com/uBlockOrigin/uAssets/issues/7614
 @@||wp.com/*/wp-content/plugins/master-slider/public/assets/css/blank.gif$image,domain=hearthstone-decks.net
-
-! aupetitparieur .com videos broken
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=aupetitparieur.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/7623
 @@||pxys.ezoic.net^$domain=lanaciondigital.es
@@ -3426,7 +3402,7 @@ html5.gamedistribution.com##+js(no-fetch-if, api)
 ! https://forums.lanik.us/viewtopic.php?t=47647-video-di-sky-incorporati-in-altre-pagine
 ||4strokemedia.com^$3p,badfilter
 @@||4strokemedia.com^$script,xhr,domain=oasport.it
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=oasport.it
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=oasport.it
 @@||secure.quantserve.com/quant.js$script,domain=oasport.it
 oasport.it#@#.adv
 oasport.it#@#div[id^="div-gpt-"]:not([style^="width: 1px; height: 1px; position: absolute; left: -10000px; top: -"])
@@ -4231,11 +4207,10 @@ pcwelt.de#@#a[href^="https://pvn.saturn.de/"]
 ! https://github.com/uBlockOrigin/uAssets/issues/23767
 ! https://www.reddit.com/r/uBlockOrigin/comments/1iybutj/adblock_detected_at_skywareinventory/
 @@||scylla.wgplayer.com/f_webp/$image
-@@||universal.wgplayer.com/tag/$script,domain=atarisalon.com|brightygames.com|eminiclip.ro|sisigames.com|yoho.games
-@@||wgplayer.com/*/wgAds.$script,domain=atarisalon.com|brightygames.com|eminiclip.ro|pastelkattogames.com|sisigames.com|yoho.games
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=atarisalon.com|brightygames.com|eminiclip.ro|sisigames.com|yoho.games
+@@||universal.wgplayer.com/tag/$script,domain=atarisalon.com|brightygames.com|sisigames.com|yoho.games
+@@||wgplayer.com/*/wgAds.$script,domain=atarisalon.com|brightygames.com|pastelkattogames.com|sisigames.com|yoho.games
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=atarisalon.com|brightygames.com|sisigames.com|yoho.games
 brightygames.com,yoho.games##^html > head > meta[property="og:url"]:not([content*="/games/"], [content*="/play/"]):upward(1) > script:has-text(wgplayer)
-eminiclip.ro##^html:not(:has(#thegame)) > head > script:has-text(wgplayer)
 sisigames.com##^#index-games:upward(html) > head > script:has-text(wgplayer)
 ! videos
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=canvids.com
