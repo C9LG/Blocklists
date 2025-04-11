@@ -877,6 +877,9 @@ bing.com##+js(href-sanitizer, a[href^="/rebates/welcome?url=http"], ?url)
 ! https://github.com/uBlockOrigin/uAssets/issues/27884
 ||royalroad.com/a/r?campaign=*&url=http$doc,urlskip=?url
 
+! https://github.com/uBlockOrigin/uAssets/issues/27950
+||duckduckgo.com/l/?uddg=http$doc,urlskip=?uddg
+
 ! Click Trackers
 ! https://reddit.com/r/uBlockOrigin/comments/14t3y1d/
 html.duckduckgo.com,lite.duckduckgo.com##+js(href-sanitizer, a[href^="//duckduckgo.com/l/?uddg="], ?uddg)
@@ -1733,7 +1736,6 @@ grok.com##+js(no-fetch-if, url:/api/statsig/log_event method:POST)
 
 ! https://px.a8.net/svt/ejp?a8mat=2TMZ7K+6IKXR6+NA2+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.amiami.jp%2Ftop%2Fdetail%2Fdetail%3Fgcode%3DFIGURE-180018
 ||px.a8.net/svt/ejp?*&a8ejpredirect=$doc,urlskip=?a8ejpredirect -uricomponent
-figure-times.com##+js(href-sanitizer, a[href*="&a8ejpredirect="], ?a8ejpredirect -uricomponent)
 
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
