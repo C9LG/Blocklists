@@ -153,6 +153,7 @@
 ||startup.mobile.webvisor.com^
 ||startup-mobile.ap.yandex-net.ru^
 !
+||cvt-s2.agl005.tech^
 ||legy-jp.line-apps.com^
 ||rainmaker.production-public.tubi.io^
 ||configure.rayjump.com^
@@ -2180,9 +2181,6 @@ motherless.com$$script[tag-content="awentw.com"][min-length="2000"][max-length="
 @@||api.championat.com/*/?tag_id=$app=ru.ideast.championat
 ! http://4pda.ru/forum/index.php?showtopic=601691&st=8140#entry57313153
 @@||mc.yandex.ru^$app=ru.yandex.weatherplugin
-!@@||an.yandex.ru$app=ru.yandex.weatherplugin
-!@@||awaps.yandex.ru$app=ru.yandex.weatherplugin
-!@@||appmetrica.yandex.net$app=ru.yandex.weatherplugin
 ! ru.rostel - fixing app
 @@||mc.yandex.ru^$app=ru.rostel
 ! https://github.com/AdguardTeam/AdguardFilters/issues/20405
@@ -2745,6 +2743,9 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+r10.net##.container > div[class^="r"]:has(> div[class] > a[href][target="_blank"])
+r10.net##.postList > div[class^="r"]:has(> a[href][target="_blank"])
+serial.everyeye.it#$#.adv-spacer { padding-top: 0 !important; }
 asianetnews.com##.mob-ad
 koimoi.com###after_featured_image
 augsburger-allgemeine.de##.pt_onlinestory
