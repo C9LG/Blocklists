@@ -4451,7 +4451,6 @@ pornve.com##+js(set, frg, 1)
 pornve.com##+js(nowoif)
 pornve.com###blockblockB:style(display: block!important;)
 pornve.com###blockblockA
-pornve.com###close-teaser
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3214
 seselah.com##+js(aopw, adBlockDetected)
@@ -8497,7 +8496,7 @@ yuvutu.com##+js(acs, String.prototype.charAt)
 
 ! https://github.com/NanoMeow/QuickReports/issues/1664
 @@||lnk2.cc^$script,1p
-lnk2.cc##+js(aeld, , \)
+lnk2.cc##+js(aeld, , '\')
 lnk2.cc##+js(nano-stb)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/6075
@@ -10415,6 +10414,10 @@ dobrapogoda24.pl##+js(nostif, , 1)
 ! 9hentai onclick popup/under
 9hentai.*##+js(aeld, click, saveLastEvent)
 9hentai.*###ads
+! https://github.com/AdguardTeam/AdguardFilters/issues/205914
+9hentai.so##+js(set-cookie, juicyads0, 1)
+9hentai.so##+js(set-cookie, juicyads1, 1)
+9hentai.so##+js(set-cookie, juicyads2, 1)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/6807
 @@||chuppito.fr^$ghide
