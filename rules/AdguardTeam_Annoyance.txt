@@ -2507,6 +2507,9 @@ teslawissen.ch,scootertechno.com,mysize.ch,aeotec.com,geschichte-wissen.de,4kfil
 !
 ! NOTE: Regular rules
 !
+budgey.de##app-cookie-rules
+lkz.de#%#//scriptlet('trusted-click-element', '#nfyc-plus-layer:not(.hidden) button[onclick="UC_UI.acceptAllConsents();"]', '', '1000')
+cam4.com##footer + div[class]:has(> div > div > a[href="/legal/cookies"])
 noon.com##div[class^="CookieConsentNotice_wrapper"]
 pdf-xchange.com##.cookie-fixed-hint
 solesavy.com##.u21-privacy-banner
@@ -5348,8 +5351,8 @@ centrumzdrowegowlosa.pl###gmgdpr-overlay
 domclick.ru#%#//scriptlet('set-cookie', 'cookieAlert', 'true')
 skratchlabs.com##div[aria-describedby^="cookieconsent"]
 citidirect.com###divCookieConsentBanner
-citibank.pl#$#.CookieStyle { display: none !important; }
-citibank.pl#$#body.ScrollLock { overflow: auto !important; }
+citibankonline.pl,citibank.pl#$#.CookieStyle { display: none !important; }
+citibankonline.pl,citibank.pl#$#body.ScrollLock { overflow: auto !important; }
 gospeedcheck.com,temporarymail.com###consentBox
 ||biolib.cz/*/consent.min.js
 mammothbikes.com###capaAvisoPoliticaCookies
@@ -11643,7 +11646,7 @@ shop.apotal.de##footer::after
 ggbet.ru##.info-message--cookie-agreement
 french.peopledaily.com.cn###shengmingTip
 kartoteka.ru,gry.lotto.pl###cookie__note
-nsfavourites.nl,totalizator.pl,lotto.pl,steigenberger.com,aegon.nl##.cookie-wall
+twoje-lampy.pl,nsfavourites.nl,totalizator.pl,lotto.pl,steigenberger.com,aegon.nl##.cookie-wall
 lotto.pl#$#body { overflow: auto !important; }
 lotto.pl#$#.privacy-popup { display: none !important; }
 holidu.at,holidu.ch,holidu.ie,holidu.ca,holidu.com.au,holidu.co.nz,holidu.fr,holidu.be,holidu.nl,holidu.es,holidu.dk,holidu.it,holidu.se,holidu.no,holidu.pl,holidu.pt,holidu.com.br,holidu.com.mx,holidu.co.uk,holidu.de,holidu.com###cookie-selector
@@ -17176,11 +17179,14 @@ poznancongresscenter.pl,arenapoznan.pl,garden-city.pl,city-marketing.pl,ideaexpo
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/206765
+@@||usercentrics.eu^$domain=lkz.de
+! https://github.com/AdguardTeam/AdguardFilters/issues/206746
 ! https://github.com/AdguardTeam/AdguardFilters/issues/206759
 ! https://github.com/AdguardTeam/AdguardFilters/issues/206751
 ! https://github.com/AdguardTeam/AdguardFilters/issues/206748
 ! https://github.com/AdguardTeam/AdguardFilters/issues/206730
-@@||delivery.consentmanager.net/delivery/cmp.php$domain=nrz.de|braunschweiger-zeitung.de|waz.de|thueringer-allgemeine.de
+@@||delivery.consentmanager.net/delivery/cmp.php$domain=nrz.de|braunschweiger-zeitung.de|waz.de|thueringer-allgemeine.de|weser-kurier.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/206424
 newpharma.fr,newpharma.be,newpharma.de,newpharma.nl,newpharma.at#@#.cookie-policy:not(body):not(html)
 newpharma.fr,newpharma.be,newpharma.de,newpharma.nl,newpharma.at#@#.js-cookie-policy
@@ -43844,6 +43850,7 @@ alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepeti.com,ra
 !
 !
 !
+budgey.de##t3-top-bar:has(> a[href="https://www.budgey.de/app"])
 noon.com##div[class^="AppInstallBanner_container"]
 visualcapitalist.com##div[style^="margin-bottom:"]:has(> p > a[href="https://www.voronoiapp.com/"])
 rzd.ru##rzd-mobile-application-banner
@@ -47506,6 +47513,7 @@ m.tokopedia.com#$#div[data-testid="divOverlay"] { display: none!important; }
 ! causes some issues: https://github.com/AdguardTeam/AdguardForMac/issues/550
 ~vert.sh,~search.brave.com,~status.im,~lafenice.io,~kurer-sreda.ru,~chorki.com,~zattoo.com,~zaycev.net,~hitta.se,~mail.ru,~facebook.com,~instagram.com,~drive.google.com$$link[rel="manifest"]
 !
+budgey.de##.budgey-smart-banner
 reuters.com#$#@media (max-width: 768px) { .site-header__container__1qvTA { height: var(--subnav-height) !important; } }
 soleretriever.com##div[class*="UpdateBanner_banner__"]
 disk.yandex.*#%#//scriptlet('trusted-click-element', '.new-promo-mobile__footer > a[href$="skip-promo=1"]')
@@ -51890,6 +51898,7 @@ www.kinopoisk.ru##div[class^="trailer-promo"]
 !
 ! SECTION: Self-promo - Regular rules
 !
+lz.de###fb_werbeform
 visualcapitalist.com###block-8
 saechsische.de###piano-home-inline-saez
 dnn.de,landeszeitung.de#$#div[class^="PianoBanner"] { display: none !important }
