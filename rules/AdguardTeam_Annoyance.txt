@@ -17221,6 +17221,8 @@ poznancongresscenter.pl,arenapoznan.pl,garden-city.pl,city-marketing.pl,ideaexpo
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/208681#issuecomment-3032001663
+@@||cdn.cookielaw.org^$domain=people.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/208495
 @@||medicoversport.pl/pakiety/public-shared/element/cookies-info/cookie-bar.js$domain=medicoversport.pl
 ! https://github.com/AdguardTeam/AdguardFilters/issues/208314
@@ -26804,6 +26806,7 @@ sanalkurs.net###toast-container > .toast-error[aria-live="assertive"]
 !
 ! SECTION: Popups - Regular rules
 !
+kaitori-dx.com###footBnr
 urban-media.ru#%#//scriptlet('set-cookie', 'hide_popup', 'yes')
 haberaktuel.com###android-install-banner
 haberaktuel.com###windows-install-banner
@@ -47372,6 +47375,8 @@ m.tokopedia.com#$#div[data-testid="divOverlay"] { display: none!important; }
 ! causes some issues: https://github.com/AdguardTeam/AdguardForMac/issues/550
 ~vert.sh,~search.brave.com,~status.im,~lafenice.io,~kurer-sreda.ru,~chorki.com,~zattoo.com,~zaycev.net,~hitta.se,~mail.ru,~facebook.com,~instagram.com,~drive.google.com$$link[rel="manifest"]
 !
+dcard.tw##button[style="--button-padding-left:16px;--button-padding-right:16px"]
+dcard.tw#$?#article ~ div[style="--15gfups: 0;"]:has(> button[style="--button-padding-left:14px;--button-padding-right:14px"]) { remove: true; }
 youdo.com##div[class^="toolbar_downloadAppWrapper"]
 youdo.com###MobileDownloadApp
 tntsports.co.uk##div[data-testid="organism-smart-banner"]
@@ -48334,9 +48339,8 @@ forbes.com#$##forbes-dv { display: none !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/196958
 ctvnews.ca##.b-alert-bar-wrapper-custom
 ! Google Search - AI Overview
-google.*##div[data-lhcontainer][style="margin-bottom:30px"] > div[data-mcpr]
+google.*##div[data-lhcontainer="1"][id][data-hveid] > div[data-mcpr][data-mg-cp][data-mcp]
 ://www.google.*/async/folsrch?*&async=_basejs:*,_basecomb:*&q=$xmlhttprequest
-google.*##script + div[data-mcpr][class="YzCcne"]
 google.*##div[data-q][data-al]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/197075
 pravda.sk#%#//scriptlet('prevent-addEventListener', 'scroll', 'fixed && window.scroll')
@@ -51738,6 +51742,8 @@ www.kinopoisk.ru##div[class^="trailer-promo"]
 !
 ! SECTION: Self-promo - Regular rules
 !
+jitenon.jp##.side_shop_bnr
+jitenon.jp##.shop_bnr
 fintables.com#%#//scriptlet('prevent-setTimeout', 'Plan_Promotion_Modal')
 ||api.fintables.com/ads?
 domclick.ru##div[class^="tpln-RateReduction-"]
