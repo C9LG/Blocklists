@@ -3452,7 +3452,7 @@ mic.eucast.org#%#//scriptlet('trusted-set-cookie', 'cookieconsent_status', 'dism
 myworkdayjobs.com##div[data-automation-id="legalNotice"]
 atresplayer.com#$#body { overflow: auto !important; }
 atresplayer.com#$##didomi-host { display: none !important; }
-atresplayer.com#$##didomi-host ~ div div[class^="style__StyledBackground-sc-"] { display: none !important; }
+atresplayer.com#$##didomi-host ~ div div[class^="style__StyledBackground-"] { display: none !important; }
 descifrandolaguerra.es###adam-cookie-banner
 support.wolterskluwer.ca###siCookieNoticeContainer
 justica.gov.pt##.justica-cookie_bar
@@ -7249,7 +7249,7 @@ evium.de,u-bordeaux.fr,flyingblue.fr,ppk.pzu.pl#$#html { overflow: auto !importa
 zinio.com##div[class^="CookiePolicyContainer-"]
 drogi.gddkia.gov.pl###c_popek
 systemtbsmart.pl,sklep.lak-auto.pl,waterpikpolska.pl,malachowski.pl,belement.net###poscookielaw
-nerogiardini.it,ottry.com,vutbr.cz,ujep.cz,muni.cz,sklep.kfd.pl,portaldrazeb.cz,stobklub.cz,eurotrucksimulator2.com,fio.cz,unica.esse3.cineca.it,americantrucksimulator.com,shop.bauerfitness.com,doshisha.ac.jp,milanreports.com,cheater.ninja,apetilo.com,assyst.app,turbopizza.cz,rsd.cz###cc_div
+ookbee.com,nerogiardini.it,ottry.com,vutbr.cz,ujep.cz,muni.cz,sklep.kfd.pl,portaldrazeb.cz,stobklub.cz,eurotrucksimulator2.com,fio.cz,unica.esse3.cineca.it,americantrucksimulator.com,shop.bauerfitness.com,doshisha.ac.jp,milanreports.com,cheater.ninja,apetilo.com,assyst.app,turbopizza.cz,rsd.cz###cc_div
 eberry.cz##.c-cookie-consent-bar
 newyorker.com,self.com,gq.com,vanityfair.com,vogue.com,allure.com,teenvogue.com##div[data-testid="message-banner"]
 jove.com##.css-ad08s1
@@ -13271,7 +13271,7 @@ eshopwedrop.lt###coockies_box
 streszczenia.pl,dojrzewamy.pl###cookemessagehandler
 accounts.nintendo.com###cookie-accept-modal
 sparwelt.de,asklepios.com,digi.com###cookie-acceptance
-rangitschhomes.com,rowerystylowe.pl,master-plus.com.ua,xfilesaversa.it,biosuplementacja.pl,receiveasms.com,honda.com.tr,siteplus.com,topbattery.cz,keepinguptodate.com,benq.eu##div[id^="cookie-"]
+fujimift.com,rangitschhomes.com,rowerystylowe.pl,master-plus.com.ua,xfilesaversa.it,biosuplementacja.pl,receiveasms.com,honda.com.tr,siteplus.com,topbattery.cz,keepinguptodate.com,benq.eu##div[id^="cookie-"]
 qt.io###cookie-confirm
 illust-ac.com,kymillman.com,blog.risingstack.com,blue-tomato.com###cookie-consent-box
 zoloto585.ru,sedo.com###cookie-info-wrapper
@@ -17328,6 +17328,8 @@ poznancongresscenter.pl,arenapoznan.pl,garden-city.pl,city-marketing.pl,ideaexpo
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/210452
+@@||cdn-a.ookbee.com/Shop/ookbee/file/cookieconsent.js$domain=ookbee.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/210395
 @@||combi.de/*/cookieconsent/
 ! https://github.com/AdguardTeam/AdguardFilters/issues/209724
@@ -35782,13 +35784,16 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+vsnp.net##.free-area:has(> .section-box > .plugin-twitter_follow_button)
+mindhack2ch.com##.follow-title
+mindhack2ch.com##.follow-btn
 fotokino.sk###newslettersubscribe-consent
 lrytas.lt#$#.safe-top > div.sticky > div.h-\[70px\].md\:h-\[50px\] { display: none !important; }
 lrytas.lt#$#.safe-top > div.sticky { margin-bottom: 0 !important; }
 asiatimes.com##.newspack-inline-popup:has(> .newspack-newsletters-subscribe)
 data.europa.eu##.block-newsletter-subscription
 pisapapeles.net##.lets_social_count
-redecanais.*##.redes-bloco
+redecanaistv.*,redecanais.*##.redes-bloco
 groupon.it###subscribe_modal_container
 groupon.it###spotlight
 revistaoeste.com##.newsletter-side
@@ -43997,7 +44002,7 @@ alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepeti.com,ra
 !
 !
 !
-redecanais.*##.pm-video-heading > div[style]:has(> a[href="./android/"])
+redecanaistv.*,redecanais.*##.pm-video-heading > div[style]:has(> a[href="./android/"])
 gamersky.com##.pc-downLoad
 fenerbahce.org#%#//scriptlet('trusted-set-local-storage-item', 'superapp', '$now$')
 ||cdn.ekoltv.com.tr/news/44102.jpg
@@ -52071,10 +52076,10 @@ www.kinopoisk.ru##div[class^="trailer-promo"]
 !
 scmp.com##div[data-qa="PlusWidget-Container"]
 merkmal-biz.jp###recruitlink
-redecanais.*#$#.pm-video-heading > div[style]:has(> a[href="/parceria.html"]) { display: none !important; }
-redecanais.*#$#.unlockr-overlay { display: none !important; }
-redecanais.*#$#.unlockr-no-scroll { overflow: auto !important; }
-redecanais.*#$#body.unlockr-active > *:not(.unlockr-overlay) { filter: none !important; }
+redecanaistv.*,redecanais.*#$#.pm-video-heading > div[style]:has(> a[href="/parceria.html"]) { display: none !important; }
+redecanaistv.*,redecanais.*#$#.unlockr-overlay { display: none !important; }
+redecanaistv.*,redecanais.*#$#.unlockr-no-scroll { overflow: auto !important; }
+redecanaistv.*,redecanais.*#$#body.unlockr-active > *:not(.unlockr-overlay) { filter: none !important; }
 asmr18.fans##.book18-post-list
 jornaldocomercio.com###popup
 jornaldocomercio.com###popup-overlay
@@ -58947,6 +58952,9 @@ netizen-voice.blog.jp,ityouchannel.livedoor.blog,nanjei-baseball.blog.jp,baynews
 !
 ! NOTE: Blogroll specific rules
 !
+jumpmatome2ch.biz###custom_html-6
+jumpmatome2ch.biz##.kotei
+vsnp.net##.free-area:has(> #livedoor)
 esusokuhou.blog.jp##.blogroll_kijishita
 gundam.matome-gamers.com###st_custom_html_widget-32
 gundam.matome-gamers.com###st_custom_html_widget-33
