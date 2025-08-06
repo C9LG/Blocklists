@@ -101681,6 +101681,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||googletagmanager.com/static/service_worker/
+||urldefense.com/*/webmon.js
 ||interactions.one.store/v1/analytics/
 ||nmc.cn/npt/track/stat.js
 ||nmc.cn/static/nmclog/nmclog.js
@@ -101796,7 +101798,8 @@ allrecipes.com#%#//scriptlet('set-local-storage-item', '/_fpi|_duid/', '$remove$
 ||banking.dkb.de/api/metrics/$xmlhttprequest
 ||cdn.dsmcdn.com/sfx/mergen/
 ||cdn.dsmcdn.com/sfint/production/demeter-prod-*.umd.js
-||ing.de/*/webtrekk
+||static.wertpapiere.ing.de/*/webtrekk
+||cdn.ing.de/ing-cms-ui/*/js/webtrekk
 ||derstandard.*/qpkdl/
 ||duckduckgo.com/t.js?q=
 ||data.product.lastpass.com/data/ptm.gif/
@@ -107958,6 +107961,9 @@ $cookie=bf_visit
 ! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/210570
+||newneek.co^$cookie=/AMP_/
+||newneek.co^$cookie=deviceId
 ! kari.com
 ||kari.com^$cookie=rees46_device_id
 ||kari.com^$cookie=did
@@ -109925,6 +109931,8 @@ d4?appid*type*
 !@@||mc.yandex.ru/metrika/watch.js$domain=
 !#endif
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/210841
+@@||googletagmanager.com/gtm.js?id=GTM-56WSR2$domain=victorinox.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/210417
 @@||cdn.segment.com/*/settings|$xmlhttprequest,domain=outdoorsy.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/210763
@@ -113725,8 +113733,6 @@ kizi.com#%#window.google_trackConversion = function() {};
 @@||googletagmanager.com/gtm.js$domain=m.papajohns.ru
 @@||google-analytics.com/analytics.js$domain=m.papajohns.ru
 @@||google-analytics.com/plugins/ua/ec.js$domain=m.papajohns.ru
-! https://github.com/easylist/easylist/commit/7a675bf60b0722afcc7fc4bcf43f8cad2fc22dc7
-@@||gaanacdn.com/*_social_tracking.js$domain=gaana.com
 ! https://github.com/easylist/easylist/commit/93567c036766bd5157e1df09f2cb75fb2914e728
 @@||harvard.edu/scripts/ga_social_tracking.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/3330
