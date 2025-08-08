@@ -409,6 +409,14 @@ $removeparam=fb_source
 ! Bad: ||example.org^$xmlhttprequest,redirect=noopvast-3.0 (for instance, should be in specific.txt)
 !
 !
+! fnnews.com
+||fnnews.com^$removeparam=jd
+||fnnews.com^$removeparam=dc_data
+||fnnews.com^$removeparam=did
+||fnnews.com^$removeparam=origin_referral_type
+||fnnews.com^$removeparam=ui
+||fnnews.com^$removeparam=response.session
+||fnnews.com^$removeparam=response.id
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-14008771
 ||firefox.com^$removeparam=redirect_source
 ! https://github.com/AdguardTeam/AdguardFilters/issues/210667
@@ -2968,6 +2976,7 @@ $removeparam=s,domain=twitter.com|x.com
 ! Daraz & Shop (Samesite)
 ||daraz.*$removeparam=/spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=/
 ! Bilibili
+://www.bilibili.com/video/$removeparam=mid
 ||bilibili.com^$removeparam=from_spmid
 ||bilibili.com^$removeparam=msource
 ||bilibili.com^$removeparam=csource
