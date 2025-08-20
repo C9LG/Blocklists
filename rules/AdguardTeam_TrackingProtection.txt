@@ -554,6 +554,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 !
 !
 !
+||collect.adplogger.no^
+||lwadm.com^
+||smct.co^
 ||ub-analytics.com^
 ||t.usermaven.com^
 ||onetag.co.kr^
@@ -2958,7 +2961,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||dsply.com^$third-party
 ||dti-ranker.com^$third-party
 ||dtscout.com^$third-party
-||dwin1.com^$third-party
+||dwin1.com^
 ||dwin2.com^$third-party
 ||dyntrk.com^$third-party
 ||e-kaiseki.com^$third-party
@@ -67173,6 +67176,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||ihi.flowplayer.com^
+||pixel.spotify.com^
 ||gtmserverside.eluniversal.com.mx^
 ||ym-tack.b-cdn.net^
 ||icu.newsroom.bi^
@@ -103818,7 +103823,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! https://github.com/AdguardTeam/AdguardForWindows/issues/3973
 ! Probably caused by overriding "dataLayer.push" function
-||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=~olx.*|~banki.ru|~bigc.co.th|~sonos.com
+||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=~olx.*|~banki.ru|~bigc.co.th|~sonos.com|~hepsiburada.com
 ! https://github.com/uBlockOrigin/uAssets/issues/9458
 ||google-analytics.com/ga.js$script,redirect=google-analytics-ga,domain=~daj.jp
 ! https://github.com/AdguardTeam/AdguardFilters/issues/101178 - bethesda.net
@@ -103867,6 +103872,28 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||featureflags.grubhub.com/v1/events
+||pps.rokt.com/v1/timings/events
+||sse.devcycle.com/event-stream
+||services.api.no/api/bazaar/logerror
+||channel-receive.meetbot.biz/sp/callback/user/behavior/data
+||esrtech.com/web-pixels
+||esrtech.com/api/collect
+||chata.quickcep.com/im/behavior/visitor/update
+||vkvideo.ru/al_video.php?act=track_player_events
+||spclient.wg.spotify.com/gabo-receiver-service*/v3/events/
+||spclient.wg.spotify.com/ads/
+||spclient.wg.spotify.com/ad-logic/
+-spclient.spotify.com/gabo-receiver-service*/v3/events
+||api.fubo.tv/papi/v1/tracking
+livemint.com#%#//scriptlet('set-constant', 'dapTracker', 'emptyObj')
+livemint.com#%#//scriptlet('set-constant', 'dapTracker.track', 'noopFunc')
+||istockphoto.com/pulse|
+||mxmkitchen.com/in/pcl/track.php
+||scv-blog.io.nver.com/jackpotlog/
+||ssl.pstatic.net/adimg3.search/adpost/js/ad.js
+||ssl.pstatic.net/t.static.blog/nmobile/versioning//common/lib/ntm/ntm-blog-web-*.js
+||ssl.pstatic.net/t.static.blog/nmobile/versioning/NtmBaLog-*.js
 ||bhaskar.com/comscore-ajax/
 ||guc*-spclient.spotify.com/gabo-receiver-service/public/*/events
 ||issuu.com/bsp/events/*/web-events
@@ -112000,6 +112027,7 @@ d4?appid*type*
 ||wlog.ksapisrv.com^
 !
 ! TikTok
+||mcs.*.tiktok.com^
 ||mcs.tiktokw.us^
 ||mcs.*.tiktokv.com^
 ||log*-normal-*.tiktokv.us^
@@ -112173,6 +112201,8 @@ d4?appid*type*
 !@@||mc.yandex.ru/metrika/watch.js$domain=
 !#endif
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/211685
+@@||googletagmanager.com/gtm.js$domain=hepsiburada.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/211344
 @@||cdn.clerk.io/clerk.js$domain=fjellandhandel.no
 @@||api.clerk.io/v*/log/click?$domain=fjellandhandel.no
