@@ -554,6 +554,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 !
 !
 !
+||openstats.co^
+||http-inputs-notion.splunkcloud.com^
 ||sentinelpro.com^$third-party
 ||openinstall.io^
 ||s.ssl.qhres2.com^
@@ -67180,6 +67182,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||c.bazu.cc^
+||sherlock-events-sampler.ebay.com^
 ||ads.mozilla.org^
 ||cpx.golem.de^
 ||carmen.golem.de^
@@ -103885,6 +103889,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||bazu.cc/api/baidu_tui.php
 ||assets.engoo-static.com/tracking.js
 ||espncdn.com/js/omniture/tracking.js
 ||espncdn.com/*/js/espn-analytics.js
@@ -108655,11 +108660,14 @@ link.gmapp*.net$image
 ! fortunately, extensions can see them (Gmail puts the real URL in the location.hash part of the src)
 !
 ! Generic rules
+! shopify
+cdn.shopify.com/shopifycloud/shopify/assets/themes_support/notifications/spacer-$image
+cdn.shopify.com%2Fshopifycloud%2Fshopify%2Fassets%2Fthemes_support%2Fnotifications%2Fspacer-$image
 ! intercom.com
 /via/o?h=
 %2Fvia%2Fo%3Fh%3D
 ! Salesforce
-/eos/v1/$image
+/eos/v1/*$image
 %2Feos%2Fv1%2F$image
 ! Amazon
 /gp/r.html?C=*&ref_=pe_*_open$image
@@ -111133,6 +111141,9 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||event.flareflow.tv^
+||api.deeplink.dev^
+||attr-logs.*.amazonaws.com^
 ||event.*.karrotmarket.com^
 ||beacons.ads.fubo.tv^
 ||s3-ca-liveops.easybrain.com^
