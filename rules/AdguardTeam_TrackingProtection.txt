@@ -67183,6 +67183,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||magic.prism.gg^
 ||c.bazu.cc^
 ||sherlock-events-sampler.ebay.com^
 ||ads.mozilla.org^
@@ -67238,7 +67239,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||analytics.webanalytics.op.europa.eu^
 ||aem-kakao-collector.onkakao.net^
 ||slc.commerce.naver.com^
-||a.klaviyo.com^
 ||nlog.shinhan.com^
 ||cdn.js.fpaudience.com^
 ||lg3.media.net^
@@ -70154,6 +70154,9 @@ charlestownwyllie.oaklawnnonantum.com^
 ||e664.theoaklandpress.com^
 ||t133.sun-sentinel.com^
 ||x446.orlandosentinel.com^
+!
+! Klaviyo - don't block subdomains of a.klaviyo.com by DNS
+|a.klaviyo.com^
 !
 ! Hisense Smart TV
 ||api-*.hismarttv.com^
@@ -103890,6 +103893,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+://a.klaviyo.com^
+misterworker.com##.custom_text_home:has(> #mw-clerk-sliderhp)
+||trip.com/bee/collect
 ||ssl.pstatic.net/static.news/mnews/resources/*/js/generated/statistics_jquery.js
 ||donga.com/proc/ad_history
 ||bazu.cc/api/baidu_tui.php
@@ -111148,6 +111154,8 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||logs.dradis.netflix.com^
+||analytics-stg.samsungknox.com^
 ||event.flareflow.tv^
 ||api.deeplink.dev^
 ||attr-logs.*.amazonaws.com^
@@ -112243,6 +112251,12 @@ d4?appid*type*
 !@@||mc.yandex.ru/metrika/watch.js$domain=
 !#endif
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/212040
+xinshuru.com#%#//scriptlet('set-constant', 'RADAR_MONITOR', 'emptyObj')
+xinshuru.com#%#//scriptlet('set-constant', 'RADAR_MONITOR.setProject', 'emptyObj', '', 'asFunction')
+xinshuru.com#%#//scriptlet('set-constant', 'Object.prototype.getTrack', 'noopFunc')
+!+ PLATFORM(ios, ext_safari, ext_android_cb)
+@@||s.ssl.qhres2.com/pkg/radarsdk/radar-analytic-js-sdk-*.umd.js$domain=xinshuru.com
 ! golem.de - broken podcasts
 @@||cdn.stroeerdigitalgroup.de/metatag/live/ctc_golem_relaunch/metaTag.min.js$domain=golem.de
 ! krone.at - broken content main page
