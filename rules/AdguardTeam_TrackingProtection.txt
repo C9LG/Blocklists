@@ -66210,7 +66210,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||icu.newsroom.bi^
 ||data.ds.dumont.de^
 ||sta-events.swishapps.ai^
-||pro-1w-dataaggregator.onelouder.com^
 ||mllog.jd.com^
 ||count.shein.com^
 ||analytics.cosmopolitanmag.com.tr^
@@ -102817,6 +102816,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||ytn.co.kr/_comm/yct.js
 ||rtp.pt/common/js/convivaAppTracker.js
 ||bookwalker.jp/ex/browser-viewer/unitag_bv.js
 ||c.bookwalker.jp/v/louis/*/tracks.js
@@ -111250,6 +111250,8 @@ d4?appid*type*
 !@@||mc.yandex.ru/metrika/watch.js$domain=
 !#endif
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/212411
+@@||s.ssl.qhres2.com/baomitu/jquery/*/jquery.min.js$domain=yasuo.360.cn
 ! https://github.com/AdguardTeam/AdguardFilters/issues/212337
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=themirror.com
 @@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=themirror.com
