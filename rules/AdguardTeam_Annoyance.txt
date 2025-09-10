@@ -17,6 +17,7 @@
 !#######################################################
 ! SECTION: Cookies - General element hiding
 !
+##.cookies-modal
 ##.wtm-cookies
 ##.cookieadmin_cookie_modal
 ##.cookieadmin_law_container
@@ -2536,6 +2537,9 @@ accace.pl,entrack.pl,kraemer-it.de,teslawissen.ch,scootertechno.com,mysize.ch,ae
 !
 ! NOTE: Regular rules
 !
+av.ru##.av-cookie-banner
+platanitos.com###policy-notice
+nabchelny.ru###polyticaC
 shop.cosmed.com.tw##div:has(> div:first-child > p:first-child > a[href^="//shop.cosmed.com.tw/MyAccount/Privacy"])
 zakonyprolidi.cz##.CookiePerm
 flysmartavia.com##.cookies-policy-wrapper
@@ -4658,7 +4662,7 @@ uno-fluechtlingshilfe.de#%#//scriptlet('trusted-click-element', '#CybotCookiebot
 f1-insider.com#%#//scriptlet('set-cookie', 'perfectSub', 'true')
 fashiontechnews.zozo.com##div[class^="style-module--consent--"]
 corp.zozo.com##.m-box-policy
-roughradical.com.pl##div[id^="lgcookieslaw"]
+dragonbox.de,roughradical.com.pl##div[id^="lgcookieslaw"]
 iko.pkobp.pl##.pko-cookie-rodo-overlay
 footballista.jp###cookie_background
 ||cookiecdn.com/cwc.js
@@ -8105,7 +8109,6 @@ playcentral.de#$#body[style="overflow: hidden;"] > div[id][data-bg^="background-
 playcentral.de#$#body[style="overflow: hidden;"] * { filter: none !important; }
 playcentral.de#$?#body > div[id]:has(> div.wp-exclude-emoji > div.animate__animated > div[id] a[href="https://www.playcentral.de/datenschutz/"]) { display: none !important; }
 miloan.pl##.cookies-pan
-payment.kurogame-service.com,wutheringwaves.kurogames.com,budownictwo.org,insales.ru,hdsex2.com,hdsex.org,clubpremier.com,inpower.com.br,rivegauche.ru,mkcafehoreca.pl,netcredit.pl##.cookies-modal
 lefeld.de#$#div[data-feature*="PrivacyCategory"] { display: none !important; }
 lefeld.de#$#body.modal-open { overflow: auto !important; padding-right: 0 !important; }
 dailymotion.com#$#div[class^="CookiePopup_"] { position: absolute !important; left: -3000px !important; }
@@ -22438,11 +22441,10 @@ dehn.de#@#.cookie-layer
 ://yandex.*/images/_$xmlhttprequest,method=post
 !
 ! Yandex.Images
+[$path=/images]ya.ru,yandex.*##div[style="max-width: 100%; max-height: 300px; height: 300px;"]
 [$path=/images]ya.ru,yandex.*#%#//scriptlet('abort-on-property-write', '__pcodeAllActiveTestIds')
 [$path=/images]ya.ru,yandex.*#%#//scriptlet('json-prune', 'seatbid rtb direct')
 [$path=/images]ya.ru,yandex.*##.AdvMastHead
-[$path=/images]ya.ru,yandex.*##.Root > div.MastHead
-[$path=/images]ya.ru,yandex.*##div[role="list"] > div[class^="JustifierRowLayout"]:has(> div[class^="Adv"][class$="CrossPage"])
 ! https://github.com/AdguardTeam/AdguardFilters/issues/201179
 ! https://github.com/AdguardTeam/Scriptlets/issues/482
 ! TODO: remove this when the new MV2 extension is released, current version is 5.1.62
@@ -25935,6 +25937,8 @@ sanalkurs.net###toast-container > .toast-error[aria-live="assertive"]
 !
 ! SECTION: Popups - Regular rules
 !
+dragonbox.de###__up_pop-INSTANCE_undefined
+dragonbox.de###up_optin
 naavtotrasse.ru##.NotificationItems
 dorabash.com#$#.pum-overlay { display: none !important; }
 dorabash.com#$#html { overflow: auto !important; }
@@ -43707,7 +43711,7 @@ level.travel##div[class^="DesktopAppBanner__Container"]
 level.travel#%#//scriptlet('trusted-set-cookie', 'lt_go_to_app_mobile_popup', 'hiding')
 level.travel##div[class^="dynamicDataWrapper-module__appBannersWrapper"]
 perekrestok.ru#%#//scriptlet('trusted-click-element', 'button.app-banner-close', '', '800')
-m.sonyunara.jp,magnit.ru##.install-app-banner
+arabam.com,m.sonyunara.jp,magnit.ru##.install-app-banner
 lenta.com##.fl-embedded-wrapper
 navitime.co.jp###body-left > div.section:has(> a[href="https://www.navitime.co.jp/pcstorage/html/japan_travel/english/"])
 megamarket.ru##.header-entry-point__app > a
@@ -46925,6 +46929,7 @@ m.tokopedia.com#$#div[data-testid="divOverlay"] { display: none!important; }
 ! causes some issues: https://github.com/AdguardTeam/AdguardForMac/issues/550
 ~lineup.withgoogle.com,~vert.sh,~search.brave.com,~status.im,~lafenice.io,~kurer-sreda.ru,~chorki.com,~zattoo.com,~zaycev.net,~hitta.se,~mail.ru,~facebook.com,~instagram.com,~drive.google.com$$link[rel="manifest"]
 !
+platanitos.com###install-app-banner
 znews.vn###follow_oa
 gaitame.com###ad-marketnext
 pinterest.com#%#//scriptlet('set-session-storage-item', 'showedAppUpsellCurrentSession', 'true')
@@ -50060,7 +50065,7 @@ vc.ru##.microsoft-ticker-special
 vc.ru###dpir-startup-generator
 ! https://github.com/AdguardTeam/AdguardFilters/issues/30699
 genius.com##apple-music-player
-genius.com##div[class^="AppleMusicPlayer__"]
+genius.com##iframe[class^="AppleMusicPlayer"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/28313
 shikimori.*##.about-ads
 ! https://github.com/AdguardTeam/AdguardFilters/issues/29802
@@ -51409,6 +51414,7 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+deepl.com#%#//scriptlet('trusted-set-local-storage-item', 'LabsBanner', '{"bannerShown":true}')
 play.mercadolibre.com.ar##.banner-ads-container
 ||img.cityheaven.net/img/banner/seamless_login_unlinked_banner.png
 deepl.com##div[data-testid="ai-labs-banner"]
