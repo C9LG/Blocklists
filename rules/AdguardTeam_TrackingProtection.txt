@@ -557,6 +557,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 !
 !
 !
+||trck.digiteka.com^
 ||partnerlinks.io^
 ||hlstatus.com^
 ||pixel-img.com^
@@ -112674,6 +112675,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||marketplace.geniusplus.ai/*/lre-events?cid=*&wid=
 ||yqzhishen.me/Statistics/statistics.
 ||dashichang.work/Statistics/statistics.
 ||parchment.com/wp-content/themes/wp-parchment/assets/utm-tags.min.js
@@ -117575,6 +117577,9 @@ gmarket.co.kr#%#//scriptlet('fingerprintjs2')
 ! fortunately, extensions can see them (Gmail puts the real URL in the location.hash part of the src)
 !
 ! Generic rules
+! Movable Ink
+/p/rp/*?mi_u=$image
+%2Fp%2Frp%2F*%3Fmi_u%3D$image
 ! mailerlite.com
 /tf/o/$image
 %2Ftf%2Fo%2F$image
@@ -117804,9 +117809,11 @@ esputnik.com$image
 /r/?id=$image
 %2Fr%2F%3Fid%3D$image
 sbs-mkt-stage1-res.adobe-campaign.com$image
-! Demdex
-demdex.net%2Fevent%3Fd_event%3D$image
+! demdex.net
+demdex.net/event?d_src=$image
+demdex.net%2Fevent%3Fd_src%3D$image
 demdex.net/event?d_event=$image
+demdex.net%2Fevent%3Fd_event%3D$image
 ! sbs.com.au
 ://t1.*.sbs.com.au/r/$image
 %2Ft1.*.sbs.com.au%2Fr%2F%3Fid%3D$image
@@ -119176,6 +119183,8 @@ $cookie=bf_visit
 ! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/213280
+||aviasales.$cookie=/^_sp_id/
 ! https://github.com/AdguardTeam/AdguardFilters/issues/213391
 ||flo.com.tr^$cookie=bunsar_visitor_id
 ! https://github.com/AdguardTeam/AdguardFilters/issues/213403
