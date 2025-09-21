@@ -2540,6 +2540,8 @@ accace.pl,entrack.pl,kraemer-it.de,teslawissen.ch,scootertechno.com,mysize.ch,ae
 !
 ! NOTE: Regular rules
 !
+rki.de#%#//scriptlet('trusted-click-element', '.rejectAll','','300')
+vodafone.de#%#//scriptlet('trusted-click-element', '#consent-banner a[aria-label="Alle ablehnen"] > button','','300')
 koleso.ru##div[class^="BlockCookies_wrapper"]
 regiojet.pl#%#//scriptlet('set-cookie', 'functional', 'false')
 regiojet.pl#%#//scriptlet('set-cookie', 'marketing', 'false')
@@ -56728,7 +56730,7 @@ news.kstyle.com##div[style*="width:640px;"][style*="height:253px;"] + aside > di
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115284
 itigic.com#$#body { padding-bottom: 0!important; }
 ! https://github.com/uBlockOrigin/uAssets/issues/12468
-watchadsontape.com,advertisertape.com,tapeadvertisement.com,adblockplustape.xyz,tapelovesads.org,gettapeads.com,tapeadsenjoyer.com,noblocktape.com,antiadtape.com,tapewithadblock.org,shavetape.*,adblockstrtape.link,adblockstrtech.link,adblockstreamtape.*,stape.fun,strcloud.link,streamtape.*#%#//scriptlet("adjust-setTimeout", "counter", "", "0.02")
+tapepops.com,watchadsontape.com,advertisertape.com,tapeadvertisement.com,adblockplustape.xyz,tapelovesads.org,gettapeads.com,tapeadsenjoyer.com,noblocktape.com,antiadtape.com,tapewithadblock.org,shavetape.*,adblockstrtape.link,adblockstrtech.link,adblockstreamtape.*,stape.fun,strcloud.link,streamtape.*#%#//scriptlet("adjust-setTimeout", "counter", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112415
 markezine.jp#$#.l-sidebar_inner > div.ad-job-board-wrap + div.c-secondarysection { margin-top: 0 !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112175
