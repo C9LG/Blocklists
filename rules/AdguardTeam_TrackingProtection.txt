@@ -559,6 +559,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 !
 !
 !
+||*-sdk.rum.aliyuncs.com^
 ||digitalcamp.co.kr^$third-party
 ||marathondataco.com^$third-party
 ||telecid.ru^
@@ -71800,6 +71801,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||collector-sbanking.shb-pelib.com^
 ||uac.etnews.com^
 ||fuse.ubs.com^
 ||cdn.kmalgo.com^
@@ -108083,6 +108085,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+novakid.*,novakidschool.com#%#//scriptlet('set-local-storage-item', 'ftr', '$remove$')
+||school.novakidschool.com/api/*/metrics
 ||dbrand.com/cvg/log?
 ||dbrand.com/cvg/track?
 ||dbrand.com/cvg/static/pixels/
@@ -113133,6 +113137,10 @@ gmarket.co.kr#%#//scriptlet('fingerprintjs2')
 /CI0/0$image
 %2FCI0%2F0$image
 !
+! seasungames.com
+dm-sg.aliyuncs.com/trace/*/report$image
+dm-sg.aliyuncs.com%2Ftrace%2F*%2Freport$image
+tk.seasungame.com$image
 ! https://github.com/easylist/easylist/issues/22390
 s-pt.jp/mail/info/*/img/_.gif$image
 s-pt.jp%2Fmail%2Finfo%2F*%2Fimg%2F_.gif$image
@@ -114714,6 +114722,9 @@ $cookie=bf_visit
 ! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
 !
 !
+! novakidschool.com
+||novakid.$cookie=ftr
+||novakidschool.com^$cookie=ftr
 ! purevpn.de
 ||purevpn.$cookie=/^intercom-/
 ! fashionnova.com
