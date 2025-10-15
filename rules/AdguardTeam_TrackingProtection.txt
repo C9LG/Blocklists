@@ -12,6 +12,9 @@
 ! Bad: example.org###rek (should be in specific.txt)
 !
 !
+! Youtube
+!+ NOT_PLATFORM(ext_chromium_mv3)
+www.youtube.com#%#//scriptlet('prevent-xhr', '/\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d+&cbr=.+?&fexp=v1%[-%0-9C]{300,}&.+?&muted=\d(&vis=3)?&docid=/ method:POST')
 ! Ad-Shield
 ! Prevent Ad-Shield tracking script - Only tracking ad block traffic. NOT Ad-Shield advertisement or protection.
 slobodnadalmacija.hr,meconomynews.com,brandbrief.co.kr,motorgraph.com#%#//scriptlet('abort-current-inline-script', 'atob', 'eval(decodeURIComponent(escape(window.atob("KCgpPT5')
@@ -559,6 +562,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 !
 !
 !
+||wurflcloud.com^
+||tvspix.com^
 ||events.stylux.io^
 ||*-sdk.rum.aliyuncs.com^
 ||digitalcamp.co.kr^$third-party
@@ -117664,6 +117669,10 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||dxp.baidu.com^
+||nsclickvideo.xiaodutv.com^
+||api-access.pangolin-sdk-toutiao1.com^
+||xda.xiaodutv.com^
 ||analytics-ccu.qpyou.cn^
 ||analytics-log.withhive.com^
 ||prebid-server-canary.ifunny.co^
@@ -123610,6 +123619,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||captivatingillusion.com^
 ||captivatingpanorama.com^
 ||captivatingperformance.com^
+||cardmethod.com^
 ||carefuldolls.com^
 ||caringcast.com^
 ||carloforward.com^
@@ -124096,6 +124106,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||gulliblegrip.com^
 ||gustocooking.com^
 ||gustygrandmother.com^
+||haikusoap.com^
 ||halcyoncanyon.com^
 ||halcyonsculpture.com^
 ||haltingbadge.com^
@@ -124495,6 +124506,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||pickmicro.com^
 ||pietexture.com^
 ||pigeonsetc.com^
+||pigmentpaper.com^
 ||pinchsquirrel.com^
 ||pincourse.com^
 ||piquantgrove.com^
@@ -125086,6 +125098,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||toomanyalts.com^
 ||topbookgifts.com^
 ||topcrazypress.com^
+||topthrowbacks.com^
 ||touristfuel.com^
 ||toysbasics.com^
 ||toytakeover.com^
