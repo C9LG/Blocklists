@@ -2,12 +2,12 @@ name: Update Filters
 on: 
   workflow_dispatch:
   schedule:
-  - cron: 0 */8 * * *
+  - cron: 0 2/8 * * *
 
 env:
   TZ: Asia/Shanghai
-  SINGBOX_VERSION: 1.12.4
-  MIHOMO_VERSION: 1.19.13
+  #SINGBOX_VERSION:
+  #MIHOMO_VERSION:
 
 jobs:
   Update_Filters:
@@ -38,23 +38,9 @@ jobs:
           rm -rf app/__pycache__
           echo "message=$(date)" >> $GITHUB_OUTPUT
 
-      - name: Compile Sing-Box filters
-        run: |
-          wget https://github.com/SagerNet/sing-box/releases/download/v${{env.SINGBOX_VERSION}}/sing-box-${{env.SINGBOX_VERSION}}-linux-amd64.tar.gz
-          tar -zxvf sing-box-${{env.SINGBOX_VERSION}}-linux-amd64.tar.gz
-          chmod +x sing-box-${{env.SINGBOX_VERSION}}-linux-amd64/sing-box
-          ./sing-box-${{env.SINGBOX_VERSION}}-linux-amd64/sing-box rule-set compile --output rules/adblocksingbox.srs     rules/adblocksingbox.json
-          ./sing-box-${{env.SINGBOX_VERSION}}-linux-amd64/sing-box rule-set compile --output rules/adblocksingboxlite.srs rules/adblocksingboxlite.json
-          rm -rf sing-box*
+     # - name: Compile Sing-Box filters
       
-      - name: Compile mihomo filters
-        run: |
-          wget https://github.com/MetaCubeX/mihomo/releases/download/v${{env.MIHOMO_VERSION}}/mihomo-linux-amd64-v${{env.MIHOMO_VERSION}}.gz
-          gzip -d mihomo-linux-amd64-v${{env.MIHOMO_VERSION}}.gz
-          chmod +x mihomo-linux-amd64-v${{env.MIHOMO_VERSION}}
-          ./mihomo-linux-amd64-v${{env.MIHOMO_VERSION}} convert-ruleset domain yaml rules/adblockmihomo.yaml     rules/adblockmihomo.mrs
-          ./mihomo-linux-amd64-v${{env.MIHOMO_VERSION}} convert-ruleset domain yaml rules/adblockmihomolite.yaml rules/adblockmihomolite.mrs
-          rm -rf mihomo*
+     # - name: Compile mihomo filters
       
       - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v5
@@ -91,5 +77,5 @@ jobs:
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@main
         with:
-          retain_days: 1
-          keep_minimum_runs: 5
+          retain_days: 0
+          keep_minimum_runs: 3
