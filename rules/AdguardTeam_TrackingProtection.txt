@@ -567,6 +567,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 !
 !
 !
+||nlog.instajob.ai^
 ||data.pendo.io^
 ||api.statsigcdn.com^
 ||beacon.coofis.com^
@@ -76182,6 +76183,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||sp.aviasales.ru^
+||darnuid.netflix.com^
 ||analytics.thekrazycouponlady.com^
 ||usage.trackjs.com^
 ||coll.lovense.com^
@@ -118874,6 +118877,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||grok.com/_data/v1/events
 ||frysfood.com/assets/*/collect?
 ||fredmeyer.com/static/*/collect?
 ||ralphs.com/resources/*/collect?
@@ -119646,7 +119650,6 @@ colliers.com#%#//scriptlet('set-local-storage-item', 'visitorId', '$remove$')
 ||cbsivideo.com/cb-measurements/
 ||scv.band.us/jackpotlog/*/logs|$xmlhttprequest
 ||epicgames.com/id/api/analytics
-||app.launchdarkly.com/sdk/evalx/*/contexts/$domain=epicgames.com
 ||doppler.hulu.com/doppler/*/ingest?source=client-reporting-HTML
 ||terabox.app/sse/events?
 ||widget2.vreview.tv/js/amplitude.js
@@ -119676,7 +119679,6 @@ threads.net#%#//scriptlet('href-sanitizer', 'a[href*="?xmt="]', '[href]', 'remov
 ://cnstrc.com/js/
 ||freyr.futurecdn.net/freyr.js
 ||meta.com/*/fl?*comet_req=*&__user=
-||clientstream.launchdarkly.com/eval/
 ||app.cybba.solutions/event/*/pageview?
 ||script.gmarket.co.kr/js/mobile/main/common/montelena.js
 ||hmr.mrgcdn.ru/assets/js/logger.min.js
@@ -121548,7 +121550,6 @@ weekly-economist.mainichi.jp##iframe[id^="cxWidget_"]
 ||s-cdn.phonearena.com/js/ops/taina.js
 ||static.narrativ.com/tags/narrativ-pub.
 ||widgets.entireweb.com/pixel-track/
-/access.html$domain=2jigiri.net
 ||apis.naver.com/livecloud/livecloud/quantum/p2p/*/client/stat
 ||redditmedia.com/gtm?id=
 ||search-api.joongna.com/v*/ga/log|
@@ -122096,7 +122097,7 @@ sports.goo.ne.jp###taboola-below-sokuho-thumbnails
 ||bilanx.dtto.com/*/configs
 ||bilanx.dtto.com/*/events
 ||mt-wzb.clarin.com/weizenbock/pixel.fingerprint.gif
-itmedia.co.jp,mag.osdn.jp##div[id^="logly-lift-"]
+itmedia.co.jp##div[id^="logly-lift-"]
 ||mangapedia.com/js/abb.
 ||sf-syn.com/conversion_outbound_tracker$subdocument,domain=sourceforge.net
 ||tv3play.skaties.lv/static/scripts/trackdb/events.gif$image,redirect=1x1-transparent.gif
@@ -123254,6 +123255,7 @@ westnews.com.ua##a[href="http://www.bigmir.net/"]
 ||fiylo.de/typo3conf/ext/of_design/Resources/Public/JavaScript/Libs/smarttag_LIVE.js
 ||steampowered.com/default/usabilitytracking
 ||report.23video.com/api/analytics/
+||report.23video.com/report-batch
 ||mb.mtvnservices.com/data/collect/
 ||imgsmail.ru/gstat?
 ||slideplayer.biz.tr/slide/getviewscount/
@@ -125605,6 +125607,9 @@ $cookie=bf_visit
 ! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/217766
+||epicgames.com^$cookie=visitor-uuid
+||epicgames.com^$cookie=EPIC_DEVICE
 ! thekrazycouponlady.com
 ||thekrazycouponlady.com^$cookie=/^ab\.storage\./
 ! lovense.com
@@ -126592,6 +126597,14 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||fcm-collect-api.alyac.com^
+||service-api.flarelane.com^
+||mossturbo.com^
+||collect.wehearfm.com^
+||itracking.ikameglobal.com^
+||client-events-ingress.bookbub.com^
+||sdk.fra-*.braze.eu^
+||sdk.out.usbla.net^
 ||xz.fbcdn.net^
 ||xy.fbcdn.net^
 ||data.eu.pendo.io^
