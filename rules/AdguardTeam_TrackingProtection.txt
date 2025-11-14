@@ -118877,6 +118877,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||img1.wsimg.com/traffic-assets/js/tccl.min.js
+||neuron.cbssports.cloud/client.js?platform=tracking-manager
 ||famil.ru/bitrix/templates/aspro_max/js/yandex_metrika_
 ||search-api.fie.futurecdn.net/js/*/master-*/analytics-library-entry-getCustomTrackingId.js
 ||grok.com/_data/v1/events
@@ -126599,6 +126601,7 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||federatedcompute-pa.googleapis.com^
 ||fcm-collect-api.alyac.com^
 ||service-api.flarelane.com^
 ||mossturbo.com^
@@ -126687,12 +126690,6 @@ dlsdk.appsflyer.com^
 ||qcloud-sg-datareceiver.kurogame.xyz^
 ||statistic-overseas.yunxinfw.com^
 ||perfsight.wetest.net^
-||gamedot.afafb.com^
-||tadata.afafb.com^
-||ecpm.afafb.com^
-||mediation-receiver.afafb.com^
-||df.afafb.com^
-||middle-defend.afafb.com^
 ||pangolin-sdk-toutiao.com^
 ||stat.tpns.sgp.tencent.com^
 ||guid.tpns.sgp.tencent.com^
@@ -127715,6 +127712,8 @@ d4?appid*type*
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/217854
+@@||siteintercept.qualtrics.com^$domain=idealo.*
 ! https://github.com/AdguardTeam/AdguardFilters/issues/217617
 ||ct.pinterest.com^$subdocument,redirect=noopframe
 ! https://github.com/AdguardTeam/AdguardFilters/issues/217599
