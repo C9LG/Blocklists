@@ -438,6 +438,14 @@ $removeparam=fb_source
 ! Bad: ||example.org^$xmlhttprequest,redirect=noopvast-3.0 (for instance, should be in specific.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/218448
+||careerindex.jp^$removeparam=_ly_c
+||careerindex.jp^$removeparam=_ly_r
+||careerindex.jp^$removeparam=pathway
+||careerindex.jp^$removeparam=yj_r
+! https://github.com/AdguardTeam/AdguardFilters/issues/218405
+||sell.amazon.de^$removeparam=refTag
+||sell.amazon.de^$removeparam=ld
 ! https://github.com/AdguardTeam/AdguardFilters/issues/218446
 ||qoo10.jp^$removeparam=__da_seqno
 ||qoo10.jp^$removeparam=flowpath_page_no
@@ -2223,6 +2231,7 @@ $removeparam=afid,domain=123chat.jp|kanochat.jp|live.fc2.com
 ||imdb.com^$removeparam=pf_rd_s
 ||imdb.com^$removeparam=pf_rd_t
 ||imdb.com^$removeparam=pf_rd_i
+
 ! https://github.com/AdguardTeam/AdguardFilters/issues/132478
 ||wiley.com^$removeparam=/elq/
 ! https://github.com/AdguardTeam/AdguardFilters/issues/131490
