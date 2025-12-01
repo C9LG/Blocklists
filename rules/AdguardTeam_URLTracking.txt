@@ -443,6 +443,8 @@ $removeparam=fb_source
 ! Bad: ||example.org^$xmlhttprequest,redirect=noopvast-3.0 (for instance, should be in specific.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/218996
+||s.awa.fm^$removeparam=t
 ! https://github.com/AdguardTeam/AdguardFilters/issues/219121
 ||aozorabank.co.jp^$removeparam=lid
 ! https://github.com/AdguardTeam/AdguardFilters/issues/219068
@@ -453,10 +455,7 @@ $removeparam=fb_source
 ||frontier-direct.jp^$removeparam=argument
 ||frontier-direct.jp^$removeparam=dmai
 ! https://github.com/AdguardTeam/AdguardFilters/issues/218448
-||careerindex.jp^$removeparam=_ly_c
-||careerindex.jp^$removeparam=_ly_r
 ||careerindex.jp^$removeparam=pathway
-||careerindex.jp^$removeparam=yj_r
 ! https://github.com/AdguardTeam/AdguardFilters/issues/218405
 ||sell.amazon.de^$removeparam=refTag
 ||sell.amazon.de^$removeparam=ld
