@@ -2554,6 +2554,7 @@ raz-zeitung.de,muensteraner-rechtsanwaelte.de,hardware-helden.de,naheland-apothe
 !
 ! NOTE: Regular rules
 !
+youtrack.jetbrains.com##div[data-test="alert-container"][class^="ring-ui-manager-alertContainer"]
 dom.ria.com#%#//scriptlet('set-cookie-reload', 'gdpr', '1')
 ancestry.de#%#//scriptlet('trusted-click-element', 'div[id^="Banner_cookie_"] #rejectAllBtn')
 untold.ae#%#//scriptlet('trusted-set-cookie', 'cookies', 'declined')
@@ -5335,7 +5336,7 @@ serif.com##div[aria-labelledby="cookie-heading"]
 magnit.ru##.popup-unit-cookie-policy
 torggler.com##.wf-cookie-consent
 sportaustria.at##div[data-extension="consent_manager"]
-nordstellar.com,saily.com###consent-widget-container
+nordprotect.com,nordstellar.com,saily.com###consent-widget-container
 jod.jsports.co.jp##.o-app-cvArea
 deal.by##div[data-testid="backdrop"]
 deal.by###react-portal > div > div[role="presentation"]:has(footer + div > div > div > button)
@@ -8118,7 +8119,7 @@ playngo.com##.deobxn
 bbc.com#?#header[role="banner"] > div > div:has(> div  > div > h2)
 ||sportrar.tv/js/cookiepop.js
 artnews.com,rollingstone.com,dirt.com,deadline.com,variety.com,billboard.com,indiewire.com###pmc_toupp_notice
-regiojethotels.com,regiojethotels.at,studentagency.cz,dovolena.cz,jazykovepobyty.cz,navigator-tmn.ru,my.nintendo.com##div[class^="Cookie"]
+estoty.com,regiojethotels.com,regiojethotels.at,studentagency.cz,dovolena.cz,jazykovepobyty.cz,navigator-tmn.ru,my.nintendo.com##div[class^="Cookie"]
 scherzo.es###pdcc-modal-bg
 dyzurnet.pl#$?#.modal:has(> .cookies-modal) { display: none !important; }
 dyzurnet.pl#$?#.modal:has(> .cookies-modal) + .modal-backdrop { display: none !important; }
@@ -35733,6 +35734,7 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+usconcealedcarry.com##body > delta-modals
 zaranikas.gr##.bottom-slider-section
 protagon.gr##p[style]:has(> strong > a[href^="https://news.google.com/publications/"])
 telecinco.es##aside[class*="_whatsapp-cta-"]
@@ -42924,7 +42926,7 @@ livemint.com###lastAd
 sudinfo.be###gr-footer-newsletter
 m-timesofindia-com.cdn.ampproject.org##.newsletter_hook_content
 businessinsider.com,1kr.ua##.right-subscribe
-1kr.ua##.telegram-chat
+x-fetish.tube,1kr.ua##.telegram-chat
 mercola.com##.top-subscription
 securitylab.ru###subscribe-section
 usvinternet.ru###text-54
@@ -44544,6 +44546,10 @@ alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepeti.com,ra
 !
 !
 !
+newt.net##article > a[class$="__appBanner"]
+newt.net##aside div[class$="__areaOrAppBanner"]
+newt.net##aside > section[class^="AppDownload"]
+newt.net##div[class^="FixedAppBannerForPc"]
 marcoderhy.medium.com##.cp.bi.gq.gr.gs.gt > .ul.um.sx.sy.sz.m:has(a[href^="https://rsci.app.link/?"])
 producthunt.com##.theme-mirror:has(> .fixed > .flex > a[href^="https://producthunt.app.link"])
 crimeradar.us##a[href^="https://app.adjust.com/1q711p7o"]
@@ -48337,6 +48343,7 @@ m.tokopedia.com#$#div[data-testid="divOverlay"] { display: none!important; }
 ! causes some issues: https://github.com/AdguardTeam/AdguardForMac/issues/550
 ~lineup.withgoogle.com,~vert.sh,~search.brave.com,~status.im,~lafenice.io,~kurer-sreda.ru,~chorki.com,~zattoo.com,~zaycev.net,~hitta.se,~mail.ru,~facebook.com,~instagram.com,~drive.google.com$$link[rel="manifest"]
 !
+newt.net##div[class^="FixedAppBannerForSp"]
 m.soundcloud.com##a[data-testid="open-in-app-link"]
 chirashiplus.jp##.to_app-site_bnr
 crimeradar.us##main > div.fixed.left-0.top-0
@@ -52943,6 +52950,13 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+newt.net##body > div[class$="__banner"]
+newt.net##body > div[class$="__bannerContainer"]
+newt.net##aside div[class$="__campaignBanner"]
+newt.net##article iframe[class$="__card--hotel"]
+newt.net##article section[class$="__tourLinkArea"]
+newt.net##article div[class$="__normalBody"] > p[style^="text-align: center"]:has(> strong + br)
+||frame.newt.net/hotelCardFromMag/
 bileter.ru##.event-grid-right
 bileter.ru##.slider-bottom
 billboard.com##.pmc-not-a-paywall a[href^="https://ubpass.co/billboard"] > img
