@@ -70766,6 +70766,8 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||bookoff.co.jp/assets/js/ac/tag-analyze.js
+||bookoffonline.co.jp/files/tracking/
 ||api.20min.ch/kaia/v*/persist
 20min.ch#%#//scriptlet('set-local-storage-item', 'clientId', '$remove$')
 ||temu.com/*/conversion/*beacon$ping
@@ -75987,8 +75989,10 @@ gmarket.co.kr#%#//scriptlet('fingerprintjs2')
 ! NOTE: Generic rules
 !
 ! sendy.co
-/t/*/a^$image
 %2Ft%*%2Fa^$image
+! https://github.com/AdguardTeam/AdguardFilters/issues/219953
+!+ NOT_PLATFORM(ios, ext_safari)
+/t/*/a^$image
 ! tinyemail.com, SNRbox and maybe other
 /pix.gif?$image
 %2Fpix.gif%3F$image
