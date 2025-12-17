@@ -47134,6 +47134,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||mp.imgur.com^
 ||a.apkeditor.io^
 ||log.goodnovel.com^
 ||d2qxmykuaro8s3.cloudfront.net^
@@ -73624,6 +73625,9 @@ adguard.info,adguard.com,adguard.app#$#.hello_from_adguard_advanced_protection_i
 ! Bad:  ||example.com^$cookie=flat_r_mb (should be in cookies_specific.txt)
 !
 !
+! Galaksion
+$cookie=GL_UI4
+$cookie=GL_GI10
 ! baixafilmestorrent.com
 $cookie=adb_saas
 ! tagContainer (commandersact.com)
@@ -74465,6 +74469,11 @@ $cookie=bf_visit
 ! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/220298
+||agoda.com^$cookie=agoda.analytics
+||agoda.com^$cookie=agoda.firstclicks
+||agoda.com^$cookie=agoda.lastclicks
+||agoda.com^$cookie=t_rc
 ! aws.amazon.com
 ||amazon.com^$cookie=aws-target-data
 ||amazon.com^$cookie=aws-target-session-id
@@ -76701,8 +76710,9 @@ d4?appid*type*
 @@||cdn.cxense.com/cx*.js$domain=onetz.de
 @@||cdn.cxense.com/sp*.html$domain=onetz.de
 @@||api.cxense.com/public/widget/data?json=$domain=onetz.de
+! https://github.com/uBlockOrigin/uAssets/issues/16086#issuecomment-3655830578
 ! https://github.com/easylist/easylist/pull/7880/
-@@||dev.visualwebsiteoptimizer.com^$script,xmlhttprequest,domain=dominos.jp
+@@||dev.visualwebsiteoptimizer.com^$script,xmlhttprequest,domain=dominos.jp|dominos.com.my|dominos.com.sg|dominoslk.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/215786
 @@||googletagmanager.com/gtm.js$domain=sferis.pl
 ! https://github.com/AdguardTeam/AdguardFilters/issues/215834
@@ -82205,6 +82215,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||jubilantwhisper.com^
 ||juicebard.com^
 ||juiceblocks.com^
+||juicingoasis.com^
 ||justconfig.com^
 ||justicejudo.com^
 ||justpickaname.com^
@@ -82664,6 +82675,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||rememberdiscussion.com^
 ||remixslot.com^
 ||rentinfinity.com^
+||rentpenny.com^
 ||repeatsweater.com^
 ||replaceroute.com^
 ||rescuerhino.com^
