@@ -47134,6 +47134,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||d.nordvpn.com^
 ||ingress.linktr.ee^
 ||browser-fp.production.linktr.ee^
 ||app-performance.music.amazon.dev^
@@ -66795,6 +66796,7 @@ zjjz6lpv44aguszo.cloud.s11.sfmc-osl.com$image
 !+ NOT_OPTIMIZED
 /.well-known/private-click-measurement
 !
+/ajax/whereami$ping
 /wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-contact-form-
 /web-vitals-tracker.js
 /.rum/@adobe/helix-
@@ -67576,6 +67578,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||nordvpn.com/static/TrackersRuntimeScript.
 ||letu.ru/api/rrs/v*/analytics
 ||api-statist.tinkoff.ru/gateway/v*/events
 ||assets.production.linktr.ee/cep/
@@ -72945,6 +72948,9 @@ click.sender.yandex.ru/px/$image
 click.sender.yandex.ru%2Fpx%2F$image
 feedback.send.yandex.ru/px/$image
 feedback.send.yandex.ru%2Fpx%2F$image
+! sp.yandex.ru
+api.peeper.plus.yandex.net/v1/p/$image
+api.peeper.plus.yandex.net%2Fv1%2Fp%2F$image
 ! https://github.com/AdguardTeam/AdguardFilters/issues/209977
 cl.mos.jp/q/$image
 cl.mos.jp%2Fq%2F$image
@@ -75082,6 +75088,8 @@ $cookie=ahoy_visitor,domain=instacart.ca|instacart.com
 !||tripadvisor.$cookie=TAUnique - breaks results https://github.com/AdguardTeam/AdguardFilters/issues/168373
 !||tripadvisor.$cookie=TADCID - breaks login
 ! https://github.com/AdguardTeam/AdguardFilters/issues/139322
+||nordvpn.com^$cookie=nv_tri
+||nordvpn.com^$cookie=nv_trs
 ||nordvpn.com^$cookie=CurrentSession
 ||nordvpn.com^$cookie=FirstSession
 ||nordvpn.com^$cookie=nextbid
@@ -75484,6 +75492,9 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||events.backtrace.io^
+||kbox-analytics-prod.s*.amazonaws.com^
+||logs.classdojo.com^
 ||api.arity.com^
 ||mob2.bpt.apprevork.com^
 ||cpatrk.net^
@@ -76644,6 +76655,8 @@ d4?appid*type*
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/219868
+@@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=heise.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/219906
 @@||cdn.shopify.com/oxygen-v2/*/assets/Clarity-$domain=thegoodguys.com.au
 ! https://github.com/AdguardTeam/AdguardFilters/issues/219632
