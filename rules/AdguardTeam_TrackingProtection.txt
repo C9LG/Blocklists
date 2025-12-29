@@ -67288,6 +67288,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||etsy.com/include/tags.js
+||etsy.com/api/v*/ajax/public/bacon|
+||etsy.com/api/v*/ajax/public/statsd|
 ||tag.assembly.go.kr:*/nlog/log/event
 ||metrics.streaks.jp^$xmlhttprequest,redirect=nooptext
 ||temu.com/*/api/firefly/exp-config
@@ -76434,6 +76437,8 @@ enedis.fr#%#//scriptlet('set-constant', 'window.tc_vars', 'emptyObj')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/219632
 ! aglint-disable-next-line no-invalid-modifiers
 @@||cdn.taboola.com/libtrc/unpkg/tfa.js$domain=/anitube\d+\.vip/
+! https://github.com/AdguardTeam/AdguardFilters/issues/221300
+@@||awsstatic.com/libra/*/vendor/web-vitals.attribution.iife.js$domain=aws.amazon.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/219921
 @@||awsstatic.com/*/orchestrate.js$domain=aws.amazon.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/219743
