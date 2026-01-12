@@ -49044,7 +49044,7 @@ prd.api.bleacherreport.com^
 ||stats.bunkr.ru^
 ||logs.netflix.com^
 ||mst.rnd.de^
-||cza.crazygames.com^
+||cza*.crazygames.com^
 ||event-dot-procolor-backend.appspot.com^
 ||prod.event.mwm-asset-manager.mwmwebapis.com^
 ||api.amplitudeexperiment.com^
@@ -49301,7 +49301,6 @@ prd.api.bleacherreport.com^
 ||femetrics.grammarly.io^
 ||realtimeanalytics.yext.com^
 ||stats.indianpornempire.com^
-||lp.spac.me^
 ||analytics.verfacto.com^
 ||log.dzen.ru^
 ||flask.us.nextdoor.com^
@@ -70600,7 +70599,6 @@ pcmag.com##img[src^="https://t.myvisualiq.net/"]
 ||dataplane.rum.*.amazonaws.com/appmonitors
 ||suumo.jp/jj/jjcommon/sc/s_code.js
 ||bablic.com/api/engine/pling
-||spcs.*/api/common/beacon/
 ||unification.useinsider.com/api/event/
 ||rou.video/js/yd.js
 ||elle.com.hk/assets/js/ur.js
@@ -75370,10 +75368,6 @@ $cookie=_wctrck
 $cookie=flocktory-uuid
 ! wisepops.com widget counter
 $cookie=/^wisepops/
-! Demandware Analytics
-! https://github.com/AdguardTeam/AdguardFilters/issues/205331
-! https://github.com/AdguardTeam/AdguardFilters/issues/169558
-$cookie=/dwanonymous_/,domain=~nintendo.com|~hoka.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/167333
 $cookie=cqcid,domain=~nintendo.com
 ! BUG: https://github.com/AdguardTeam/AdguardFilters/issues/164150
@@ -76961,6 +76955,10 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||track.applicaster.com^
+||hb-mob2.optiword.com^
+||tracking.geo.*.amazonaws.com^
+||telemetry.doxo.com^
 ||sensorsdata-datasink.stardust-tv.com^
 ||event-api-cs.stardust-tv.com^
 ||logreport-global-dual.cool*cloud.com^
@@ -78162,6 +78160,15 @@ d4?appid*type*
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/221977
+investor-web.hdfcfund.com#%#//scriptlet('set-constant', 'smartech', 'noopFunc')
+!+ PLATFORM(ios, ext_android_cb)
+@@||tw.netcore.co.in/smartechclient.js$domain=investor-web.hdfcfund.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/222196
+! https://github.com/AdguardTeam/AdguardFilters/issues/221840
+@@||a.klaviyo.com/client/subscriptions/
+! https://github.com/AdguardTeam/AdguardFilters/issues/222035
+@@||st.dynamicyield.com/st?$domain=noelleeming.co.nz
 ! https://github.com/AdguardTeam/AdguardFilters/issues/222263
 !+ PLATFORM(windows, mac, android, cli)
 ||awswaf.com/*/telemetry|$redirect=nooptext,domain=discipulusv2.amasystem.net
