@@ -567,6 +567,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||heap-api.com^
 ||analytics.vinovo.si^
 ||cs.media.net^
 ||bidder.doceree.com^
@@ -48394,6 +48395,12 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||sp.pluto.tv^
+||service-ad-image-ga-weighted.prd.pluto.tv^
+||tracking.carfax.com^
+||analytics.carvana.io^
+||analytics.ticketmaster.com^
+||track.opentable.com^
 ||mixpanel.tigocloud.net^
 ||analytics.launcherleaks.net^
 ||ingest.webcol.sdp.peacocktv.com^
@@ -48978,7 +48985,6 @@ prd.api.bleacherreport.com^
 ||pixels.argusplatform.com^
 ||egg.afisha.ru^
 ||tracking-app.diginetica.net^
-||c.us.heap-api.com^
 ||logging.g.sst.secureserver.net^
 ||metricreceiver.cellrebel.com^
 ||events.app-performance.music.amazon.dev^
@@ -68991,6 +68997,9 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||cdn1.adoberesources.net/alloy/$domain=pluto.tv
+||autotrader.com/pixall/
+||partner.awscconsumerinfo.autotrader.com/*/beacon/
 ||question.searchiq.co/static/js/analytics.js
 ||app.birdsend.co/forms/*/display-stats-pixel
 ||marketplace.anyclip.com/v*/lre-events
@@ -76849,6 +76858,7 @@ $cookie=ev_did,domain=diariovasco.com
 /.*/$network,app=com.adups.fota.sysoper|com.adups.fota
 !
 ! For specific apps
+||tracking.ibotta-classic.ipn-ops.net^$app=com.ibotta.android
 ||firebaselogging-pa.googleapis.com^$app=com.sampleapp
 ||ads-api.twitter.com^$app=com.twitter.android
 ||tags.tiqcdn.com^$app=uk.co.thetimes|com.hulu.plus|com.booking
@@ -76997,6 +77007,11 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||ir-sdk.guardease.com^
+||verifysession.uxcam.com^
+||analytics.wachanga.app^
+||usage.digitalconcerthall.com^
+||report.starshort.online^
 ||clarity.ms^|
 ||engagelab.cc^
 ||global-sis.engagelab.com^
@@ -77291,7 +77306,7 @@ d4?appid*type*
 ||103.41.167.237/v2/resolv?host=
 ||logs.nebulahoroscope.com^
 ||gateway.bingviz.microsoftapp.net^$app=com.microsoft.bing
-||app.adjust.com^$app=com.microsoft.bing|jp.gocro.smartnews.android|com.daily.health.tracker.monitor|com.glovo|com.edadeal.android|com.dailymotion.dailymotion
+||app.adjust.com^$app=com.microsoft.bing|jp.gocro.smartnews.android|com.daily.health.tracker.monitor|com.glovo|com.edadeal.android|com.dailymotion.dailymotion|com.novoda.dch|com.jotform.v2
 ||sapphire.api.microsoftapp.net^$app=com.microsoft.bing
 ||browser.events.data.microsoft.com^$app=com.microsoft.bing
 ||mobile.events.data.microsoft.com^$app=com.microsoft.bing
@@ -78215,6 +78230,8 @@ d4?appid*type*
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/222648
+@@||mi.tigo.com.co/plugins/cordova-plugin-fingerprint-aio/www/Fingerprint.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/222570
 @@||cdn.cxense.com/cx.cce.js$domain=elle.com
 @@||cdn.cxense.com/cx.js$domain=elle.com
