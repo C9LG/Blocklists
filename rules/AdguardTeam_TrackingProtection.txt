@@ -48394,6 +48394,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||mixpanel.tigocloud.net^
 ||analytics.launcherleaks.net^
 ||ingest.webcol.sdp.peacocktv.com^
 ||t.collectiveaudience.co^
@@ -68990,6 +68991,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||question.searchiq.co/static/js/analytics.js
 ||app.birdsend.co/forms/*/display-stats-pixel
 ||marketplace.anyclip.com/v*/lre-events
 /log/client/messages$domain=momondo.com|kayak.com
@@ -76995,6 +76997,9 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||clarity.ms^|
+||engagelab.cc^
+||global-sis.engagelab.com^
 ||app.siteperformancetest.net^
 ||events-stream-svc.cordial.io^
 ||events.gonative.io^
@@ -78210,6 +78215,10 @@ d4?appid*type*
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/222570
+@@||cdn.cxense.com/cx.cce.js$domain=elle.com
+@@||cdn.cxense.com/cx.js$domain=elle.com
+@@||api.cxense.com/public/widget/data?json=$domain=elle.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/222154
 !+ NOT_PLATFORM(windows, mac, android, cli)
 @@||live.mrf.io/statics/marfeel/gardac-sync.js$domain=muylinux.com
