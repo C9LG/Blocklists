@@ -162,6 +162,8 @@
 ||startup.mobile.webvisor.com^
 ||startup-mobile.ap.yandex-net.ru^
 !
+||ad-api.maxnapps.com^
+||d3vgkjyuhp91nc.cloudfront.net^
 ||rainmaker4.production-public.tubi.io^
 ||x3m.biz^
 ||d1tru86qrby720.cloudfront.net^
@@ -2772,7 +2774,7 @@ itc.ua##.image-100
 walica.jp##footer + div.fixed.bottom-0.left-0.right-0.z-50.sm\:hidden
 thetoc.gr##.bannerparent
 thetoc.gr##.mg_underhero
-m.yelp.com##div[class*="new-serpia-"] > ol > li:has(div[data-traffic-crawl-id="SearchResultBizName"] > h3 > a[href^="/adredir?"])
+m.yelp.com##div[class*="new-serpia-"] > ol > li:has(a[href^="/adredir?"])
 m.yelp.com##div[class*="new-serpia-"] > ol > li:has(> div[class*="sponsored-icon"])
 4j.com###Games_TopAdDiv
 mydealz.de##div[class]:has(> .ad--bg:only-child)
@@ -8696,6 +8698,7 @@ adguard.info,adguard.com,adguard.app#$#.hello_from_adguard_advanced_protection_i
 !
 !
 ! Blocking Facebook mobile ads
+||graph.facebook.com^$app=com.location.track.proxy.gps|com.magical.smart.alban
 ||graph.facebook.com^$app=com.loomgames.pixelflow
 ||graph.facebook.com^$app=com.winter.breaker
 ||graph.facebook.com^$app=com.apkpure.aegon
