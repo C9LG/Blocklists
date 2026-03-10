@@ -1293,6 +1293,8 @@ $script,xmlhttprequest,third-party,domain=00ksw.com|01zww.com|0biquge.com|114zw.
 !
 ! NOTE: Specific rules
 !
+vpstop.cn##a[target="_blank"] > img[style^="width: 100%;max-height:"]
+vpstop.cn#?#.sidebar > div.uk-card:contains(赞助商家)
 huavod.com##a[href^="https://lesi198.com"]
 ||static.okokserver.com/uploads/lesi/lesi.mp4$media
 ||zhanlangcdnimg.top^$image,domain=91av51.com
@@ -5581,6 +5583,8 @@ newduba.cn###jq_youxi
 ||57l2ng6r91.com^
 ||xdyn03101jy.com^
 ||i5rp73ne9h.com^
+||awcecrod.com^
+||1phyxws373.com^
 ||3hg6yh6h0.com^
 ||nb5a7g5r1.com^
 ||pztnzqwz.icu^
@@ -15487,7 +15491,6 @@ hao123.com###hao123-gw11
 javhope.com###havhope
 macd.cn###hbad
 coolaler.com###hd
-jr35.xyz###hd + .wp
 gdmm.com###hd > .wp > .module
 hackhw.com,ithome.com###hd_float
 ithome.com###hd_float1
@@ -19384,7 +19387,6 @@ szjjzs.com##a[href^="/pic/tiao/"]
 chinacsbs.com##a[href^="/plus/view.php?aid="]
 96weixin.com##a[href^="/show/ads/"]
 fx112.com##a[href^="/union."]
-jr35.xyz##a[href^="ad."]
 131400.best,vikacg.com,vikacg.icu,vikacg.xyz##a[href^="http"] > img[src*="/assets/moonlight/"]
 boniu123.cc##a[href^="http"] > img[src*="/bn_"]
 yigujin.cn##a[href^="http"]:not([href$=".html"]) > img[src*="/tp/"]
