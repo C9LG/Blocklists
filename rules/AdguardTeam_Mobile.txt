@@ -2774,6 +2774,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+m.slashdot.org###vibe-code
 yesasia.ru##div[style="display:block;height:600px;overflow:hidden;"]
 mwed.jp##div[style="margin-top:60px; width:300px; margin-inline:auto;"]
 cancam.jp##.sp-template-field
@@ -8727,7 +8728,7 @@ vimm.net#$#body > #main { bottom: 0 !important; }
 accuweather.com#$#.header-placeholder.has-adhesion { height: 44px !important; }
 accuweather.com#%#//scriptlet('remove-class', 'has-adhesion', '.header-placeholder.has-adhesion')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/187643
-!+ PLATFORM(windows, mac, android)
+!+ PLATFORM(windows, mac, android, cli)
 mail.yahoo.com#?#aside[data-test-id="leaderboard-ad-mobile"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/165241
 yahoo.com#$?#li[data-wf-native-da-id^="ntk-native-ad-"] { remove: true; }
