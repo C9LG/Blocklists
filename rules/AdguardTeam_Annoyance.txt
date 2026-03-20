@@ -25906,7 +25906,7 @@ zkillboard.com###adsensetop
 ||good-surf.ru/*script/script.js
 ||googleads.g.doubleclick.net/pagead/$redirect=nooptext,important,domain=maxedtech.com
 ||googleads.g.doubleclick.net/pagead/ads$subdocument,redirect=noopframe,domain=thehouseofportable.com
-||googletagmanager.com/gtm.js$domain=popsci.com|saveur.com|denik.cz|ign.com|thehouseofportable.com
+||googletagmanager.com/gtm.js$domain=popsci.com|saveur.com|denik.cz|ign.com|thehouseofportable.com|xataka.com
 ||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=diep.io
 ||guhoyas.com/*/adblock-modal.js
 ||htlbid.com/*/motherjones.com/htlbid.js$script,redirect=noopjs,domain=motherjones.com,important
@@ -36761,6 +36761,7 @@ gaugau.futabanet.jp,newscientist.com,jiji.com,edp24.co.uk,technologyreview.com,n
 !
 ! SECTION: Subscriptions - Regular rules
 !
+news.yahoo.co.jp##button[aria-label="チュートリアルを閉じる"]
 techblog.gr###tbNlBar
 teluguone.com##.content-one-main-middle-add
 ipiter.ru###telegram_invite
@@ -38647,7 +38648,6 @@ aviasales.ru##div[class^="SubscriptionCard_container"]
 tutu.ru###banner-covid-19
 axios.com##div[data-vars-experiment="content_to_subscription_recommendations"]
 today.com##.preloaded_lightbox:has(> iframe[title="(LIVE) Start TODAY App | Al with Weights"])
-winaero.com###dbpa
 calltouch.ru#%#//scriptlet('set-local-storage-item', 'lastDateSubNotice', 'true')
 gov.kz##.card-information__actions
 vulture.com##.promotional-spot
@@ -54851,7 +54851,7 @@ music.yandex.*##.deco-pane-overlay
 !
 ! Yandex.Market
 market.yandex.*#$##MainHeader { margin-top: 0 !important; }
-market.yandex.*##div[data-apiary-widget-name="@monetize/UrbanAdsStreamer"]
+market.yandex.*##div[data-apiary-widget-name^="@monetize/UrbanAds"]
 market.yandex.*##div[data-apiary-widget-name="@monetize/IncutConstructor"]
 market.yandex.*#$#div[data-apiary-widget-name="@monetize/MadvHeaderPromo"] { display: none !important; }
 market.yandex.*##div[data-apiary-widget-name="@marketfront/LiveStreamPreviewPopup"]
@@ -54908,6 +54908,7 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+ozon.ru##div[data-widget="webReviewTabs"] div[data-widget="skuGrid"]
 design.penpot.app##.main_ui_dashboard_subscription__cta-power-up
 pachca.com##body > div.min-h-screen > div.relative:has(> div.w-full > div.mx-auto > a[href="/from-telegram"])
 blog.domclick.ru#%#//scriptlet('set-session-storage-item', 'realtorLabelIncludedInPost', 'false')
