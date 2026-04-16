@@ -1309,6 +1309,7 @@ $script,xmlhttprequest,third-party,domain=00ksw.com|01zww.com|0biquge.com|114zw.
 !
 ! NOTE: Specific rules
 !
+free.com.tw##.advads-entity-placement
 huaren.live,huavod.com,huavod.net##a[href="/go/baba/1"]
 *$script,xmlhttprequest,third-party,domain=m.niupizhi.net
 ||m.niupizhi.net/lokedpgdjs
@@ -3569,6 +3570,8 @@ adguard.info,adguard.com,adguard.app#$#.hello_from_adguard_advanced_protection_i
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/228922
+@@||staticsns.cdn.bcebos.com/amis/$image,domain=pan.baidu.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/225957
 mnya.tw#@##advertise
 ! https://github.com/AdguardTeam/AdguardFilters/issues/225120
