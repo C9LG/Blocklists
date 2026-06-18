@@ -79314,6 +79314,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||mcs-normal-*.capcutapi.com^
 ||performance-events.guardianapis.com^
 ||tracker-proxy.getmimo.com^
 ||a.cineflix.st^
@@ -182273,11 +182274,15 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
+||edit-api-*.capcut.com/lv/v1/event/
+||api.anyembed.xyz/api/user/event|
+thestar.com.my#%#//scriptlet('set-local-storage-item', 'nx_anon_id_v1', '$remove$')
+||st-a.cdp.asia/insight.js
 ||ph.givebutter.com^$ping
 ||work.ua/api/v1/view-page/
 ||compo-de.frontnow.app/api/event|
 ||economx.hu/ident-fingerprint/
-||dex.hu/x.php
+||dex.hu/x.php$xmlhttprequest
 ||senvio.ai/api/*/events/
 ||health.ems.onet.pl/*/metric/collector
 ||rent.com/api/analytics|
@@ -190124,6 +190129,7 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||stats-sdk.tange365.com^
 ||dc.oppomobile.com^
 ||aki-gb-sdklog.kurogames.net^
 ||log1.pwsdk.com^
@@ -198175,6 +198181,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||strivesquirrel.com^
 ||strokesystem.com^
 ||strongercity.com^
+||studioalkaline.com^
 ||studycooking.com^
 ||stupendoussleet.com^
 ||stupendoussnow.com^
@@ -198257,6 +198264,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||texturetrick.com^
 ||thebigvan.com^
 ||thebrainybulb.com^
+||thecounter.net^
 ||thecrazychili.com^
 ||thefishstops.com^
 ||thejavalane.com^
