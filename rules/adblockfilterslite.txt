@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilterslite.txt
-! Version: 20260621030519
-! Last modified: 2026/06/21 03:05:19
-! Blocked Filters: 155247
+! Version: 20260621144025
+! Last modified: 2026/06/21 14:40:25
+! Blocked Filters: 155415
 !
 ###AC_ad
 ###AD_160
@@ -23480,6 +23480,16 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 11479.connector-qa1.marketingcloudqaapis.com$image
 11486.editor-qa1.marketingcloudqaapis.com$image
 11498.connector-qa1.marketingcloudqaapis.com$image
+114la.com###Gamepng
+114la.com###dlAD1
+114la.com###dlAD2
+114la.com###egg-packet
+114la.com##.corner
+114la.com##.headline
+114la.com##.s11bg
+114la.com##.search_ad
+114la.com##.sy_ad4
+114la.com#?#.sortItem:has(> dIV[class] > .FeedADClose)
 114la.com,78dm.net,chinairn.com,chinanews.com.cn,dav01.com,qncye.com,qzwb.com,silisili.in,silver.org.cn,solidot.org,ylmf.com##.adv
 114la.com,ylmf.com###GameAdv
 114la.com,ylmf.com###HDtopBar
@@ -23867,6 +23877,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 16961.editor-qa1.marketingcloudqaapis.com$image
 1697.sock-qa1.marketingcloudqaops.com$image
 16fan.com##.item-newad
+16sucai.com##.pindao_ad2
 16sucai.com,bbxxbbs.net##table[width="960"]
 1703.connector-qa1.marketingcloudqaapis.com$image
 1703.sock-qa1.marketingcloudqaops.com$image
@@ -23940,6 +23951,9 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 18835.sock-qa1.marketingcloudqaops.com$image
 1888.editor-qa1.marketingcloudqaapis.com$image
 1888.sfap-qa1.marketingcloudqaops.com$image
+188soft.com##.cont_d_l_dow + .down-center
+188soft.com##.down_gaosu
+188soft.com##.safety
 189.cn#@##linkShare
 189.cn#@#.adLink
 189.cn#@#.adlink
@@ -24035,6 +24049,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 1avlang.com,avavl4.com,avlang.com##.index-info > .tac
 1cloudfile.com,koramaup.com,doodrive.com##.uk-position-bottom-right
 1istochnik.ru,mirnov.ru##a[href^="https://t.me/"] > img
+1kkk.com##.kk2.cc
+1kkk.com##.lanrenzhijia
 1kkk.com,40407.com,5068.com,88148.com,chazidian.com,china.com,cnwnews.com,elecfans.com,ghjie.com,iask.ca,ifeng.com,iqilu.com,juqingba.cn,liuxue86.com,qzwb.com,sina.com.cn,zsnews.cn##.gg
 1kkk.com,dm5.com###lb-win
 1kkk.com,dm5.com##.swiper-container[style*="760px;"]
@@ -24043,22 +24059,27 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 1kkk.com,dm5.com,dm5.hk##.adform_1
 1kkk.com,dm5.com,dm5.hk##.adform_2
 1lou.info,1lou.icu,1lou.me,1lou.one,1lou.pro###advert > :not(.card)
+1m3d.com###klp_adtop
 1movierulzhd.*,xcandid.top#@#.ad_slot
 1movierulzhd.*,xcandid.top#@#.ad_unit
 1movierulzhd.*,xcandid.top#@#.adslot
 1movierulzhd.*,xcandid.top#@#.adslot_1
 1movierulzhd.*,xcandid.top#@#.adunit
 1news.co.nz,actionnewsjax.com,boston25news.com,fox23.com,hits973.com,kiro7.com,wftv.com,whio.com,wpxi.com,wsbradio.com,wsbtv.com,wsoctv.com##.arcad_feature
+1ppt.com##.lpadlist
 1sale.com,7billionworld.com,9jaflaver.com,appdoze.net,bestcrazygames.com,canstar.com.au,canstarblue.co.nz,cheapies.nz,climatechangenews.com,cointribune.com,cosmeticsbusiness.com,cryptonomist.ch,currencyrate.today,daily-sun.com,eventcinemas.co.nz,ezgif.com,gagadget.com,gamesadshopper.com,geo.tv,govtrack.us,gramfeed.com,hentaikun.com,herzindagi.com,hockeyfeed.com,i24news.tv,icons8.com,idiva.com,indiatimes.com,inspirock.com,islamchannel.tv,m.economictimes.com,mangasect.com,mb.com.ph,medicalxpress.com,mehrnews.com,meta-calculator.com,mini-ielts.com,motogp.com,mugshots.com,nbc.na,news.nom.co,nsfwyoutube.com,onlinerekenmachine.com,onlymyhealth.com,ozbargain.com.au,piliapp.com,readcomicsonline.ru,recipes.net,robuxtousd.com,russia-insider.com,savevideo.me,search.illicit.pw,sgcarmart.com,sherdog.com,straitstimes.com,teamblind.com,tehrantimes.com,thatmaidguy.su,thedailyjagran.com,thenews.com.pk,thestar.com.my,unb.com.bd,viamichelin.com,viamichelin.ie,vijesti.me,y8.com,yummy.ph##.ads
 1tamilblasters.*##p[style="text-align: center;"] > a[target="_blank"] > img
 1tamilblasters.*#?#.ipsWidget > .ipsWidget_inner:has(> p[style="text-align: center;"]:only-child > a[target="_blank"] > img)
 1tamilmv.*#%#//scriptlet("abort-current-inline-script", "document.createElement", "ppu_")
+1ting.com###tingx_5
+1ting.com##div[style="position:fixed;bottom:0;z-index:999"]
 1tube.org,1flex.org,1shows.org#%#//scriptlet('prevent-navigation', 'youtube.com')
 1v9.gg,humboldtforum.org#%#//scriptlet('set-cookie', 'acceptCookie', 'true')
 1vhrgv0dy5bwe5a7.kdpwizard.app$image
 1voice.gr,odishabytes.com,campaigntr.com,derstarih.com,justnerd.it##.more-stories
 1x6666.com,528500.com,52jscn.com,5378cc.com,58cam.com,5imx.com,7sqq.com,99nets.com,99nets.me,bbs.52life.cc,bestcclm.com,cm868.com,cnyw.net,discuzlab.com,gebi1.com,hh010.com,im286.net,kugz.com,ld0766.com,luanren.com,mahoupao.com,qinzhou8.com,sh419.net,suizhoushi.com,susongbbs.com,txahz.com,wishct.com,xsool.com,xydai.cn,ybvv.com###diy1
 1x6666.com,52ch.net,bbs.qbaobei.com,chinafix.com,cnyw.net,gz0668.com,hcbbs.com,mahoupao.com,susongbbs.com,xsool.com,xydai.cn###diynavtop
+1ydt.com###head
 2.sfap-qa1.marketingcloudqaops.com$image
 2.sock-qa1.marketingcloudqaops.com$image
 20.ftp-qa1.marketingcloudqaops.com$image
@@ -24093,6 +24114,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 20119.editor-qa1.marketingcloudqaapis.com$image
 2012.connector-qa1.marketingcloudqaapis.com$image
 2013.avadacom.com$image
+2014.qq.com#@##adIframe
 20156.editor-qa1.marketingcloudqaapis.com$image
 20156.ftp-qa1.marketingcloudqaops.com$image
 20160.connector-qa1.marketingcloudqaapis.com$image
@@ -24151,7 +24173,15 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 2190.sfap-qa1.marketingcloudqaops.com$image
 2195.editor-qa1.marketingcloudqaapis.com$image
 2195.sfap-qa1.marketingcloudqaops.com$image
+21cn.com###embed_hzh_div
+21cn.com##.h-gg
+21cn.com##.xuantu
+21cn.com##div[class^="topAds"]
+21ic.com###IC2008Ad
+21ic.com##.couplet_ad2
 21ic.com,pyccoo.cn,qq.com##.topbanner
+21yq.com###AD1
+21yq.com##div[style^="width:980px;height:80px;"]
 2206.ftp-qa1.marketingcloudqaops.com$image
 2206.sfap-qa1.marketingcloudqaops.com$image
 22155.editor-qa1.marketingcloudqaapis.com$image
@@ -24165,6 +24195,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 2228.sock-qa1.marketingcloudqaops.com$image
 2233.connector-qa1.marketingcloudqaapis.com$image
 2233.sfap-qa1.marketingcloudqaops.com$image
+2234.cn##.btngs
+2234.cn##.pc-down_url_left > .pull-left
 2236.connector-qa1.marketingcloudqaapis.com$image
 22365.sfap-qa1.marketingcloudqaops.com$image
 2239.sock-qa1.marketingcloudqaops.com$image
@@ -24184,6 +24216,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 22957.ftp-qa1.marketingcloudqaops.com$image
 22970.view-qa1.sfmc-marketingqa.com$image
 22pixx.xyz,imagevenue.com###overlayBg
+22vd.com##.widget_custom_html:last-child
 2301.connector-qa1.marketingcloudqaapis.com$image
 2301.editor-qa1.marketingcloudqaapis.com$image
 2301.sfap-qa1.marketingcloudqaops.com$image
@@ -24193,10 +24226,93 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 23180.connector-qa1.marketingcloudqaapis.com$image
 23242.connector-qa1.marketingcloudqaapis.com$image
 23293.ftp-qa1.marketingcloudqaops.com$image
+233.com##.gads
+233.com##.gads2
 23350.ftp-qa1.marketingcloudqaops.com$image
 23380.connector-qa1.marketingcloudqaapis.com$image
 2342.sfap-qa1.marketingcloudqaops.com$image
 23427.sfap-qa1.marketingcloudqaops.com$image
+2345.com###J_Banner_Special
+2345.com###J_act_plane_hb
+2345.com###J_acts11_footerfixed
+2345.com###J_bgSug1st
+2345.com###J_go_erweima
+2345.com###J_gul_yg + .mod
+2345.com###J_gul_yglist
+2345.com###J_hot_event
+2345.com###J_s11_foot
+2345.com###J_search_bd > div:last-child
+2345.com###J_tip_stopXP
+2345.com###abanner
+2345.com###cnxh
+2345.com###corner-flash
+2345.com###corner_a
+2345.com###corner_div
+2345.com###header-img-new
+2345.com###header-news
+2345.com###ivy-taobao
+2345.com###jswbox
+2345.com###kz
+2345.com###leftPacketBox
+2345.com###leftPacketMain
+2345.com###leftSideBar
+2345.com###m_banner
+2345.com###m_banner_2
+2345.com###mzBrowserWrap
+2345.com###right > div:first-child
+2345.com###rightXieCheng
+2345.com###sideCat
+2345.com###sidel_lvy
+2345.com###sidenav > .activity-trig
+2345.com###topHf
+2345.com###xxl_game-new
+2345.com##._isFirstAd
+2345.com##.act-market
+2345.com##.act-openJ-mask
+2345.com##.act-search-tab
+2345.com##.act-yguang
+2345.com##.activity-skin-rtrig
+2345.com##.activity-skin-trig
+2345.com##.acts11-sidefixed
+2345.com##.adMainBg
+2345.com##.chc-dzoem
+2345.com##.cmoe-nxh-dx
+2345.com##.cmp-game-new
+2345.com##.cnxh_box
+2345.com##.coem-dzhcn
+2345.com##.comp-logo-wall
+2345.com##.comp-normal-navigate
+2345.com##.dzc-hn-cmoe
+2345.com##.event1-hasList
+2345.com##.lian-meng-box
+2345.com##.mainbg
+2345.com##.mainbg1
+2345.com##.mco-ex-ndxh
+2345.com##.mod-serchright
+2345.com##.mod-txtred
+2345.com##.mzdh_bottom
+2345.com##.newsArea
+2345.com##.part-banner
+2345.com##.s11-fixNav
+2345.com##.s11-logowall
+2345.com##.s11-side
+2345.com##.s12-fullNav
+2345.com##.search-right-swiper-news
+2345.com##.spreadHotWords
+2345.com##.tip_stopXP
+2345.com##.top > .fred
+2345.com##.top-browser-wrap
+2345.com##.top-lvy
+2345.com##.top_news
+2345.com##.v_picConBox.height214
+2345.com##.vipTopBanner
+2345.com##.wawaji
+2345.com##div[class*="act-navspec"]
+2345.com##div[class*="act-open"] > :not(.close):not([class*="mask"])
+2345.com##div[id^="J_Topic"]
+2345.com##div[id^="J_micro_zhuanti-"]
+2345.com##div[id^="bd-search-ad"]
+2345.com#?#.pic:has(a[href^="http://g.wan."])
 2348.ftp-qa1.marketingcloudqaops.com$image
 2348.sfap-qa1.marketingcloudqaops.com$image
 2350.connector-qa1.marketingcloudqaapis.com$image
@@ -24257,8 +24373,10 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 24ai.tech,kotofoto.ru,hrtime.ru,prostavochka.com.ua,cifrus.ru##.messages_cookies
 24fm.ps,datingscammer.info,ihrc24x7.com,news365.co.za,royale-games.com,thedefensepost.com,xboxera.com##.stream-item
 24h.pchome.com.tw,find.ruten.com.tw##.site_evt
+24k99.com##.jy_24k99_suspended_ad
 24k99.com,fx168.com##.ny2018_txtLink
 24k99.com,fx168.com##.yy_guangao
+24kplus.com###custom_html-3
 24porn.com,bigfuck.tv,redporn.porn##.c-random
 24porn.com,boy18tube.com,gayfuckporn.tv,gaymaletube.name,gayporno.fm,gogaytube.tv,goldgay.tv,hdpornvideo.tv,ice-gay.com,icegay.tv,icegaytube.tv,icetranny.com,justustrannies.com,machogaytube.com,machotube.tv,madgaysex.com,onlydudes.tv,ourshemales.com,shemaleporntube.tv,trannytube.tv,ts-tube.net,xgaytube.tv##.js-uvb-spot
 24rodopi.com,rodopi24.blogspot.com###HTML14
@@ -24308,6 +24426,9 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 25944.sfap-qa1.marketingcloudqaops.com$image
 2598.sock-qa1.marketingcloudqaops.com$image
 25ans.jp,ellegirl.jp,harpersbazaar.com##div[class*="css-"]:has(> div.ad-disclaimer)
+25xz.com##.p_ads
+25xz.com##div[style*="1002px;"]
+25xz.com##div[style*="724px;"]
 26002.connector-qa1.marketingcloudqaapis.com$image
 26016.ftp-qa1.marketingcloudqaops.com$image
 2609.editor-qa1.marketingcloudqaapis.com$image
@@ -24320,6 +24441,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 26291.sfap-qa1.marketingcloudqaops.com$image
 26340.editor-qa1.marketingcloudqaapis.com$image
 26369.sfap-qa1.marketingcloudqaops.com$image
+263y.com##.view_abc
 26494.connector-qa1.marketingcloudqaapis.com$image
 26547.sfap-qa1.marketingcloudqaops.com$image
 26549.ftp-qa1.marketingcloudqaops.com$image
@@ -26395,6 +26517,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||1991421.cn^$generichide
 @@||199it.com^$generichide
 @@||1login.wp.pl^$cookie
+@@||2345.com/images/activity/20171111/open/j/close.png
 @@||360buyimg.com/ad/$domain=jd.com
 @@||360buyimg.com/ads/$domain=jd.com
 @@||360buyimg.com^*??
@@ -33268,7 +33391,7 @@ binhantur.com,mapsofworld.com,moulinex.com.tr###dialog
 binnews.com,iheart.com,jessekellyshow.com,steveharveyfm.com##.component-pushdown
 binnews.com,iheart.com,jessekellyshow.com,steveharveyfm.com##.component-recommendation
 bio-protocol.org##.el-dialog__wrapper
-bioinformant.com,geeksforgeeks.org###text-15
+bioinformant.com,geeksforgeeks.org,theretirementmanifesto.com###text-15
 biokord.com,acom.pl,lantre.pl,maxsklep.pl,technikalia.pl###topInfoContainer1
 biolink.webtena.com,lite.liiingo.com#%#//scriptlet('prevent-setTimeout', 'ad_blocker_detector_modal')
 biologianet.com,futebolinterior.com.br,colegioweb.com.br,preparaenem.com,portugues.com.br,folha.com.br,mundoconectado.com.br,adrenaline.com.br,uol.com.br##.banner-lgpd-consent-container
@@ -125297,7 +125420,7 @@ gizmochina.com,prodesigntools.com###wpfront-notification-bar
 gizmodo.com,kotaku.com##.lg\:min-h-\[300px\]
 gizmodo.com,kotaku.com##.od-wrapper
 gizmodo.com,kotaku.com##.widget_keleops-ad
-gizmodo.com,space.com##.aspect-video
+gizmodo.com,lgbtqnation.com,space.com##.aspect-video
 gizmodo.com.au,kotaku.com.au,lifehacker.com.au,pedestrian.tv##.ad-no-mobile
 gizmodo.com.au,kotaku.com.au,lifehacker.com.au,pedestrian.tv##.sidebar-outbrain
 gizmodo.com.au,kotaku.com.au,lifehacker.com.au,pedestrian.tv##.top-ad-leaderboard
@@ -132766,6 +132889,7 @@ makepolo.com##div[class*="_ad"]
 makepolo.com,mycar168.com,mysteel.com,pchome.net,rjfcw.cn##div[id^="ad"]
 makeship.com,nfnz.cz,dagrasso.pl,businessoffashion.com,goingapp.pl,empikbilety.pl##div[class^="CookieBar_"]
 makeuseof.com,military.com##.sidebar-first
+makeuseof.com,polygon.com##.sidebar-default
 makitech.co.jp,sutterhealth.org,phonecopy.com###cookieAgreement
 maklerinmuenster.de,garten-bienen.at###privacyCtrl
 makro.cz,makro.pl#$#.consent-disclaimer { display: none !important; }
@@ -139203,6 +139327,7 @@ rivianforums.com,redgifs.com##.bannerWrapper
 riwyat.com,hiraethtranslation.com,filmzone.com,brokensilenze.net#%#//scriptlet('abort-on-property-write', 'disableEnterKey')
 riwyat.com,vernamagazine.com,filmzone.com,mangacrab.com,flinsetyadi.com,theturtleislandnews.com,animeactua.com,7misr4day.com,michaelemad.com,lazytranslations.com,world4.eu,elektrikmen.com,wartaterkini.news,iptv4best.com,sysnettechsolutions.com,aihristdreamtranslations.com,audioreview.m1001.coreserver.jp#$#body.unselectable { -webkit-touch-callout: default !important; -moz-user-select: text !important; -webkit-user-select: text !important; -ms-user-select: text !important; -o-user-select: text !important; user-select: text !important; -khtml-user-select: text !important; }
 rjfcw.cn##li[style*="1200px"]
+rkanr.com##.bill
 rlx32.com,primepropertynow.com,kdvqi.xyz,ehinditimes.com,rlx7.com,almafhm.online,androidonepro.com,bosejk.in,cinema-3d.xyz,everydaytechvams.com,gfx-station.com,gold-24.net,hindisink.com,innateblogger.com,mobiranking.com,movies4u.*,princetechzone.in,rlxoff.com,rlxtech24h.com,stream2watch.*,to-travel.net,treasl.com,yjiur.xyz##.overlay
 rlx32.com,primepropertynow.com,kdvqi.xyz,ehinditimes.com,rlx7.com,almafhm.online,androidonepro.com,bosejk.in,cinema-3d.xyz,everydaytechvams.com,gfx-station.com,gold-24.net,hindisink.com,innateblogger.com,mobiranking.com,movies4u.*,princetechzone.in,rlxoff.com,rlxtech24h.com,stream2watch.*,to-travel.net,treasl.com,yjiur.xyz##.popSc
 rlx32.com,primepropertynow.com,kdvqi.xyz,ehinditimes.com,rlx7.com,almafhm.online,androidonepro.com,bosejk.in,cinema-3d.xyz,everydaytechvams.com,gfx-station.com,gold-24.net,hindisink.com,innateblogger.com,mobiranking.com,movies4u.*,princetechzone.in,rlxoff.com,rlxtech24h.com,stream2watch.*,to-travel.net,treasl.com,yjiur.xyz##.popup
@@ -148508,6 +148633,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||02wq.com/script1/
 ||042.cn/adver/
 ||0439.com/javascript.php?part=advertisement&
+||0573fang.com/ads/
 ||0575bbs.com/js/float.js
 ||0575bbs.com/updateimeags/
 ||0579.cn/SHow/Showplacenew.aspx
@@ -148535,7 +148661,10 @@ zzztube.com,videoporn.tube##.b-random-column
 ||107.167.16.*.gif
 ||107.167.22.*.gif
 ||10fang.com/static/skin/tfy/layer/layer.js
+||11.mydrivers.com/drivers/
 ||1133.cc^$third-party
+||114la.com/static/js/egg.js
+||114la.com^$third-party,domain=~ylmf.com
 ||1188.com^$third-party
 ||119xiazai.com^$subdocument
 ||11st.co.kr^$cookie=/RAKE_SID/
@@ -148589,6 +148718,8 @@ zzztube.com,videoporn.tube##.b-random-column
 ||168gamer.*/list-
 ||168gamer.*/olist-
 ||168gamesf.*/olist-
+||16sucai.com/ads/
+||16sucai.com/images/*0
 ||17173.com/advideo/
 ||17173.com/api/video/PlayerPopup?
 ||17173.com/batch_show?ads=
@@ -148616,6 +148747,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||18183.com^*.php?
 ||183yf.cn/img/nz.png
 ||184.164.88.220^$app=com.newtime.hp.templetreasure
+||188soft.com/js/PCsoftDetailAD.js
 ||189.cn/actpush/$popup,third-party
 ||189.cn/dns/
 ||189.cn^*/push/$third-party
@@ -148633,10 +148765,16 @@ zzztube.com,videoporn.tube##.b-random-column
 ||1lib.*/components/z-promotion.js
 ||1lib.*/components/z-recommended-search.js
 ||1password.university^$removeparam=utm_ref
+||1ppt.com/ad$image
 ||1tamilmv.*/madness.js
+||200218.com^$third-party
 ||2018x.*/guang/
 ||203.195.121.$popup
+||2114.com/api.php?a=get_adv
+||2114.com/zb_users/script/advertise.js
+||211600.com/data/attachment/portal/
 ||21buttons.com^$cookie=21b.user.generated.id
+||21yq.com/mg/21yq/
 ||220-volt.ru^$cookie=_userGUID
 ||220-volt.ru^$cookie=advref
 ||220-volt.ru^$cookie=advref_first
@@ -148646,8 +148784,33 @@ zzztube.com,videoporn.tube##.b-random-column
 ||23.109.82.$popup
 ||23.109.87.
 ||23.109.87.$popup
+||2345.com/cnxh/
+||2345.com/duoteimg/img/*_ad_
+||2345.com/dypcimg/*gameRecommend.js
+||2345.com/dypcimg/ads/
+||2345.com/guess/v1/adList
+||2345.com/images/activity/20180618/search-actimg
+||2345.com/images/m/global/new-hongbao/
+||2345.com/js/index/activity/
+||2345.com/js/m/bottom.float.adver.js
+||2345.com/js/m/common/top_information.js
+||2345.com/pic/2345video.png
+||2345.com/right/homepage/tqbChannel_
+||2345.com/right/site/like/gul_
+||2345.com^*/activity/20171
+||2345cdn.net/js/index/activity/
+||234fang.com/index.php?/ajax/get_adv/
+||239300.net/template/*_mh_gg
+||23aitt.com/zz/
+||23bei.com/static/plugins/layer/layer.
+||23img.com^*/qomnyi.
+||23qb.com/ak
+||23qb.com/skin/style
+||23qb.com/skin/xiu.js
+||23sc.cn/andy/
 ||24scor*.*/img/*background$image
 ||24scor*.*/img/branding
+||2500sz.com/site/
 ||2898.com/index/flowexchange/getGoods?
 ||2ccc.com/images/WebXone.gif
 ||2ccc.com/images/aobi.gif
@@ -150588,6 +150751,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||douyin.com^$removeparam=previous_page
 ||douyu.com/japi/sign/web/getinfo
 ||douyu.com/member/gamegift/gameList/
+||down-id.img.susercontent.com/file/*.webp$domain=lk21.am.in
 ||downlinker.*/ad_dl.js
 ||downlinker.*/ads.js
 ||download.2345.cn/2345yd1/apk/
@@ -151557,6 +151721,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||gucheng.com/2016/ggimg/
 ||gucheng.com/gcwad/
 ||guhai.com.cn/AD/
+||guifun.com/psptool/ad/
 ||gulfnews.com^$cookie=/incap_|NEW_VISITOR|nlbi_|___utmv/
 ||gulper.io^$cookie=play_cnt
 ||gumgo.cn^$third-party
@@ -152065,6 +152230,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||javbest.cc^$referrerpolicy=origin
 ||javplayer.me/*/views^
 ||jb51.net/imgby/logo_
+||jbzyw.com/Application/M/adv/
 ||jc001.cn/ci/jad/fix.
 ||jd-bbs.com^*/gif/
 ||jd.com/bottom/cps
@@ -153601,6 +153767,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||rivestream.*/scripts/monetag-special.js^
 ||rjsos.com/channel/laomo_dibu.png
 ||rjzxw.com/include/
+||rkanr.com/data/cpcache/cp*.js
 ||rkxy.com.cn/js/text_
 ||rnd.de^$cookie=__vads
 ||roblox.com^$cookie=RBXSessionTracker
@@ -154328,6 +154495,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||tf1.fr^$cookie=ABTastySession
 ||tf1.fr^$cookie=atidvisitor
 ||tf1.fr^$cookie=gguserid
+||tfg2.com/images/upfile/AD/
 ||tgb.cn/res/js/tgbgg/
 ||theathletic.com^$removeparam=login_source
 ||theathletic.com^$removeparam=ref_page
