@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilters.txt
-! Version: 20260627191726
-! Last modified: 2026/06/27 19:17:26
-! Blocked Filters: 268636
+! Version: 20260628025909
+! Last modified: 2026/06/28 02:59:09
+! Blocked Filters: 268640
 !
 ###AC_ad
 ###AD_160
@@ -27158,10 +27158,10 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 91porny.com##.jsv-g1
 91porny.com##.mobile-jsv-bottom,.mb-3.p-0,.d-sm-none,.mb-0.p-0
 91porny.com##A.display.d-block[href^='http'],A.display.d-block[href^='http'] ~ *
-91porny.com,91porn.fans###main > div[class][id] > .mb-0
-91porny.com,91porn.fans##.videoPlayContainer > style + div[data-nosnippet]
-91porny.com,91porn.fans#?##main > div[class][id]:has(>style)
-91porny.com,91porn.fans#?#.colVideoList:has(>.video-elem>.d-block[href^="http"])
+91porny.com,91porn.fans,91porny.org###main > div[class][id] > .mb-0
+91porny.com,91porn.fans,91porny.org##.videoPlayContainer > style + div[data-nosnippet]
+91porny.com,91porn.fans,91porny.org#?##main > div[class][id]:has(>style)
+91porny.com,91porn.fans,91porny.org#?#.colVideoList:has(>.video-elem>.d-block[href^="http"])
 91porny.com/api/getPos?jspath=/
 91rb99.com##.float-right
 91rb99.com##.top
@@ -32360,6 +32360,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||dingit.tv^$generichide
 @@||dinvemitoloji.com^$generichide
 @@||direct-link.net^$generichide
+@@||directg.jp/js/fingerprint2.js$~third-party
 @@||directline.botframework.com^$stealth=referrer
 @@||directline.com/touchclarity/$script
 @@||directly.com/chat?cfgId=$stealth=referrer
@@ -186398,6 +186399,7 @@ m.sports.ru##.b-main-menu__section--x5
 m.sports.ru##.columns__main-column > div.news-layout__frame:has(> div.ad-slot)
 m.sports.ru##.g-banner-context-wrap
 m.sports.ru##.geo-banner
+m.sports.ru##.nav-left-banner
 m.sports.ru##.navigation-item-list__list > li.navigation-item-list__list-item:has(> div > a[href="https://sirena.world/apps_menu"])
 m.sports.ru##.navigation-left-banner
 m.sports.ru##.smartappbanner
@@ -234244,6 +234246,7 @@ video.sibnet.ru###pobeda2023-sticky
 video.sibnet.ru###vjs-overlayclip-container-box
 video.sibnet.ru##.pobeda2023_push
 video.sky.it##.c-adv-generic
+video.sports.ru##header:has(> div > div > button.CookieBanner-expand)
 video.tv-tokyo.co.jp###modal:has(> div#modal-inner > div#webpushsp)
 video.tv-tokyo.co.jp##.adApp-wrapper
 video.tv-tokyo.co.jp##.cta-around
@@ -251721,6 +251724,7 @@ zzzyk.com###Tinfo
 ||dir.bg/js_ext.php?placeid=*&affiliate_id=*
 ||direct.hdzog.com/contents/lejpppwud/
 ||directcpmfwr.com^$popup
+||directg.jp/js/fingerprint2.js$script,redirect=fingerprintjs2
 ||directleaks.net/styles/images/ads/
 ||directory.cookieyes.com/api/v*/ip
 ||dirproxy.com/helper-js
