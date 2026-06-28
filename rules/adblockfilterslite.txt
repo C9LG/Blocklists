@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilterslite.txt
-! Version: 20260628193004
-! Last modified: 2026/06/28 19:30:04
-! Blocked Filters: 155365
+! Version: 20260629025835
+! Last modified: 2026/06/29 02:58:35
+! Blocked Filters: 155341
 !
 ###AC_ad
 ###AD_160
@@ -5827,7 +5827,6 @@
 ##.GoogleDfpAdModule
 ##.GoogleDoubleClick-SponsorText
 ##.GroupAdSense
-##.HeaderAd
 ##.HeaderAds
 ##.HeaderBannerAd
 ##.HeadingAdSpace
@@ -5884,7 +5883,6 @@
 ##.PrimisMidArticleAdUnit_desktop__dq_iB
 ##.PrimisResponsiveStyle
 ##.PrintAd-Slider
-##.ProductAd
 ##.PushdownAd
 ##.RC-AD
 ##.RC-AD-BOX-BOTTOM
@@ -5931,7 +5929,6 @@
 ##.SkyAdContainer
 ##.SkyAdContent
 ##.SkyScraperAd
-##.SovrnAd
 ##.Sponsor-container
 ##.SponsorHeader
 ##.SponsorIsland
@@ -5953,8 +5950,6 @@
 ##.SummaryPage-HeaderAd
 ##.TaboolaMoreToExplore_taboolaContainerWrapper__Ccf_j
 ##.Text-Advertising
-##.TextAd
-##.TextAdds
 ##.Textads
 ##.TopAd
 ##.TopAdBox
@@ -6226,7 +6221,6 @@
 ##.ad-970x250
 ##.ad-970x90
 ##.ad-Advert_Placeholder
-##.ad-E
 ##.ad-LREC
 ##.ad-LREC2
 ##.ad-Leaderboard
@@ -6578,7 +6572,6 @@
 ##.ad-group
 ##.ad-halfpage
 ##.ad-halfpage-placeholder
-##.ad-hdr
 ##.ad-head
 ##.ad-header
 ##.ad-header-below
@@ -7106,7 +7099,6 @@
 ##.ad-text-links
 ##.ad-textads
 ##.ad-textlink
-##.ad-thanks
 ##.ad-ticker
 ##.ad-tile
 ##.ad-title
@@ -7456,7 +7448,6 @@
 ##.adBanner728x90
 ##.adBillboard
 ##.adBkgd
-##.adBlock728
 ##.adBlockBottom
 ##.adBlockSpacer
 ##.adBlockSpot
@@ -7637,7 +7628,6 @@
 ##.adPanorama
 ##.adPlaceholder
 ##.adPlacement
-##.adPod
 ##.adPosition
 ##.adPremium
 ##.adRecommend
@@ -7749,7 +7739,6 @@
 ##.adUnit
 ##.adUnitHorz
 ##.adUnitVert
-##.adVar
 ##.adVertical
 ##.adVideo
 ##.adVideo2
@@ -8295,7 +8284,6 @@
 ##.adblock-top
 ##.adblock-top-left
 ##.adblock-wide
-##.adblock300
 ##.adblock300250
 ##.adblock728x90
 ##.adblock__banner
@@ -11649,7 +11637,6 @@
 ##.ctl_CookieWarning
 ##.ctm_ad
 ##.cube-ad
-##.cubeAd
 ##.cube_ad
 ##.cube_ads
 ##.cui-pt-item[data-qhb]
@@ -14242,7 +14229,6 @@
 ##.profile_ad_top
 ##.prom-olnk
 ##.promlnk[style="position:relative;width:100%;height:100%;"]
-##.promo-ad
 ##.promo-mpu
 ##.promoAd
 ##.promoAds
@@ -18796,6 +18782,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .icu/biyys*.js$third-party
 .icu/pssbk?$third-party
 .in/js/ads/
+.in/js/footer_ad.js
 .info/ad.js
 .info/ad/
 .info/jquerys.js
@@ -19747,6 +19734,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /ad--unit.htm|
 /ad-blocking-advisor/*$script,stylesheet
 /ad-blocking-alert/*$stylesheet
+/ad-blocking-detector/assets/js/adblock-detector.min.js
 /ad-choices-$image
 /ad-choices.png$image
 /ad-provider.
@@ -19807,12 +19795,10 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /adasync.min.js$script
 /adbanners/*$image
 /adblock-detect.$script
-/adblock-detector.min.js$script
 /adblock-notify-by-bweb/*$script,stylesheet
 /adblock/frontend_loader.js
 /adblock_detector2.$script
 /adblock_logger.$script
-/adblockdetect.js$script
 /adblocker.js$domain=hindimearticles.net|solution-hub.com
 /adcg/*
 /adchoice.png$image
@@ -19867,7 +19853,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /adrum.js^
 /adrum_
 /ads-250.$image
-/ads-async.$script
 /ads-blocking-detector.$script
 /ads-common.$image,script
 /ads-front.min.js$script
@@ -19936,7 +19921,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /adscroll.js$script
 /adsdelivery/*$subdocument
 /adsen.php
-/adserv.$script
 /adserve/*$script
 /adserver.$popup
 /adserver.$~stylesheet,~xmlhttprequest,domain=~konograma.com
@@ -20147,7 +20131,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /apricot.php?
 /apstag.js$script
 /apu.php?$script
-/arcads.js$script
 /as/d/*.js$~third-party,domain=137.175.73.220
 /asdfghjkl.tech/index.html$document
 /asesor-cookies-
@@ -20487,7 +20470,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /cmp_shim.js
 /cms-gg.js
 /cms-s4s-components/s4s-privacy-module/s4s-privacy-module$domain=sas.dk|flysas.com
-/cms_ads.js$script
 /cnil-cookies_
 /cnil.js
 /cnki/js/adDetail1124.js
@@ -20527,7 +20509,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /config/tj.js
 /consent.[\s\S]*.de/$domain=mopo.de|duda-kinderzeitung.de|dumont.de|dumont-rheinland.de|rheinische-anzeigenblaetter.de|yourjob.de
 /consentManager/js/*$domain=lastowiec.pl|biuropodrozymax.pl
-/content-ads.js$script
 /content.php?id=148&type=g|$xmlhttprequest
 /content/ads/*$~xmlhttprequest
 /content/clyscontent.js
@@ -20695,7 +20676,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /cpd|$app=system
 /cpm/i.ashx?
 /cpmShopAds^
-/cpmbanners.js$script
 /cpro.$popup,third-party
 /cpro/ui/*
 /cps|$app=system
@@ -20804,7 +20784,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /dooanalytics/*$script
 /doseofporn.com\/[a-z]{0,5}[1-9]{0,5}[a-z]{0,5}[1-9][s\S]*.js/
 /dotbandeaucookie/*
-/doubleclick.min$script
 /doubleserve.js$badfilter
 /download-link-js/?v=$script,~third-party
 /download.plagin.js
@@ -20970,7 +20949,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /fn666/shouye.php
 /fnn_cookiemanager/*/fnn-cookiemanager.js$domain=erzgebirgskreis.de|erzgebirge-gedachtgemacht.de|dachmarke-erzgebirge.de
 /fontyukle.net\/js\/\w+.js/$domain=fontyukle.net
-/footer_ad.js$script,domain=~streamruby.com
 /footer_ads.php$subdocument
 /footerads.php$script
 /forms-akamai.smsbump.com$script,domain=edikted.com
@@ -21284,7 +21262,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /inhouse_ads/*$image
 /init?*&fallbackUserId=
 /inlineads.aspx$subdocument
-/insertads.js$script
 /inside-banner.mini.js$domain=irishradiolive.com|myonlineradio.at|myonlineradio.de|myonlineradio.hu|myonlineradio.nl|myonlineradio.sk|myradioendirect.fr|myradioenvivo.ar|myradioenvivo.mx|myradioonline.cl|myradioonline.es|myradioonline.it|myradioonline.pl|myradioonline.ro|ukradiolive.com
 /insights-emitter.
 /insights-emitter/*
@@ -21337,7 +21314,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /js/aahome.htm
 /js/ad.js$domain=69shuba.com
 /js/adInitializer.js$domain=ddwloclawek.pl|ddtorun.pl
-/js/ad_common.js$script
 /js/ad_insight/*
 /js/adobe-analytics.js$domain=moneywise.com|money.ca
 /js/ads
@@ -21375,6 +21351,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /js/cpv_fm_
 /js/detector.js$domain=bestsimsmods.com|dtbps3games.com|passionategeekz.com
 /js/dfp.js$script
+/js/doubleclick.min.js?v=
 /js/dyguosj/*
 /js/easyAD.js
 /js/easyAD2.js
@@ -22279,7 +22256,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /skin/view/ft$domain=iimanhua.cc|iimh.net
 /skyscraperad.$image
 /slide_in_ads_close.gif$image
-/slider_ad.js$script
 /sliderad.js$script
 /sm-policy-banner.js$domain=storage-mart.com
 /sm/getcode?apiKey=
@@ -22375,7 +22351,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /stereotypedsugar\.com\/[a-z]?\/[a-z0-9]+\/[a-z]{4}[a-z0-9]{15,25}\.index\.js$/$script,match-case,domain=agweek.com
 /sticky_ads.js$script
 /stickyad.js$script
-/stickyads.js$script
 /stock_bnr_300-$domain=food-foto.jp|model-foto.jp
 /storage/*.js#spot=$domain=beapirate.pw|proxtpb.art|unblocktheship.org
 /storage/*.js?_=$domain=tpb.one|unblocktheship.org
@@ -22616,6 +22591,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /vbvb_*_pmpm.js
 /velvet_stack_cmp.js$script
 /vendor/*/plugins/advert/js/shut-blocker.js$domain=kamudanhaber.net|yenimalatya.com.tr|habervakti.com|medya28.com|milliirade.com|kanalmaras.com
+/vendor/doubleclick.min.js
 /vendors~ads.
 /vglnk.js
 /vh2/*$third-party
