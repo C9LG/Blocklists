@@ -565,6 +565,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||telemetry.adsninja.ca^
 ||dsp-track-global.zmaticoo.com^
 ||opecloud.com^
 ||sf-insights.io^
@@ -79320,6 +79321,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||litags.feedblitz.com^
 ||posthog.football24.ua^
 ||analytics.wispbyte.com^
 ||trk.edf.fr^
@@ -182292,6 +182294,7 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
+||api.sales-ninja.me/*/events/
 ||static.ridicdn.net/books-backend/*/tracking/ridi-tracking-sdk.js
 ||ridibooks.com/_ext/g/js?id=
 mashable.com#%#//scriptlet('href-sanitizer', 'a[href^="https://zdcs.link/"]', '?u')
@@ -191528,6 +191531,8 @@ d4?appid*type*
 !@@||mc.yandex.ru/metrika/watch.js$domain=
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/234452
+@@||duckduckgo.com/local.js?tg=$~third-party
 ! https://github.com/easylist/easylist/issues/24516
 ||directg.jp/js/fingerprint2.js$script,redirect=fingerprintjs2
 !+ PLATFORM(ios, ext_safari, ext_android_cb)
