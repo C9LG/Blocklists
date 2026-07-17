@@ -79337,6 +79337,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||bzrcdn.openai.com^
+||lc-event.pixiv.net^
+||franken-analytics.makeup.global^
 ||l.ovhcloud.com^
 ||mtag-*.wedevs.com^
 ||h2tcbox.baidu.com^
@@ -181534,7 +181537,6 @@ zonedirector.avadacom.com$image
 /api/ads-bff-client/*
 /nelio-ab-testing/assets/dist/js/visitor-type.js
 /elastic-apm-rum.umd.min.js
-/sftouch?branchId=
 /digibox.gif?c=$image
 /wp-content/plugins/burst-statistics/*
 /wp-content/plugins/wp-analytify-pro/*
@@ -182341,7 +182343,9 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
-||lc-event.pixiv.net^
+||nettg.pl/store-view/api/track-page-view
+||grizly.*/metrics/
+||assets.mediadelivery.net/rum.js
 ipay.ztgame.com#%#//scriptlet('prevent-fetch', 'beacon.ztgame.com')
 ||sephora.com/js/ufe/isomorphic/thirdparty/fp.min.js
 ||celebtattler.com/world/cache/analytics.js
@@ -191004,7 +191008,6 @@ d4?appid*type*
 ||logs.gshopper.com^
 ||airlytics.airlock.twcmobile.weather.com^
 ||track.midway.run^
-||tdid.m.qq.com^
 ||d.reddit.com^
 ||splendapps.com/aid.php
 ||clog.mirrativ.com^
