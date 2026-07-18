@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilters.txt
-! Version: 20260718185420
-! Last modified: 2026/07/18 18:54:20
-! Blocked Filters: 269659
+! Version: 20260719024159
+! Last modified: 2026/07/19 02:41:59
+! Blocked Filters: 269658
 !
 ###AC_ad
 ###AD_160
@@ -16434,7 +16434,6 @@
 ##a[href*=".com?s="]
 ##a[href*=".engine.adglare.net/"]
 ##a[href*=".erodatalabs.com/"]
-##a[href*=".fdgsnnvfsdv2df1bf3fdb1.cc"]
 ##a[href*=".foxqck.com/"]
 ##a[href*=".g2afse.com/"]
 ##a[href*=".gaimin.gg/cn"]
@@ -18977,7 +18976,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .gif|$image,third-party,domain=jiuqugan.top|91jp3.beauty
 .gif|$third-party,domain=91xx133.cc
 .go?pid=*&spaceid=*&ctrlid=
-.hgo0*uyi.com/$script,xmlhttprequest,third-party
 .histats.*.js
 .hit.gemius.*.js
 .hit.gemius.*?
@@ -19054,7 +19052,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .mn/banner/embed/
 .mn/bn/
 .mn/images/banner/
-.moa0*ju.com/$script,xmlhttprequest,third-party
 .monster/images/ads/2.png|$~third-party,domain=monster
 .mp4?*sdtfrom=&$domain=m.v.qq.com
 .mpd$xmlprune=//*[name()="Period"][.//*[@value="Ad"]] | //*[name()="Period"]/@start[boolean(//*[@value="Ad"])],xmlhttprequest,domain=amazon.com|amazon.co.jp|amazon.de|amazon.co.uk|primevideo.com
@@ -19264,7 +19261,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .xyz:9002/*?x=$websocket,script,third-party
 .xyz^$domain=ceofix.net|teenfic.net
 .xyz^|$xmlhttprequest,third-party,domain=vipleague.pm|myflixerz.to|kaido.to|swatchseries.is|hianime.nz|dbsullca.com|hdtodayz.to|hdtoday.cc|myasiantv.ac|footyroom.top|miztv.shop|movieshd.watch|watch.cricstreams.re|mega4upload.net|vixcloud.co|yuppow.com|animeunity.so|dopebox.to|viprow.nu|animeflv.net|giize.com|hianimez.*|nmac.to|daddyhd.com|daddylive.*|topcinema.*|luckypatchers.com|tvableon.me|cricstreams.re|tvableon.me|kunmanga.com|anime3rb.com|forcedtoplay.xyz|thedaddy.*|streamlord.com|forcedtoplay.xyz|youtubemp4.to|tinyzonetv.cc|y2mate.*|cuevana.*|dorawatch.net|capo6play.com|hianime.to|dlhd.dad|embedtv.net|asd.homes|mlbbox.me|ico3c.com|hianime.do|watchluna.com|fs6.lol|movielair.cc|seeflix.to|asd.pics|doramasonline.org|kisskh.ovh|vidara.to|vidara.so|familypornhd.com|movish.to|dlhd.pk|jimpenopisonline.online|asd.ink|vidmatrixa.com|vidchampions.com|vidavaca.cc|cineblog001.work
-.yui0*shga.com/$script,xmlhttprequest,third-party
 .z.dkt-ib.com
 .zone/ads/
 /&*^$popup,domain=piracyproxy.app|piraproxy.info|unblocked.club|unblockedstreaming.net
@@ -19459,7 +19455,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /800x160/*
 /80sad/*
 /80x468_
-/83zg/tss.js
 /88/tag.min.js
 /8drama_yahoo/*
 /9115gg/*
@@ -45149,7 +45144,7 @@ akwam.*#%#//scriptlet("adjust-setInterval", "clock()", "1000", "0.02")
 akwam.news,re.two.re,khsm.io#%#//scriptlet('trusted-click-element', '.content > a[href^="http"].download-link')
 akyazihaber.com##.col-12 > div.list:has(> div.row > div[class] > a[href^="ilanlar/"])
 al-monitor.com##.region--after-content
-al.com,attackofthefanboy.com,destructoid.com,edmontonsun.com,gamepur.com,gamerjournalist.com,gameskinny.com,lehighvalleylivecom,lgbtqnation.com,macwelt.de,mlive.com,news8000.com,nj.com,pcwelt.de,pennlive.com,primagames.com,siliconera.com,syracuse.com,themarysue.com,touchtapplay.com,wegotthiscovered.com#%#//scriptlet('ubo-aost', 'decodeURI', '/(?=^(?!.*\.js))/')
+al.com,attackofthefanboy.com,destructoid.com,edmontonsun.com,gamepur.com,gamerjournalist.com,gameskinny.com,lehighvalleylivecom,lgbtqnation.com,macwelt.de,mlive.com,news8000.com,nj.com,pcwelt.de,pennlive.com,primagames.com,progameguides.com,siliconera.com,syracuse.com,themarysue.com,touchtapplay.com,wegotthiscovered.com#%#//scriptlet('ubo-aost', 'decodeURI', '/(?=^(?!.*\.js))/')
 al.com,cleveland.com,gulflive.com,lehighvalleylive.com,masslive.com,mlive.com,newyorkupstate.com,nj.com,oregonlive.com,pennlive.com,silive.com,syracuse.com###below-toprail
 al.com,cleveland.com,lehighvalleylive.com,masslive.com,mlive.com,newyorkupstate.com,oregonlive.com,pennlive.com,silive.com,syracuse.com##.revenue-display
 al.com,oregonlive.com,nj.com##.main-wrapper > #belowToprail
@@ -45993,6 +45988,7 @@ amazon.*##div[id="softlines-mobile-btf-discovery-zone-T3_feature_div"] .softline
 amazon.*##div[id^="dp-ads-"]
 amazon.*##div[id^="sims-simsContainer_feature_div_"]:has(.sp_info_link)
 amazon.*##div[id^="sp_detail"]
+amazon.*##div[id^="typ-recommendations-stripe-"]:has(div[data-is-sponsored-label-active="true"])
 amazon.*##li[role="listitem"]:has(.hybrid-widget-sponsored-label)
 amazon.*##section[class*="csm-placement-id"]:not([data-cel-widget^="sobe_d_"])
 amazon.*##span[cel_widget_id^="MAIN-FEATURED_ASINS_LIST-"]
@@ -53529,6 +53525,7 @@ bleepingcomputer.com##[src*="https://www.bleepstatic.com/c/t/threatlocker/"]
 bleepingcomputer.com##a.center-link-image[target="_blank"][rel="sponsored noopener"]
 bleepingcomputer.com##a[href="https://try.flare.io/bleeping-computer/"] > img
 bleepingcomputer.com##div[style="width:98%; margin:0 auto; text-align:center; padding:4px; background:#f0f0f0; border:1px solid #ccc; border-radius:6px;"]
+bleepingcomputer.com##div[style="width:98%; margin:0 auto; text-align:center; padding:5px; background:#f0f0f0; border:1px solid #ccc; border-radius:6px;"]
 bleepingcomputer.com##ul#bc-home-news-main-wrap > li:has(> .bc_latest_news_text > h4 > a[rel="nofollow"]:not([href*="bleepingcomputer.com"]))
 bleepingcomputer.com##ul#bc-home-news-main-wrap > li:has(> div > ul > li > a[rel="noopener sponsored"])
 bleepingcomputer.com#$#.bc_right_sidebar { min-height: unset !important; }
@@ -225883,10 +225880,12 @@ theclassroom.com##.adsense-main-ad
 thecode.media##.article-content > div.wp-block-lazyblock-plashka:has(> p > a[href^="https://practicum.yandex.ru/"])
 thecode.media##.b-tasks-wrp:has(a[href^="https://telegram.me/"])
 thecode.media##.float-link
+thecode.media##.footer__qr-code
 thecode.media##.main-social-banner
 thecode.media##.main-subscribe-wrp
 thecode.media##.pr-b
 thecode.media##.praktikum-link
+thecode.media##.wp-block-lazyblock-plashka
 thecode.media##a[href="https://t.me/+kyR5fxPW3twyMjdi"]
 thecode.media##div[class^="lazyblock-banner"]
 thecoinrise.com##.pp_ad_block
@@ -227223,6 +227222,7 @@ thesun.co.uk##[data-aspc="newBILL"]
 thesun.co.uk##div.module--1-billboard:has(> div.advert-wrapper)
 thesun.co.uk##div[aria-label="Video Player"][data-test-id="docked-brightcove"]
 thesun.co.uk##div[data-aspc="BILL"]
+thesun.co.uk#%#//scriptlet('abort-current-inline-script', 'atob', 'insertBefore(s')
 thesun.co.uk#%#//scriptlet('prevent-element-src-loading', 'script', 'gpt.js')
 thesun.co.uk#%#//scriptlet('prevent-fetch', 'adsbygoogle')
 thesun.co.uk#%#//scriptlet('remove-node-text', 'script', 'ncuAb')
@@ -246212,7 +246212,6 @@ zzzyk.com###Tinfo
 ||2watchmygf.com/spot/
 ||2zzt.com/file/aliyun
 ||2zzt.com/images/
-||31fq.com^$third-party
 ||31vcd.com^*.js
 ||321mh.com/v1/getadvertise?
 ||32xp.com/upimg/
