@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilters.txt
-! Version: 20260719190241
-! Last modified: 2026/07/19 19:02:41
-! Blocked Filters: 272499
+! Version: 20260720024444
+! Last modified: 2026/07/20 02:44:44
+! Blocked Filters: 272506
 !
 ###AC_ad
 ###AD_160
@@ -54902,7 +54902,6 @@ blog.skillfactory.ru#$?##banner-course-id { remove: true; }
 blog.springsfern.in#$##generateLinkBtn { display: block !important; }
 blog.springsfern.in#%#//scriptlet('trusted-click-element', '#generateLinkBtn')
 blog.stackademic.com##div[class^="jj jk"] > div[class="o q"]:has(> div[class^="er jo"] img[alt="Promotion image"])
-blog.statcounter.com,kuponla.com,forums.flyer.co.uk,page-online.de##.widget_newsletter
 blog.swc.rs##.my-10:has(> div.flex > input[aria-label="Enter your email address"])
 blog.swc.rs#%#//scriptlet('trusted-set-local-storage-item', 'seen-sign-up-modal', '{"value":"true"}')
 blog.system76.com##.tmblr-iframe
@@ -58774,6 +58773,7 @@ chatgpt.com###google-one-tap-anchor
 chatgpt.com###page-header > div.pointer-events-none:has(button.button-glimmer-cta)
 chatgpt.com##.border-token-border-default.mt-2.border-t:has(button[aria-label="Ad options"])
 chatgpt.com##.button-glimmer-cta
+chatgpt.com##[class*="_assistantAds"]
 chatgpt.com##[data-testid="bazaar-v2-elevated-box"]:has([data-ad-card-root="true"])
 chatgpt.com##[data-testid="bazaar-v2-elevated-box"]:has([data-testid="image-card-v2-elevated-disclosure"])
 chatgpt.com##div.opacity-100.transition-opacity.ease-out:has(button[aria-label="Sponsored options"], button[aria-label="Ad options"])
@@ -65565,8 +65565,10 @@ crazyporn.xxx##.list-videos > div > div[class="item"]:empty
 crazyporn.xxx#?#.item:has(> script[src^="/ai/"])
 crazyporn.xxx,4kporn.xxx#%#//scriptlet('remove-node-text', 'script', 'initPopunder')
 crazyporn.xxx,4kporn.xxx$$script:contains(initPopunder)
+crazyshit.com##a[href^="https://trustberrie.com/zn/"]
 crazyshit.com##body > div[style^="position: fixed;"][style*="transform:"][style*="z-index:"]
-crazyshit.com#%#//scriptlet("abort-current-inline-script", "jQuery", "document.cookie")
+crazyshit.com##div[id^="aad-footer"]
+crazyshit.com#%#//scriptlet("abort-current-inline-script", "jQuery", "window['open")
 crazyshit.com#?#.side_box:has(> .row > .tile > a[href*="out.php?"])
 crazyshit.com#?#.side_box:has(> .trevda)
 crazyshit.com,sleazyneasy.com,katestube.com,pervclips.com,vikiporn.com,fetishshrine.com,wankoz.com,sheshaft.com,pornicom.com,morazzia.com,pornwhite.com,yeswegays.com##a[href^="https://claring-loccelkin.com/"]
@@ -69681,7 +69683,9 @@ dobrotsen.ru##.subscribe-right
 dobryruch.co.uk#$#.adsbygoogle { position: absolute!important; left: -3000px!important; }
 dobrzemieszkaj.pl##.abc
 dobrzemieszkaj.pl##.ad-wrap-2
+dobrzemieszkaj.pl##.sad
 dobrzemieszkaj.pl##body .ad:not(#style_important)
+dobrzemieszkaj.pl,telex.hu##.google-box
 doc.mbalib.com###viewer > div.doc-ad
 doc.thinkphp.cn#%#//scriptlet('inject-css-in-shadow-dom', 'a[href*="?utm_source="][target="_blank"] > img { display: none !important; }')
 doc.ua##.header__call-btn
@@ -69783,7 +69787,6 @@ dogedoge.com##.tag-home__item
 dogeen.xyz#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 dogfight360.com#%#//scriptlet("abort-current-inline-script", "document.write", "document.write(ad);")
 dogma.ru,sportsdaily.ru,drovae.gov.ua,octoparse.jp##div[class^="cookies_cookies_"]
-dogruhaber.com.tr,tomsguide.com,shortlist.com,trf1.net,bessarabiainform.com,techorange.com,impress.co.jp,ispazio.net,techradar.com,dumka.media,comments.ua,muhalif.com.tr,vidomo.media,dexerto.com,malatyaguncel.com,yenisakarya.com,phonearena.com,ortadogugazetesi.com,gucluanadolugazetesi.com,alanyapostasi.com.tr,samsungazetesi.com,hamlegazetesi.com.tr,uyan32.com,yeniizmir.com,ilerigazetesi.com.tr,egetelgraf.com,referansgazetesi.com.tr,sonmuhur.com,gazetearena.com,gazetegercek.com.tr,politikam.com,gercekhaberci.com,newsofx2.com,thedailystar.net,samayam.com,teluguone.com,hockeyfeed.com,marasbugun.com.tr,cinemascomics.com,iguru.gr,lidergazete.com,autocarindia.com,112.ua,tunota.com,tomshardware.com,24saatgazetesi.com,halktv.com.tr,www-ntv-com-tr.cdn.ampproject.org,libertatea.ro,afyonturkeligazetesi.com,moja-ostroleka.pl,kamudanhaber.net,ajansspor.com,takvim.com.tr,dirilispostasi.com,americatv.com.pe,haberantalya.com,gunhaber.com.tr,pisapapeles.net,antalyahurses.com,sozcu.com.tr,aydinkulis.com,doisongphapluat.com.vn,reisetopia.de,gazetebirlik.com,iscihaber.net,sonhaber.eu,politic.gr,asianetnews.com,lance.com.br,cxid.info,nld.com.vn,vtcnews.vn,theblock.co,bibamagazine.fr,business-standard.com,autoplus.fr,buzzorange.com,abendzeitung-muenchen.de,bayburtmedya.com,12punto.com.tr,athina984.gr,pchome.com.tw,bayburtmanset.com,tele1.com.tr,dealabs.com,pcquest.com,tko.pl,generacionxbox.com,menemenhaber.com.tr,matricedigitale.it,armyrecognition.com,analyticsindiamag.com,blocktrends.com.br,investing.com,studyfinds.org,trhaber.com,avgi.gr,deccanherald.com,aksam.com.tr,daily-bangladesh.com,noticiasautomotivas.com.br,turkiyegazetesi.com.tr,haberler.com,www-news18-com.cdn.ampproject.org,haberler.com,eurasiantimes.com,vesti-ua.net,hlavnespravy.sk,ictvietnam.vn,giga.de,news.itsfoss.com,fpsjp.net,bedavainternet.com.tr,buyuksivas.com,kredibankalar.com,akyazihaber.com,kamuajans.com,tamgaturk.com,tarsushaber.com,akademikpersonel.org,inegolonline.com,ordugazete.com,gunes.com,koinfinans.com,startefacts.com,donanimhaber.com,iha.com.tr,star.com.tr,karadenizgazete.com.tr,alem.com.tr,egepostasi.com,dunya.com,ulusal.com.tr,turkgun.com,cepkolik.com,teknoloji.org,lavnik.net,gadgets360.com,sokgazetesi.com.tr,fotospor.com,neowin.net,haberturk.com,memurlar.net,mirchi9.com,eltiempo.pe,vietnamnet.vn,sportskeeda.com,desidime.com,tuoitre.vn,clutchpoints.com,ithardware.pl,listelist.com,imparcialoaxaca.mx,elpais.com.co,minuto30.com,impact.ro,b1tv.ro,moviesroom.pl,techwafer.com,moonshot.news,radiokp.ru,brestcity.com,aykiri.com.tr,yenicaggazetesi.com.tr,cnnbrasil.com.br,saudigazette.com.sa##a[href^="https://news.google.com/publications/"]
 dogrulukpayi.com##.follow-social-section-mobile
 dogrulukpayi.com,macrumors.com##.follow-banner
 dogry.pl###js-zarobek-quest-list-second-horizontal
@@ -161354,6 +161357,7 @@ flightconnections.com#?#.display-box-2
 flightglobal.com##.adwrap_MPU
 flightglobal.com,thriftyfun.com##.adp
 flightradar24.com###elementor-popup-modal-20189
+flightradar24.com###open-in-app-banner
 flightradar24.com###pb-slot-fr24-airport
 flightradar24.com###primisAdContainer
 flightradar24.com##.applink-container
@@ -163820,6 +163824,10 @@ futbolnews.pl##.legal
 futbolnews.pl#%#//scriptlet('trusted-set-cookie', 'cmplz_consented_services', '{"twitter":true}')
 futbolperuano.com#$#header.sticky-top { top: 0 !important; }
 futbolred.com,hoff.ru,netia.pl,vitalia.pl,makeup.ru,skin.ru,doz.pl##.popup-cookies
+futboo.com###nl-pop
+futboo.com###nl-pop-backdrop
+futboo.com,blog.statcounter.com,kuponla.com,forums.flyer.co.uk,page-online.de##.widget_newsletter
+futboo.com,dogruhaber.com.tr,tomsguide.com,shortlist.com,trf1.net,bessarabiainform.com,techorange.com,impress.co.jp,ispazio.net,techradar.com,dumka.media,comments.ua,muhalif.com.tr,vidomo.media,dexerto.com,malatyaguncel.com,yenisakarya.com,phonearena.com,ortadogugazetesi.com,gucluanadolugazetesi.com,alanyapostasi.com.tr,samsungazetesi.com,hamlegazetesi.com.tr,uyan32.com,yeniizmir.com,ilerigazetesi.com.tr,egetelgraf.com,referansgazetesi.com.tr,sonmuhur.com,gazetearena.com,gazetegercek.com.tr,politikam.com,gercekhaberci.com,newsofx2.com,thedailystar.net,samayam.com,teluguone.com,hockeyfeed.com,marasbugun.com.tr,cinemascomics.com,iguru.gr,lidergazete.com,autocarindia.com,112.ua,tunota.com,tomshardware.com,24saatgazetesi.com,halktv.com.tr,www-ntv-com-tr.cdn.ampproject.org,libertatea.ro,afyonturkeligazetesi.com,moja-ostroleka.pl,kamudanhaber.net,ajansspor.com,takvim.com.tr,dirilispostasi.com,americatv.com.pe,haberantalya.com,gunhaber.com.tr,pisapapeles.net,antalyahurses.com,sozcu.com.tr,aydinkulis.com,doisongphapluat.com.vn,reisetopia.de,gazetebirlik.com,iscihaber.net,sonhaber.eu,politic.gr,asianetnews.com,lance.com.br,cxid.info,nld.com.vn,vtcnews.vn,theblock.co,bibamagazine.fr,business-standard.com,autoplus.fr,buzzorange.com,abendzeitung-muenchen.de,bayburtmedya.com,12punto.com.tr,athina984.gr,pchome.com.tw,bayburtmanset.com,tele1.com.tr,dealabs.com,pcquest.com,tko.pl,generacionxbox.com,menemenhaber.com.tr,matricedigitale.it,armyrecognition.com,analyticsindiamag.com,blocktrends.com.br,investing.com,studyfinds.org,trhaber.com,avgi.gr,deccanherald.com,aksam.com.tr,daily-bangladesh.com,noticiasautomotivas.com.br,turkiyegazetesi.com.tr,haberler.com,www-news18-com.cdn.ampproject.org,haberler.com,eurasiantimes.com,vesti-ua.net,hlavnespravy.sk,ictvietnam.vn,giga.de,news.itsfoss.com,fpsjp.net,bedavainternet.com.tr,buyuksivas.com,kredibankalar.com,akyazihaber.com,kamuajans.com,tamgaturk.com,tarsushaber.com,akademikpersonel.org,inegolonline.com,ordugazete.com,gunes.com,koinfinans.com,startefacts.com,donanimhaber.com,iha.com.tr,star.com.tr,karadenizgazete.com.tr,alem.com.tr,egepostasi.com,dunya.com,ulusal.com.tr,turkgun.com,cepkolik.com,teknoloji.org,lavnik.net,gadgets360.com,sokgazetesi.com.tr,fotospor.com,neowin.net,haberturk.com,memurlar.net,mirchi9.com,eltiempo.pe,vietnamnet.vn,sportskeeda.com,desidime.com,tuoitre.vn,clutchpoints.com,ithardware.pl,listelist.com,imparcialoaxaca.mx,elpais.com.co,minuto30.com,impact.ro,b1tv.ro,moviesroom.pl,techwafer.com,moonshot.news,radiokp.ru,brestcity.com,aykiri.com.tr,yenicaggazetesi.com.tr,cnnbrasil.com.br,saudigazette.com.sa##a[href^="https://news.google.com/publications/"]
 futhead.com#$#.headliner-homepage { position: absolute!important; left: -3000px!important; }
 futmind.com##div[class^="fm-raptive-"]
 futoncompany.co.uk#$#.cookie-line { display: none !important; }
@@ -207289,6 +207297,7 @@ pixiv.net##.banner-ad-footer-scale
 pixiv.net##.ciUaug > section:has(> div > div.gtm-toppage-premium-close)
 pixiv.net##.comic-hot-works
 pixiv.net##.grid-flow-dense > .aspect-square.overflow-hidden
+pixiv.net##.grid-flow-dense > .col-span-full.overflow-hidden
 pixiv.net##.grid-flow-dense > div:has(> [style="display: block; width: 184px; height: 232px;"] > iframe)
 pixiv.net##.grid_ad
 pixiv.net##.gtm-toppage-thumbnail-illustration-recommend-works-zone > ul > li:has(> div > [style="display: block; width: 300px; height: 250px;"])
@@ -207298,27 +207307,23 @@ pixiv.net##.premium-denki-t-footer
 pixiv.net##.premium-lead-new-t-info-home-top
 pixiv.net##.premium-lead-t-footer
 pixiv.net##.terms-of-use-header
+pixiv.net##[class*="style_ads_"]
 pixiv.net##[data-gtm-recommend-zone="index"] li:has(> div > iframe[name$="rectangle"])
 pixiv.net##[span="1"]:has(> div > div > div[style="display: block; width: 100%; height: 434px;"])
-pixiv.net##[style="display: block; height: 345px; width: 500px;"]
 pixiv.net##[style="display: block; width: 100%; height: 520px;"]
 pixiv.net##[style="display: block; width: 300px; height: 250px;"]
 pixiv.net##[style="margin: 48px auto 8px; width: 728px; line-height: 0; font-size: 0px;"]
-pixiv.net##[style^="display: block; width: 100%; height"]:has(> iframe[data-uid])
+pixiv.net##[style^="display: block;"]:has(> iframe[data-uid])
 pixiv.net##a[target="premium_noads"]
 pixiv.net##dialog.app-dialog-for-first-user
 pixiv.net##div.relative > div.flex > div.w-full:has(a[href^="https://pixon.ads-pixiv.net/click"])
 pixiv.net##div[class="overlay geta"]
 pixiv.net##div[class^="sc-"]:has(> [style^="display"][style*="468px;"][style*="60px"])
 pixiv.net##div[data-theme] > div > span:has(> div > div > p > span + a[href^="https://policies.pixiv.net/"])
-pixiv.net##div[id^="adsdk-"]
 pixiv.net##div[style="font-size: 0px;"] a[target="premium_noads"]
 pixiv.net##div[style="height: 540px; opacity: 1;"]
 pixiv.net##div[style^="margin-left: 0px; --columns"] div[class^="sc-"] > div[class^="sc-"] > section[class^="sc-"]:has(> div[class^="sc-"] > a[href^="/premium/lead/lp/?"])
-pixiv.net##iframe[height="300"][name="responsive"]
-pixiv.net##iframe[height="520"][name="expandedFooter"]
 pixiv.net##iframe[src^="https://pixon.ads-pixiv.net/"]
-pixiv.net##iframe[width="300"][height="250"]
 pixiv.net##li.overflow-hidden:has(> .pt-0 > [style="display: block; width: 300px; height: 250px;"])
 pixiv.net##section.popular-introduction
 pixiv.net##section:has(> div > div > iframe[name="illusttop_appeal"])
@@ -226407,7 +226412,6 @@ telewizjagorzow.pl,krosno112.pl,tvswietokrzyska.pl,przegladpiaseczynski.pl##.tip
 telewizjagorzow.pl,krosno112.pl,tvswietokrzyska.pl,przegladpiaseczynski.pl##div[class*="widget-advert_"]
 telex.hu##.article-html-content div.framed-content:has(> p > a[href*="/subscribe-to-our-newsletters"])
 telex.hu##.communication-box--push
-telex.hu##.google-box
 telex.hu##.snackbar--tax
 telex.hu##.support-box
 telex.hu##.telex-donate
@@ -228964,8 +228968,7 @@ thizissam.in#%#//scriptlet("remove-attr", "disabled", "button#downloadf[disabled
 thlivehub.com#@#.video-ad-container
 thomann.co.uk,thomann.at,thomann.se,thomann.nl,thomann.it,thomann.pt,thomann.es,thomann.dk,thomann.fr,thomann.pl,thomannmusic.com,thomann.de##.spicy-consent-wrapper
 thomann.de##.rs-cookie-consent
-thomas-krenn.com##div[data-cookie-policy]
-thomas-krenn.com##div[data-cookie-policy] + div[class="xtxNavigationOffCanvasOverlay"]
+thomas-krenn.com#%#//scriptlet('trusted-click-element', '.xtx-privacy-cookie-overview-buttons > a[data-sst-title="acceptSelection"]', '', '3000')
 thomascook.com#@#img[width="240"][height="400"]
 thomasjfrank.com#?#div[data-elementor-type="section"] > div.elementor-section-wrap > section:has(> div.elementor-container div.elementor-widget-wrap h3:contains(Subscribe to my newsletter))
 thomasmaurer.ch##.sidebar > #custom_html-2
@@ -233691,10 +233694,12 @@ twitch.tv###noty_bottomCenter_layout_container
 twitch.tv###twilight-sticky-footer-root
 twitch.tv##.blue-bar.c-text.full-width
 twitch.tv##.channel-info-content div[class^="Layout-sc-"][style^="background-image: url(\"https://static-cdn.jtvnw.net/subs-image-assets/banner/subtember2025/banner-"]
+twitch.tv##.chat-shell > div[class^="Layout-sc-"]  > div[style^="transition:"]:has(video[src^="https://m.media-amazon.com"])
 twitch.tv##.follow-prompt
 twitch.tv##.noty_bar
 twitch.tv##.side-info-container
 twitch.tv##.stream-display-ad__wrapper
+twitch.tv##.stream-display-ad__wrapper + div > div[style^="position:"] > div[class^="Layout-sc-"]:has(video[src^="https://m.media-amazon.com"])
 twitch.tv##.twilight-root .toast-manager__container
 twitch.tv##.video-player__overlay .player-overlay-background:has(> div[class^="Layout-"] > div[class^="Layout-"] > div[class^="Layout-"] > a:is([href*="/how-to-allow-ads-browser"], [href="https://www.twitch.tv/turbo"]))
 twitch.tv##[data-test-selector="sda-wrapper"]
@@ -238790,6 +238795,7 @@ vikacg.com##.arco-overlay-notification
 vikacg.com##.openapp-footer
 vikacg.com##.right-column-box > div:has(> a[href="/app"])
 vikacg.com##a[href="/app"]
+vikacg.com##a[href^="https://acg01.com/]"]
 vikacg.com##div[class="h-[60px]"] + div.fixed.bottom-0
 vikacg.com#%#//scriptlet('prevent-window-open', '!/external')
 vikacg.com,vikacg.icu,vikacg.xyz##div[class^="my-"] > .grid > a[href^="http"]:not([href*="vikacg."])
@@ -248463,7 +248469,6 @@ zzzyk.com###Tinfo
 ||abminbuy.com^*.gif
 ||about.glavbukh.ru/callback/form-api.php
 ||abs.twimg.com/responsive-web/client-web/loader.HomeTimelineAdblockNotice
-||abs.twimg.com/responsive-web/client-web/main.$script,replace=/\,_\.send\(e\.data\)/\,_.send()/,badfilter
 ||absoluporn.com/code/script/
 ||abstream.to/fidel.js^
 ||abw.by/src/js/OneSignal.js
@@ -264178,6 +264183,7 @@ zzzyk.com###Tinfo
 ||picdumps.com/ddeal*.png
 ||picgd.com/images/*.gif
 ||picgd.com/images/2018/12/01/h1pi5.png
+||picjs.xyz/image/*.gif$domain=vikacg.com
 ||piclect.com^*.gif$third-party
 ||picoworkers.com/login.php$replace=/\/fingerprint2.js" integrity="/\/fingerprint2.js" _integrity="/
 ||picpar.com^$domain=18board.com|18p2p.com
@@ -270322,6 +270328,7 @@ zzzyk.com###Tinfo
 ||verooperofthewo.com^$popup
 ||versioncheck.addons.mozilla.org^$xmlhttprequest,removeparam=appID
 ||vertoz.com^$popup
+||verybark.com^$redirect=noopjs,script
 ||verysadfun.com/assets/publish/jquery.*.js
 ||vesseltracker.com/assets/js/leaflet-ais-trackingsymbols/
 ||vesti.az/site/vestiiframe3lentaz
