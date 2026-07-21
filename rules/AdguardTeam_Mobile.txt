@@ -2368,6 +2368,9 @@ motherless.xxx$$script[tag-content="awentw.com"][min-length="2000"][max-length="
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/236078
+ismedia.jp#@#.ad-billboard
+ismedia.jp#$#.ad-billboard { margin-top: -40px !important; }
 ! https://github.com/uBlockOrigin/uAssets/issues/33466
 sp.seiga.nicovideo.jp#$#.owner_thumbnail { top: 20px !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/233208
@@ -2838,6 +2841,11 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+pinterest.*###homefeed > div > div[data-test-id="max-width-container"] > div > div[role="list"] > div[role="listitem"]:has(> div[data-grid-item-idx] > div[data-pin-id] div[data-test-id="related-pins-name"])
+zoznam.sk##.adv
+ismedia.jp###taboola-below-article-thumbanails-high
+ismedia.jp##.m-sponsord
+kayak.com##div[class$="-mod-map-toggler"] > div[class$="-inner"] > div:not([class*="-container"]):has(div[class$="-ad-marking"])
 der-postillon.com##.iqd-dynamic-slot
 context.reverso.net##.more-examples-message
 context.reverso.net##.rca-no-ads-mobile
@@ -8969,7 +8977,9 @@ livejournal.com##div[id^="billboard_mobile_"]
 !+ NOT_OPTIMIZED
 stackoverflow.com##.js-sidebar-zone
 !+ NOT_OPTIMIZED
-hatenadiary.com,hatenadiary.jp,hatenadiary.org,hatenablog.com,hatenablog.jp,hateblo.jp#$?#.ad { remove: true; }
+hatenadiary.com,hatenadiary.jp,hatenadiary.org,hatenablog.com,hatenablog.jp,hateblo.jp##.ad
+!+ NOT_OPTIMIZED
+hatenadiary.com,hatenadiary.jp,hatenadiary.org,hatenablog.com,hatenablog.jp,hateblo.jp#?#.ad
 !+ NOT_OPTIMIZED
 itc.ua##.image-100
 !+ NOT_OPTIMIZED
