@@ -79338,6 +79338,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||stat.ip.sb^
 ||bzrcdn.openai.com^
 ||lc-event.pixiv.net^
 ||franken-analytics.makeup.global^
@@ -182343,6 +182344,10 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
+||api.pico.bendingspoonsapps.com/v*/web-events
+||stloadi.live/errors
+||stloadi.live/stat
+||stloadi.live/events
 ||run.app/events?cee=
 ||ecs.*.on.aws/events?cee=
 ||cdn.dsmcdn.com/web/prod/ring-manager.js
@@ -191672,6 +191677,8 @@ d4?appid*type*
 !@@||mc.yandex.ru/metrika/watch.js$domain=
 !
 !
+! https://github.com/easylist/easylist/issues/24670
+||online.spsglobal.com^$badfilter
 ! https://github.com/AdguardTeam/AdguardFilters/issues/236255
 @@||an.gr-wcon.com/script/$domain=chipstore.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/236178
