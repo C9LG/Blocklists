@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilters.txt
-! Version: 20260722125451
-! Last modified: 2026/07/22 12:54:51
-! Blocked Filters: 272501
+! Version: 20260722194021
+! Last modified: 2026/07/22 19:40:21
+! Blocked Filters: 272510
 !
 ###AC_ad
 ###AD_160
@@ -37542,6 +37542,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||my.gumtree.com/login$stealth=1p-cookie
 @@||my.leadpages.net/template/$script,domain=weddingjams.com|thesaturdaypaper.com.au|careercontessa.com
 @@||my.leadpages.net^*/public/
+@@||my.microsoftpersonalcontent.com^$stealth=3p-auth
 @@||my.minecraft.net/static/site/minecraft/privacy^
 @@||my.nextdns.io^$stealth=dpi
 @@||my.onvista.de^$stealth=dpi
@@ -52493,7 +52494,7 @@ beeg.com#@##ad-2
 beeg.porn##[class^="bb_show_"]
 beegnow.com#%#//scriptlet("remove-attr", "data-id", ".thumbs > li > a[href][data-id]")
 beeimg.com##.offer2
-beeline.ru###cookie-acceptance
+beeline.ru###cookie-acceptance-banner
 beeline.ru##.desktopOnlyElement > div > div[style^="background-color:"]:has(> div > button[aria-label="Скрыть баннер"])
 beeline.ru##div[data-t-id="components-TopBanner"]
 beeline.ru##div[data-t-id="components-TopBanner"] + div[class] > div.wrapper__direction--column
@@ -165611,6 +165612,7 @@ gelia.fi,gelia.no,gelia.se#$#.cookie-information { display: none !important; }
 gelia.fi,gelia.no,gelia.se#%#//scriptlet('remove-attr', 'style', 'body div.main-menu, a.logotype')
 gelia.fi,gelia.no,gelia.se#%#//scriptlet('remove-class', 'accept-cookies', 'html')
 geliebte-katze.de###zs_next_article
+geliver.io#%#//scriptlet('set-local-storage-item', 'GLVCache', 'true')
 gellerreport.com#?#.widget-area > section.widget a[href^="http://www.feedblitz.com/"]:upward(section.widget)
 gellerreport.com#?#.widget-area > section.widget h2.donate-title:upward(section.widget)
 gelomyrtol-forte.de#$#body.sliding-popup-processed > #sliding-popup { display: none!important; }
@@ -179909,7 +179911,6 @@ keyguardian.org#%#//scriptlet('prevent-fetch', 'www3.doubleclick.net')
 keyifadami.net##.x-content-dock-on
 keylol.com,steamcn.com##div[class*="rnd_"]
 keyrblx.com#%#//scriptlet('prevent-fetch', 'chpadblock.com')
-keysoft.store,canadacommons.ca,gim-international.com,mein-zaunshop.de,gartengeraete-onlineshop.de##div[x-data*="cookieConsent"]
 keyt.com###custom_html-27
 keyt.com###promo_box_widget-4
 keyt.com##.vf-trending-articles__ad
@@ -195554,7 +195555,6 @@ multiup.eu###overview + #content-page > .alert.alert-success
 multiup.io##a[href^="/download-fast/"]
 multiup.io##a[href^="https://multiup.io/download-fast/"]
 multiup.io#$?#.content-body > form[method="POST"][action^="https://multinews.me/"] { remove: true; }
-multiup.io#%#//scriptlet('abort-current-inline-script', 'document.defaultView.atob', '')
 multiup.io#%#//scriptlet('prevent-addEventListener', 'DOMContentLoaded', 'window.open')
 multiup.io#%#//scriptlet('prevent-setInterval', '$("form").submit()')
 multiup.io#%#//scriptlet('prevent-window-open', '!multiup')
@@ -200056,6 +200056,7 @@ novayagazeta.eu#%#//scriptlet('set-cookie', 'cookies-informer-close', 'true')
 novayagazeta.eu#?##materialBlock_0 > div:has(> h3:contains(/^Поддержать/))
 novayagazeta.eu#?#button:has(> img[src^="/vpnovaya"])
 novayagazeta.eu#?#main > header ~ div[class]:not([id]):has(> svg + div[class] a[href^="/donate?"])
+novayagazeta.eu,keysoft.store,canadacommons.ca,gim-international.com,mein-zaunshop.de,gartengeraete-onlineshop.de##div[x-data*="cookieConsent"]
 novayagazeta.ru###asideBlock_0 > aside > div[style="height:100%"] > div[style^="padding-top:"]
 novayagazeta.ru###krik
 novayagazeta.ru###mainNode > div:has(> a[href="/landing/email"])
@@ -205357,6 +205358,11 @@ paradisehill.cc##.shapka
 paradoxplaza.com###disablingDiv
 paradoxplaza.com##.cookie-image-wrapper
 paradoxplaza.com#@##cookies-info
+paradoxscans.com##body > div[id][class*="_"]
+paradoxscans.com##body > footer ~ h4[class*="_"]
+paradoxscans.com##body > footer ~ h4[class*="_"] + div[class*="_"]
+paradoxscans.com##body > footer ~ h4[class*="_"] + div[class*="_"] + div[class=""]
+paradoxscans.com##body > footer ~ h4[class*="_"] + div[class*="_"] + div[class=""] + div[class*="_"]
 paradoxscans.com#$##paradoxShield { display: none !important; }
 paradoxscans.com#$#body { overflow: auto !important; }
 paradoxscans.com#%#//scriptlet('prevent-addEventListener', '', 'redirectUser')
@@ -223193,7 +223199,6 @@ store.dji.com#%#//scriptlet('trusted-set-local-storage-item', 'top-banner-mobile
 store.epicgames.com#?#div[class^="css-"] > div[class^="css-"]:has(> div[class^="css-"] > h2 > span:contains(Follow Us))
 store.gaijin.net##.yp-cb.js-cb-policy
 store.google.com##bento-dialog[position="bottom"]
-store.grapht.tokyo##div[class^="_cookie-consent_"]
 store.gx.me#%#//scriptlet('trusted-set-cookie', 'cookie-consent', '{%22marketing%22:false%2C%22necessary%22:true%2C%22version%22:2}')
 store.immobilienscout24.de$image
 store.leica-camera.com#$#.cookie--permission { display: none !important; }
@@ -223487,6 +223492,7 @@ strelow-dichtungen.de##.trackingmanager
 stremio-addons.net##[aria-label*="sponsored"]
 stremio-addons.net#%#//scriptlet('trusted-set-cookie-reload', 'cookie-preferences', 'eyJmdW5jdGlvbmFsIjp0cnVlfQ%3D%3D')
 stremio.com##section[id^="stremio-on-tv"]
+stremio.com,store.grapht.tokyo##div[class^="_cookie-consent_"]
 streszczenia.pl,dojrzewamy.pl###cookemessagehandler
 streszczenia.pl,mecz-live.pl,match-en-direct-gratuit.fr,partido-en-directo.com,ops.pl,msze.info,flog.pl,naukowiec.org,rymy.eu,krzyzowki.edu.pl,odleglosci.info,ortograf.pl,interpunkcja.pl##div[id^="slot_"]
 strictlylimitedgames.com,afp.com,aqua-fun.com,onlinetutorials.org,vawoo.co.uk,sabanciuniv.edu,uamodna.com,oggusto.com,beardandblade.com.au,theenglishshavingcompany.com,mebders.com,cactusvpn.com,kaplunoff.com#$#.mfp-bg { display: none !important; }
@@ -234979,6 +234985,7 @@ uploadrar.com#%#//scriptlet("adjust-setTimeout", "tick", "1000")
 uploadrar.com#?#div[class^="banner"]:not(:has(> div#commonId))
 uploadrar.com#?#div[class^="download"][class*="page"] div[class^="banner"]:has(> .as_ads_guard:only-child)
 uploadrar.com#?#div[class^="download"][class*="page"] div[class^="banner"]:has(> script:first-child + .adsbygoogle)
+uploadrar.com,multiup.io#%#//scriptlet('abort-current-inline-script', 'document.defaultView.atob', '')
 uploadvr.com###main > div.c-section:has(> div.newsletter-section)
 uploadvr.com###sticky-rail-container > :not(:first-child)::before
 uploadvr.com###sticky-rail-container::before
@@ -242774,6 +242781,7 @@ woot.com##[data-test-ui="advertisement-cdm-zone-03"]
 woot.com##[data-test-ui="advertisement-cdm-zone-06"]
 woot.com##[data-test-ui^="advertisementLeaderboard"]
 woot.com#?#[dir="auto"]:contains(ADVERTISEMENT)
+wootly.ch#%#//scriptlet('remove-attr', 'href', 'div.playh > a[href][target="_blank"]')
 woowebtools.com##div[style^="padding-top:"]:has(a > img[src])
 woozooo.com###f_right > div[style="margin-top: 20px;"] > a[rel="noreferrer"] > img
 woozooo.com##.ves
@@ -249788,6 +249796,7 @@ zzzyk.com###Tinfo
 ||api.store-macys.com/event-queue
 ||api.strats.gg/internal/api/*/visits
 ||api.streamelements.com/science/
+||api.strem.io/api/events
 ||api.syg.ma/page_view
 ||api.taboola.com/*/recommendations.get^
 ||api.taboola.com/*/recommendations.multiple-get^
