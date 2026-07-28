@@ -233,8 +233,6 @@ paribucineverse.com#%#//scriptlet('set-constant', 'Visilabs.prototype.AddParamet
 kbjfree.com#%#//scriptlet('set-constant', 'plausible', 'noopFunc')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/151657
 tieba.baidu.com#%#//scriptlet('set-constant', 'passFingerPrint', 'noopFunc')
-! https://github.com/AdguardTeam/AdguardFilters/issues/150486
-secure1.comed.com#%#//scriptlet('set-constant', 'setupGoogleAnalytics', 'noopFunc')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/148618
 cerbahealthcare.it#%#//scriptlet('set-constant', 'pa', 'emptyObj')
 cerbahealthcare.it#%#//scriptlet('set-constant', 'pa.setConfigurations', 'noopFunc')
@@ -79342,6 +79340,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||analyticsehnwe.servicebus.windows.net^
 ||flow-control.profitroom.net^
 ||e2.sy-d.io^
 ||analytics.crewly.pl^
@@ -182360,6 +182359,11 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
+online.tokyu-dept.co.jp#%#//scriptlet('set-constant', 'addProductClickEventToTemplate', '', '', 'asFunction')
+online.tokyu-dept.co.jp#%#//scriptlet('set-constant', 'triggerGAEvent', 'noopFunc')
+||online.tokyu-dept.co.jp/assets/common/js/googleAnalyticsEvent.js
+||show.revico.jp/providejs/tagmanager.js
+||rbc.ru/info-service/api/v*/ev/?
 ||bnesim.com/js/trackers.js
 /e/*^ip=$domain=heygen.com
 ||api2.heygen.com/v1/movio.batch_track
@@ -196954,6 +196958,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||carefuldolls.com^
 ||caringcast.com^
 ||carloforward.com^
+||carpoolmatch.com^
 ||carpoolqueen.com^
 ||carsarace.com^
 ||cartelsalsa.com^
@@ -197881,6 +197886,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||nervoussummer.com^
 ||nestbuyers.com^
 ||netandbytes.com^
+||netsurfconsult.com^
 ||networklast.com^
 ||newarkdriving.com^
 ||newsbotnet.com^
