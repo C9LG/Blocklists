@@ -568,6 +568,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||aladinia.app^
+||cdp.customer.io^
+||cloud.monolytics.app^
 ||acv.mira-dsp.com^
 ||snippet.affilimate.io^
 ||mtag.markopolo.ai^
@@ -79339,6 +79342,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||flow-control.profitroom.net^
+||e2.sy-d.io^
+||analytics.crewly.pl^
 ||d3lw7s0briwuoi.cloudfront.net^
 ||analytics.sutochno.ru^
 ||athena.archive.org^
@@ -182354,6 +182360,12 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
+||bnesim.com/js/trackers.js
+/e/*^ip=$domain=heygen.com
+||api2.heygen.com/v1/movio.batch_track
+||glutenfreeonashoestring.com/wp-content/*/analytics*.min.js
+||player.fabster.com/event/
+||spolshy.com.ua/js/data|
 ||wpastra.com/wp-content/plugins/cross-domain-tracker-for-affiliatewp/
 ||autoline.link/weblog
 ||karte.io/event
@@ -182400,8 +182412,9 @@ peacocktv.com#%#//scriptlet('set-local-storage-item', 'impressionTrackingSession
 ||czesciauto24.pl/securegtm/
 ||czesciauto24.pl/p/g^
 ||hexa.su/script.js
+||candytm.pl/gtmgateway/
 /^https?:\/\/(android\.com\.pl|biznesenter\.pl)\/[a-z0-9]{1,4}\/$/$script,~third-party,domain=android.com.pl|biznesenter.pl
-biznesenter.pl#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'gtm.start')
+candytm.pl,biznesenter.pl#%#//scriptlet('abort-current-inline-script', 'document.createElement', '/gtm\.start|dataLayer/')
 ||bifrost-api.hotstar.com/v*/events
 ||linuxcommunity.io/assets/google-universal-analytics-*.js
 ||credistory.ru/api/Metrics/
@@ -191687,6 +191700,14 @@ d4?appid*type*
 !@@||mc.yandex.ru/metrika/watch.js$domain=
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/236828
+@@||rm.redbull.com/gtm.js$domain=redbull.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/236879
+@@||googletagmanager.com/gtm.js$domain=candy-home.com
+!+ NOT_OPTIMIZED
+||candy-home.com^$referrerpolicy=origin
+! https://github.com/AdguardTeam/AdguardFilters/issues/236875
+@@||googletagmanager.com/gtm.js$domain=brita.pl
 ! https://github.com/AdguardTeam/AdguardFilters/issues/235752
 !#if (adguard_app_windows || adguard_app_mac || adguard_app_android || adguard_app_cli)
 @@||xzeepb2clookuppsta001.blob.core.windows.net/bge/$content
