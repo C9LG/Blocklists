@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilters.txt
-! Version: 20260801131357
-! Last modified: 2026/08/01 13:13:57
-! Blocked Filters: 272764
+! Version: 20260801190845
+! Last modified: 2026/08/01 19:08:45
+! Blocked Filters: 272772
 !
 ###AC_ad
 ###AD_160
@@ -58541,6 +58541,7 @@ charlotteobserver.com##.option-banners
 charlotteobserver.com##body > .modal-banner[style^="color:"]
 charter97.org###donate-article
 charter97.org##.article-subscription
+chartkidmatt.com##.dream-post-content-htmlSnippet
 chartoo.in,chartoo.de,chartoo.com##aside#ej
 chartoo.in,chartoo.de,chartoo.com##aside#eq
 chartoo.in,chartoo.de,chartoo.com#%#//scriptlet('trusted-set-cookie', 'ypo', '39')
@@ -59097,6 +59098,7 @@ chongdiantou.com##.nice-sales
 chongluadao.vn##._banner_1mcvy_1
 chooinkya.com###sidebar div[id^="block-"]:has(.rssimport a[href*="//2ch-2.net/"])
 chooinkya.com##.wp-block-rss
+choosefi.com##[data-block-type="credit-card-top-offers"]
 chooyomi.com#%#//scriptlet("prevent-window-open")
 choralia.net#%#//scriptlet('trusted-set-constant', 'ads_stop', '"true"')
 chordu.com###in_chord_sheet_ad
@@ -173527,11 +173529,17 @@ idnes.cz###portal > a#fellow[onmousedown] > img
 idnes.cz###r-native
 idnes.cz###r-nativeadvertorial
 idnes.cz###r-super300
+idnes.cz###r-touch300x250related
+idnes.cz###r-touch300x250selected
+idnes.cz###r-toucharticlenative
+idnes.cz###r-toucharticlenativedown
+idnes.cz###r-touchnativeadvertorial
 idnes.cz###selfart-box
 idnes.cz###space-c-add > div[id][class*=" "]
 idnes.cz###wrapper > div.section > div[class*="touch-"]:has(> div .ads-interscroller)
 idnes.cz###wrapper > div.section > div[id][class*="r-box touch-"]
 idnes.cz##.ads-popup
+idnes.cz##.ank0a1it0n
 idnes.cz##.art-full > #text-out-box + div:not([class]):not([id]) > .r-head
 idnes.cz##.catchbox-newsletter
 idnes.cz##.col-a + div[class]:has(> div[id^="r-"])
@@ -200157,7 +200165,7 @@ novelba.com##footer div[style^="padding:"]
 novelcool.com##.mangaread-ad-box
 novelcool.com##.sus-download-app-box
 novelcrow.com##.code-block-3
-novelfire.net##.nf-ads
+novelfire.net,novelphoenix.com##.nf-ads
 novelfull.com#%#//scriptlet('abort-on-property-read', 'yeac')
 novelfull.com#%#//scriptlet('abort-on-stack-trace', 'setTimeout', '_0x')
 novelgames.com##.gamelistGame.commonEt
