@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilters.txt
-! Version: 20260802131756
-! Last modified: 2026/08/02 13:17:56
-! Blocked Filters: 270390
+! Version: 20260802190919
+! Last modified: 2026/08/02 19:09:19
+! Blocked Filters: 270392
 !
 ###AC_ad
 ###AD_160
@@ -57993,7 +57993,7 @@ chatgpt.com#%#//scriptlet('set-cookie', 'oai_consent_analytics', 'false')
 chatgpt.com#%#//scriptlet('set-cookie', 'oai_consent_marketing', 'false')
 chatgpt.com#%#//scriptlet('set-cookie-reload', 'oai_consent_personalization', 'false')
 chatgpt.com#%#//scriptlet('trusted-json-set', 'WeakMap.prototype.set', '$[?(@.ads_response_id)].*', '$remove$', '', 'arg:1')
-chatgpt.com#%#//scriptlet('trusted-replace-outbound-text', 'TextDecoder.prototype.decode', '/^{"type": "ads", "content": {"ads_request_id":[\s\S]*?"ads_response_id":[\s\S]*}$/', '{}')
+chatgpt.com#%#//scriptlet('trusted-replace-outbound-text', 'TextDecoder.prototype.decode', '/^{"type":\s*"ads",\s*"content":\s*{"ads_request_id":.*?"ads_response_id":.*}$/', '{}')
 chatgptfree.ai#?#.elementor-widget-container > style + p:contains(/^ADS$/)
 chathamhouse.org##.newsletter-form.paragraph
 chathamhouse.org##main > .section--slice-media:has(.media-cta_banner)
@@ -243250,6 +243250,7 @@ xgan.cn##body > center > a[target="_blank"][rel="nofollow"]
 xgaytube.com##.videoPlayer > .uwrap ~ br
 xgaytube.com##a[href^="https://stats.hprofits.com"]
 xgaytube.tv##.b-header > .b-row > .b-main-nav > ul > li > a[href^="https://hd100546b.com/"]
+xgcartoon.com#%#//scriptlet('abort-on-stack-trace', 'document.createElement', 'mount_adsqrt_ad')
 xgeshu.com,boqushu.com##div[style="display:block;width:100%;height:100px;overflow:hidden;"]
 xgore.net,mehndihairachnewaali.com##.e3lan
 xgp.pl###hdrbnr
@@ -248414,6 +248415,7 @@ zzzyk.com###Tinfo
 ||anime.freehentaistream.com/content/natheadcontent
 ||anime.freehentaistream.com/content/natundervidcontent
 ||anime.freehentaistream.com/content/pdz.js
+||anime.nexus/video/vast-ad.mov
 ||anime365.net/js/rsslinkimage_
 ||anime4up.com/wp-content/uploads/*.png$popup
 ||animeaddicts.hu/file/adver/
