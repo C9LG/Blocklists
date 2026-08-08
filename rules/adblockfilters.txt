@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilters.txt
-! Version: 20260808181840
-! Last modified: 2026/08/08 18:18:40
-! Blocked Filters: 268030
+! Version: 20260809021833
+! Last modified: 2026/08/09 02:18:33
+! Blocked Filters: 268039
 !
 ###AC_ad
 ###AD_160
@@ -23970,6 +23970,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 11dkim1._domainkey.biz.maxis.com.my$image
 11dkim1._domainkey.email1.onduo.com$image
 11dkim1._domainkey.snapcap.com$image
+11freunde.de##section[data-area*="Eigenwerbung"]
 11hentai.com,abebony.com,ablesbian.com,abbdsm.com,abgay.tube,abjav.com,abxxx.com,abmilf.com,abtranny.com##.links > a[href][target="_blank"]
 11hentai.com,abebony.com,ablesbian.com,abbdsm.com,abjav.com,abgay.tube,abxxx.com,abmilf.com,abtranny.com##.close-play__container
 11hentai.com,abebony.com,ablesbian.com,abbdsm.com,abjav.com,abgay.tube,abxxx.com,abmilf.com,abtranny.com##.livecam-btn
@@ -44718,7 +44719,7 @@ akwam.*#%#//scriptlet("adjust-setInterval", "clock()", "1000", "0.02")
 akwam.news,re.two.re,khsm.io#%#//scriptlet('trusted-click-element', '.content > a[href^="http"].download-link')
 akyazihaber.com##.col-12 > div.list:has(> div.row > div[class] > a[href^="ilanlar/"])
 al-monitor.com##.region--after-content
-al.com,attackofthefanboy.com,destructoid.com,edmontonsun.com,gamepur.com,gamerjournalist.com,gameskinny.com,lehighvalleylivecom,lgbtqnation.com,macwelt.de,mlive.com,news8000.com,nj.com,pcwelt.de,pennlive.com,primagames.com,progameguides.com,siliconera.com,syracuse.com,themarysue.com,touchtapplay.com,wegotthiscovered.com#%#//scriptlet('ubo-aost', 'decodeURI', '/(?=^(?!.*\.js))/')
+al.com,attackofthefanboy.com,destructoid.com,edmontonsun.com,gamepur.com,gamerjournalist.com,gameskinny.com,lehighvalleylivecom,lgbtqnation.com,macwelt.de,mlive.com,news8000.com,nj.com,pcwelt.de,pennlive.com,primagames.com,progameguides.com,queerty.com,siliconera.com,syracuse.com,themarysue.com,touchtapplay.com,wegotthiscovered.com#%#//scriptlet('ubo-aost', 'decodeURI', '/(?=^(?!.*\.js))/')
 al.com,cleveland.com,gulflive.com,lehighvalleylive.com,masslive.com,mlive.com,newyorkupstate.com,nj.com,oregonlive.com,pennlive.com,silive.com,syracuse.com###below-toprail
 al.com,cleveland.com,lehighvalleylive.com,masslive.com,mlive.com,newyorkupstate.com,oregonlive.com,pennlive.com,silive.com,syracuse.com##.revenue-display
 al.com,oregonlive.com,nj.com##.main-wrapper > #belowToprail
@@ -203120,7 +203121,7 @@ pdfroom.com##div[class^="my-"][style^="min-width:"][style*="min-height"]
 pdfroom.com##div[style="min-width: 308px; min-height: 250px;"]
 pdfslide.net##div[class*="gg_ads_"]
 pdftoexcel.com,netart-registrar.com,nazwa.pl##.policy-box
-pdftoshokan.com#%#//scriptlet('prevent-addEventListener', 'load', '/pop.Magic|addEvent\("click/')
+pdftoshokan.com#%#//scriptlet('prevent-addEventListener', 'load', '/pop.?Magic|addEvent\("click/')
 pdftoxps.com,ebook2pdf.com,imagetopdf.com,odt2pdf.com,rtftopdf.com,pdf2mobi.com,pdfextractor.com,pdfjoiner.com,html2pdf.com,imagecompressor.com,mobi2epub.com,epub2kindle.com,pdf2kindle.com,epubtopdf.com,pubtopdf.com,svgoptimizer.com,epstopng.com,epstosvg.com,svgtopdf.com,pdftosvg.com,jpg2svg.com,svgtojpg.com,svgtopng.com,png2svg.com,pngtogif.com,giftopng.com,gifcompressor.com,giftomp4.com,pdf2tiff.com,tiff2pdf.com,jpg2tiff.com,tiff2jpg.com,tiff2png.com,pdf2doc.com,doctopdf.com,pdftoimage.com,jpg2pdf.com,pdf2docx.com,pdf2png.com,png2pdf.com,pdfcompressor.com,combinepdf.com,rotatepdf.com,unlockpdf.com,croppdf.com,toepub.com,xpstopdf.com,djvu2pdf.com,pdftotext.com,shrinkpdf.com,compressgif.com,compresspng.com,compressjpeg.com##.ha
 pdftoxps.com,ebook2pdf.com,imagetopdf.com,odt2pdf.com,rtftopdf.com,pdf2mobi.com,pdfextractor.com,pdfjoiner.com,html2pdf.com,imagecompressor.com,mobi2epub.com,epub2kindle.com,pdf2kindle.com,epubtopdf.com,pubtopdf.com,svgoptimizer.com,epstopng.com,epstosvg.com,svgtopdf.com,pdftosvg.com,jpg2svg.com,svgtojpg.com,svgtopng.com,png2svg.com,pngtogif.com,giftopng.com,gifcompressor.com,giftomp4.com,pdf2tiff.com,tiff2pdf.com,jpg2tiff.com,tiff2jpg.com,tiff2png.com,pdf2doc.com,doctopdf.com,pdftoimage.com,jpg2pdf.com,pdf2docx.com,pdf2png.com,png2pdf.com,pdfcompressor.com,combinepdf.com,rotatepdf.com,unlockpdf.com,croppdf.com,toepub.com,xpstopdf.com,djvu2pdf.com,pdftotext.com,shrinkpdf.com,compressgif.com,compresspng.com,compressjpeg.com##.header__right
 pdr.net###ehsBanner
@@ -204508,6 +204509,7 @@ planetminecraft.com###box_pmc_300btf
 planetminecraft.com###leaderboard_atf
 planetminecraft.com###ultra_wide
 planetminecraft.com##.responsive728-wrap
+planetminecraft.com##[data-type="advert"]
 planetminecraft.com##li.resource[data-type="advert"]
 planetradio.co.uk##.radioplayer-anno
 planetrugby.com##.ciam-article-pr > p > a[href^="https://www.ticketmaster.co.uk/event/"]
@@ -208846,6 +208848,7 @@ queer.pl##.box-info-1234
 queermenow.net##.sidebar > #text-2
 queerty.com###inarticle-newsletter
 queerty.com##.adb-box-large
+queerty.com##.adb-qt-box
 queerty.com##.adb-top-lb
 queerty.com##.flex > article ~ div.w-full
 queerty.com##.min-h-\[100px\]
@@ -231292,6 +231295,7 @@ ufret.jp###carouselExampleIndicators
 ufret.jp###full-screen-ad
 ufret.jp###notice
 ufret.jp##.btn-lg[href="/signup.php"]
+ufret.jp##.p-banner-primary--fix
 ufret.jp#$##full-screen-ad { display: none !important; }
 ufret.jp#$#.no-scroll { overflow: auto !important; }
 ufret.jp,joysound.com#%#(()=>{["contextmenu","copy","selectstart"].forEach((o=>{window.addEventListener(o,(o=>{o.stopPropagation()}),!0)}));})();
@@ -267152,6 +267156,11 @@ zzzyk.com###Tinfo
 ||xiaodutv.com/xda?
 ||xiaohongshu.com^$cookie=xhsTrackerId
 ||xiaohongshu.com^$cookie=xhsTrackerId.sig
+||xiaohongshu.com^$removeparam=app_platform
+||xiaohongshu.com^$removeparam=app_version
+||xiaohongshu.com^$removeparam=share_channel
+||xiaohongshu.com^$removeparam=share_id
+||xiaohongshu.com^$removeparam=xhsshare
 ||xiaohuangshu.me/visit.php
 ||xiaohuks.com/1.
 ||xiaomi.eu/community/forumrunner/detect.js

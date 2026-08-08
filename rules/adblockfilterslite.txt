@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilterslite.txt
-! Version: 20260808181840
-! Last modified: 2026/08/08 18:18:40
-! Blocked Filters: 155014
+! Version: 20260809021833
+! Last modified: 2026/08/09 02:18:33
+! Blocked Filters: 155019
 !
 ###AC_ad
 ###AD_160
@@ -30993,7 +30993,7 @@ akwam.*###Arpian-ads
 akwam.*##.ads
 akwam.*#%#//scriptlet("adjust-setInterval", "clock()", "1000", "0.02")
 akwam.news,re.two.re,khsm.io#%#//scriptlet('trusted-click-element', '.content > a[href^="http"].download-link')
-al.com,attackofthefanboy.com,destructoid.com,edmontonsun.com,gamepur.com,gamerjournalist.com,gameskinny.com,lehighvalleylivecom,lgbtqnation.com,macwelt.de,mlive.com,news8000.com,nj.com,pcwelt.de,pennlive.com,primagames.com,progameguides.com,siliconera.com,syracuse.com,themarysue.com,touchtapplay.com,wegotthiscovered.com#%#//scriptlet('ubo-aost', 'decodeURI', '/(?=^(?!.*\.js))/')
+al.com,attackofthefanboy.com,destructoid.com,edmontonsun.com,gamepur.com,gamerjournalist.com,gameskinny.com,lehighvalleylivecom,lgbtqnation.com,macwelt.de,mlive.com,news8000.com,nj.com,pcwelt.de,pennlive.com,primagames.com,progameguides.com,queerty.com,siliconera.com,syracuse.com,themarysue.com,touchtapplay.com,wegotthiscovered.com#%#//scriptlet('ubo-aost', 'decodeURI', '/(?=^(?!.*\.js))/')
 al.com,cleveland.com,gulflive.com,lehighvalleylive.com,masslive.com,mlive.com,newyorkupstate.com,nj.com,oregonlive.com,pennlive.com,silive.com,syracuse.com###below-toprail
 al.com,cleveland.com,lehighvalleylive.com,masslive.com,mlive.com,newyorkupstate.com,oregonlive.com,pennlive.com,silive.com,syracuse.com##.revenue-display
 al.com,oregonlive.com,nj.com##.main-wrapper > #belowToprail
@@ -154708,6 +154708,11 @@ zzztube.com,videoporn.tube##.b-random-column
 ||xiaodutv.com/xda?
 ||xiaohongshu.com^$cookie=xhsTrackerId
 ||xiaohongshu.com^$cookie=xhsTrackerId.sig
+||xiaohongshu.com^$removeparam=app_platform
+||xiaohongshu.com^$removeparam=app_version
+||xiaohongshu.com^$removeparam=share_channel
+||xiaohongshu.com^$removeparam=share_id
+||xiaohongshu.com^$removeparam=xhsshare
 ||xiaopi.com/api.php?op=get_p&
 ||xiaopi.com/statics/new_js/15.js
 ||xiaopi.com/statics/skin_js/jquery.posrj.js
