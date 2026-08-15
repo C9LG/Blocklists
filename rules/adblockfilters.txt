@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilters.txt
-! Version: 20260815181004
-! Last modified: 2026/08/15 18:10:04
-! Blocked Filters: 273004
+! Version: 20260816021020
+! Last modified: 2026/08/16 02:10:20
+! Blocked Filters: 272999
 !
 ###AC_ad
 ###AD_160
@@ -58354,6 +58354,8 @@ chatgpt.com##div[data-testid] div[class^="max-"] > div[data-ad-card-root]
 chatgpt.com##div[data-testid] div[class^="max-"] > div[data-testid="image-card-v2"]:has(button[aria-label="Sponsored options"])
 chatgpt.com##div[data-testid] div[class^="relative max-"]:has(> div[data-testid="image-card-v2"] + .pointer-events-none button[aria-label="Sponsored options"])
 chatgpt.com##section:has(> [aria-label="Sponsored"])
+chatgpt.com#%#(()=>{const e={apply:(e,r,s)=>{const t=Reflect.apply(e,r,s);try{return s[0]&&"string"==typeof s[0]&&s[0].includes("renderedAdsHtml")&&t.messages&&(t.hideAllAds=!0),t}catch(e){}return Reflect.apply(e,r,s)}};window.JSON.parse=new Proxy(window.JSON.parse,e)})();
+chatgpt.com#%#(()=>{const e={apply:(e,t,d)=>{try{const e=d[1];e?.ads&&e?.renderedAdsHtml&&(e.hidden=!0,delete e.ads,delete e.renderedAdsHtml)}catch(e){}return Reflect.apply(e,t,d)}};window.Map.prototype.set=new Proxy(window.Map.prototype.set,e)})();
 chatgpt.com#%#//scriptlet('json-prune', 'messages.*.ads messages.*.renderedAdsHtml')
 chatgpt.com#%#//scriptlet('set-cookie', 'oai-allow-ne', 'false')
 chatgpt.com#%#//scriptlet('set-cookie', 'oai_consent_analytics', 'false')
@@ -182489,6 +182491,7 @@ led2work.com##.waconcookiemanagement-cookiebar
 ledauphine.com##.GSOC_newsletterRegistration
 ledemondujeu.com##.avertissement
 ledemondujeu.com##.sidebar > div.bloc-container:has(form.form-newsletter)
+ledge.ai##.flex-col > img[src*="EXPO_AUTUMN_bnr"]
 ledkia.com###modalPromotionschedule
 ledkia.com##.modal-backdrop
 ledlumen.pl,blsspain-russia.com###popup
@@ -250002,6 +250005,7 @@ zzzyk.com###Tinfo
 ||api.goodbarber.net/statsapi/
 ||api.goodjob.life/me/permissions/search^$replace=/("hasSearchPermission"):false/\$1:true/
 ||api.gplinks.com/track/js/power-cdn.js$replace=/function _0x[a-z0-9]{3}536\(\)\{[\s\S]*?\}/function _0x242536(){};/
+||api.heikeji.me/api/logs/check
 ||api.hh.ru/banners_targeting
 ||api.hisavana.com/hisavana/eventtracking/
 ||api.honeycomb.io/*/traces
@@ -250463,7 +250467,6 @@ zzzyk.com###Tinfo
 ||asistanaliz.com/api/hit/
 ||askanydifference.com/beardeddragon/gilamonster.js
 ||askanydifference.com/beardeddragon/iguana.js
-||askdriver.com^$redirect=noopjs,script
 ||asktiava.com/promotion/
 ||asmhentai.com/js/ajs_v2.js
 ||asp.animelab.com/*.php?do=vast*&vastver=
@@ -256500,7 +256503,6 @@ zzzyk.com###Tinfo
 ||firmware.center/.coinhive.min.js
 ||firstclass-download.com^$popup
 ||firstload.de^$popup
-||fishingtoolsbox.com^$redirect=noopjs,script
 ||fishki.net/code?
 ||fishki.net/counter/
 ||fitanalytics.com^$third-party
@@ -256526,7 +256528,6 @@ zzzyk.com###Tinfo
 ||fj.sina.com.cn/iframe/63/
 ||fjisu.*/js/huimi.js
 ||fjlqqc.com/common/api/v1.0/slot-code/
-||fjordsand.com^$redirect=noopjs,script
 ||fjuga.top
 ||fjzimaoqu.cn^$third-party
 ||fkf5.com/public/js/static.js
@@ -256628,7 +256629,6 @@ zzzyk.com###Tinfo
 ||fontech.startitup.sk/wp-content/themes/fontech/js/ads_adform.js
 ||fontke.com/custom/
 ||fonts.net/t/trackingCode.js
-||fontserif.com^$redirect=noopjs,script
 ||fontsquirrel.com/ajaxactions/get_ads^
 ||fontsquirrel.com^*/advertisements/
 ||fontsrepo.com/plugin/*/inc/pause-front.js
@@ -256897,7 +256897,6 @@ zzzyk.com###Tinfo
 ||funeraltimes.com/images/Banner-ad
 ||funmatrix.net^$popup
 ||funnyjunk.com/site/js/extra/pre
-||funtoyplanet.com^$redirect=noopjs,script
 ||fupa.net/fupa/api.php?p=besucher_klick
 ||fuq.com/js/analytics
 ||fuqer.com/b_load.php
@@ -257448,7 +257447,6 @@ zzzyk.com###Tinfo
 ||glamour.com/hotzones/src/pixelpropagate.js
 ||glamour.de/*/jquery.adblockerlayer.js?^
 ||glamour.nl/js/partials/cookie-law.js
-||glasscoyote.com^$redirect=noopjs,script
 ||glassdoor.*/geb/events/
 ||glassdoor.ca/garnish/static/js/gd-user-hardsell-overlay.bundle.js
 ||glassdoor.com/app/static/js/dist/gd-user-hardsell-overlay.bundle.js
@@ -257566,7 +257564,6 @@ zzzyk.com###Tinfo
 ||gocharting.com/ads_google.html
 ||gocye.com^$third-party
 ||godamanga.online/ad/
-||goddesslamps.com^$redirect=noopjs,script
 ||goettgen.de/cookieajx.php
 ||gofundme.com^$removeparam=attribution_id
 ||gog.com^$removeparam=pp
@@ -260756,7 +260753,6 @@ zzzyk.com###Tinfo
 ||kinarino.k-img.com/assets/webpage/download-app/
 ||kindernetz.de/static/tracking/xtclicks.js
 ||kindgirls.com/banners2/
-||kindhush.com^$redirect=noopjs,script
 ||kindredplc.com^$popup
 ||kinguin.net/affiliatepluswidget/$third-party
 ||kininatta2chmatome.doorblog.jp/rss*.index.html
@@ -270495,7 +270491,6 @@ zzzyk.com###Tinfo
 ||unleash-edge-prod.penpencil.co/api/frontend/client/metrics
 ||unleash-edge.wrtn.ai/api/frontend/client/metrics|
 ||unleashedprepaids.com/mobiquo/smartbanner/
-||unloadyourself.com^$redirect=noopjs,script
 ||unmoor.com/config.json
 ||unpkg.com/@polymarket/embeds@*/dist/index.js
 ||unpkg.com/@textback/notification-widget
