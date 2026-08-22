@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilters.txt
-! Version: 20260822181110
-! Last modified: 2026/08/22 18:11:10
-! Blocked Filters: 382543
+! Version: 20260823021117
+! Last modified: 2026/08/23 02:11:17
+! Blocked Filters: 382550
 !
 ###AC_ad
 ###AD_160
@@ -33103,6 +33103,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||cl-eu4.k5a.io/*.js$domain=itavisen.no
 @@||claimbits.net/static/js/noadblock.js
 @@||claimfreecoins.io^$generichide
+@@||claimlite.club/static/js/noadblock.js$domain=claimlite.club
 @@||claimsatoshi.xyz^$generichide
 @@||claimtrx.com^$generichide
 @@||clarity.ms/tag/$domain=moeci.com
@@ -61016,6 +61017,7 @@ claimcoin.in#%#//scriptlet('prevent-fetch', 'adoto.net')
 claimcoin.in#%#//scriptlet('prevent-xhr', 'adoto.net')
 claimercorner.xyz,faucetzoid.online###gath3r-optin-dialog
 claimfreecoins.io##div[id$="-adspace"]
+claimlite.club,earnbitmoon.club,multiclaim.net,claimbits.net,coinadster.com###wcfloatDiv4
 claimrbx.gg#%#//scriptlet('prevent-setTimeout', 'Adblocker Detected')
 claimto.xyz##a[href^="https://www.bitsler.com/"] > img
 clapway.com,lascimmiapensa.com#%#//scriptlet('prevent-setInterval', 'aadb_get_data')
@@ -66591,6 +66593,7 @@ coinpedia.org,siasat.com##.stream-item-inline-post
 coinranking.com##.sticky--full-width
 coinranking.com##.top-leaderboard
 coinrequest.io#%#//scriptlet('set-local-storage-item', 'BIT_REQUEST_VUE.cookies_enabled', 'true')
+coinsimulator.online##center:has(> ins[style^="display:inline-block;"][style*="width:"][style*="height:"]:first-child + script:last-child)
 coinsrev.com#%#//scriptlet("abort-current-inline-script", "decodeURIComponent", "_0x")
 coinstats.app##.ask-ai-popup
 coinstats.app##div[class*="mobileSwitchWrapper"]
@@ -74023,7 +74026,6 @@ eapteka.ru##.notifications__item--mobile > .notification:not(.cookie-informer)
 earlygame.com##.ad-slot-widget
 earnapp.com#$#.cookies_popup_overlay { display: none !important; }
 earnapp.com#$#html { overflow: auto !important; }
-earnbitmoon.club,multiclaim.net,claimbits.net,coinadster.com###wcfloatDiv4
 earnhub.net##center ins
 earnme.club#%#//scriptlet("adjust-setInterval", "tp-", "*", "0.02")
 earone.it##div[style^="width:968px;min-height:300px;background:url"]
@@ -302273,7 +302275,6 @@ misli.com##.cookiePolicyMain
 misli.com##.smartBarWrapper
 missav.*##div[style="width: 300px; height: 100px;"]
 missav.*,missav123.com,missav888.com##.fixed.bottom-0[x-show="showFloatingBanner"]
-missav.*,missav123.com,missav888.com##.lg\:block
 missav.*,missav123.com,missav888.com##.lg\:hidden
 missav.*,missav123.com,missav888.com##.relative > div[x-init*="campaignId=under_player"]
 missav.*,missav123.com,missav888.com##[x-show$="video_details'"] > div > .list-disc
@@ -302281,6 +302282,7 @@ missav.*,missav123.com,missav888.com##div[style^="display: flex;flex-wrap: wrap;
 missav.*,missav123.com,missav888.com##div[x-show^="recommendItems"] ~ div[class]:has(> div > div.mx-auto > div.flex > a[rel^="sponsored"])
 missav.*,missav123.com,missav888.com#%#//scriptlet('prevent-window-open')
 missav.*,missav123.com,missav888.com#%#//scriptlet('remove-attr', '@keyup.space.window|@click', 'div')
+missav.*,missav123.com,missav888.com,njavtv.com##.lg\:block
 missav.*,missav123.com,missav888.com,njavtv.com##[style^="width: 300px; height: 250px;"]
 missav.fans##.space-y-5:has(> div > div.mx-auto > script[src^="//cdn-tsyndicate.missav.fans/"])
 missav.run##.banner-box
@@ -304398,6 +304400,7 @@ msn.com#%#//scriptlet('inject-css-in-shadow-dom', '#entry-point-hp-wc-root-wrapp
 msn.com#%#//scriptlet('inject-css-in-shadow-dom', '.dialog[data-t*="personalizeCexp_CoachMarkContainer"] { display: none !important; }')
 msn.com#%#//scriptlet('inject-css-in-shadow-dom', '.eocb-ads, .ad-container-skyscraper, .ad-container, .vd-ad, cs-native-ad-card-no-hover, display-ads, .display-ad-container, .display-ads-container, .views-right-rail-top-display, #entry-point-hp-wc-banner, .me-stripe-title-subtitle, #displayAdCard, a[href*=".booking.com/"], a[href^="https://amzn.to/"], shopping-sd-card { display: none !important; }')
 msn.com#%#//scriptlet('inject-css-in-shadow-dom', 'cs-native-ad-card { visibility: hidden !important; }')
+msn.com#%#//scriptlet('inject-css-in-shadow-dom', 'csm-feed-layout[data-template-id^="mobileviews"] { --card-base-gap: 0 !important; }')
 msn.com#%#//scriptlet('json-prune', '*', 'list.*.link.ad list.*.link.kicker')
 msn.com#%#//scriptlet('json-prune', '*.*', 'adFeedbackData adType adServedUrls')
 msn.com#%#//scriptlet('json-prune', 'configs.[].properties.componentConfigs.articlePageConfig.nativeAdLoadingRules configs.[].properties.componentConfigs.articlePageConfig.slots.intraArticleNativeAd configs.[].properties.componentConfigs.endOfContentBlockConfigs.slots.endOfContentNativeAd configs.[].properties.slots.bannerAd configs.*.properties.adPlacementConfig.* configs.*.properties.slideshowWCSettings.interstitialNativeAds configs.*.properties.fullScreenSlideshowSettings.interstitialNativeAds properties.componentConfigs.slideshowConfigs.interstitialNativeAds properties.componentConfigs.slideshowConfigs.*.interstitialNativeAds configs.*.properties.componentConfigs.slideshowConfigs.*.interstitialNativeAds sections.[].cards.[].subCards.[-].type.[=].nativead sections.[].cards.[-].type.[=]./nativead|displayad/ sections.[].subSections.[].cards.[-].type.[=].cmsad')
@@ -308591,6 +308594,7 @@ nj.com##.module__ad-large
 nj.com##.revenue-display
 nj.com#$#.ad--in-article { visibility: hidden; min-height: 0!important; margin: 0!important; padding: 0!important; }
 njav.com###ad300250
+njavtv.com##.fixed.right-2.bottom-2
 njavtv.com,missav.*,missav123.com,missav888.com##.under_player
 njuskalo.hr##.PrivacyPolicyNotice
 njuskalo.hr##.SmartAppBanner
@@ -315741,6 +315745,8 @@ pekarstas.com##div[class^="share-block"]
 pekbook.com##.light-modal
 pekro.cz,elementstore.pl,elementstore.sk,elementstore.cz,remauh.cz###c_law
 pelando.com.br##main + * + div[class] > div[role="dialog"]
+pelando.com.br#$#body { overflow: auto !important; }
+pelando.com.br#$?#dialog[data-sign-in-modal-component="max_visited_deals"] { remove: true; }
 pelando.com.br#%#//scriptlet('set-cookie', 'cookies_allowed', 'true')
 pelikan.*#%#//scriptlet('set-local-storage-item', 'PAPVisitorId', '$remove$')
 pelikan.com##.activebar-container._privacy_fix
@@ -320694,6 +320700,7 @@ publicdomainq.net###footercredits + div[id][class*=" "]
 publicdomainreview.org##.action-bar__subscribe
 publicdomainreview.org##.exit-modal__shade
 publicdomainreview.org##.homepage__top-grid__newsletter
+publicdomainreview.org,tohurt.pl,mego.travel,vgf-ffm.de,picsman.ai,poets.org,spain.info,wbtaxi.com.by,ford.ua,batel.ru,abstimmung21-mitmachen.de,stadtkirche-selb.de,mateco.*,trainerakademie-koeln.de,thqnordic.com,dotlan.net,awa7.de,gartentraum.de,gorzdrav.org,rkf.online##.cookie-modal
 publicflashing.me##div.hentry
 publichealthpolicyjournal.com##.custom-slider
 publico.es###newsletters--bloque
@@ -334461,6 +334468,7 @@ t-online.de##.Tml6--anz
 t-online.de##.\+\+\+Interview > #Tvertikale-navi::before
 t-online.de##.teaser-cr-subscribe
 t-online.de##.z-overlay-content:has(> section)
+t-online.de##div[class^="fixed z-(--z-overlay-content)"]
 t-online.de##div[data-testid="NewsletterWidget.tagesanbruch"]
 t-online.de##div[data-testid="Overlay.Backdrop"]
 t-online.de##div[data-testid="Stage.Companion.SubStage"]:has(> div:only-child > div:only-child > article:only-child > div:only-child > enga-newsletter-morning-briefing-companion)
@@ -340663,7 +340671,6 @@ togliatti24.ru##.read-social__telegraminarticle
 toho-one.com##.overflow-y-auto.overflow-x-hidden.rounded-t-2xl.z-\[1000\]
 tohotheater.jp##.optIn
 tohurt.pl,kicksmaniac.com##.cookie-button
-tohurt.pl,mego.travel,vgf-ffm.de,picsman.ai,poets.org,spain.info,wbtaxi.com.by,ford.ua,batel.ru,abstimmung21-mitmachen.de,stadtkirche-selb.de,mateco.*,trainerakademie-koeln.de,thqnordic.com,dotlan.net,awa7.de,gartentraum.de,gorzdrav.org,rkf.online##.cookie-modal
 tojav.net#%#//scriptlet('abort-current-inline-script', 'onload', 'puHref')
 tojimangas.com##.scrollToTop + div[id][class*=" "]
 tok-shop.hu#@#.cookie-alert
