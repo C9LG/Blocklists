@@ -3146,7 +3146,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ||cnzz.com^$third-party
 ||cnzz.net^$third-party
 ||codata.ru^$third-party
-||cointent.com^$third-party
 ||collarity.com^$third-party
 ||collserve.com^$third-party
 ||comagic.ru^$third-party
@@ -100569,6 +100568,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||analytics.watchott.org^
+||bat.bing.net^
 ||excess-ga.duolingo.com^
 ||excess.duolingo.com^
 ||p.softmedia.cz^
@@ -314741,6 +314742,10 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+||automaton-media.com/rw7f/
+||kobe-np.co.jp/api/audience-data
+news.golfdigest.co.jp#%#//scriptlet('remove-node-text', 'script', 'MkiTracUUID')
+news.golfdigest.co.jp##.recommend_articles
 ||bitget.com/v*/monitor/events|
 ||techrepublic.com/api/ado/
 ||player.instaread.co/js/inarticle-metrics.js
@@ -321756,6 +321761,8 @@ $cookie=bf_visit
 ! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
 !
 !
+! news.golfdigest.co.jp
+||news.golfdigest.co.jp^$cookie=MkiTracUUID
 ! 4media.com
 $cookie=tipssid,domain=krosno112.pl|zawszepomorze.pl|raportwarszawski.pl|nowinypolnocne.pl|cozadzien.pl|telewizjagorzow.pl|krosno112.pl|tvswietokrzyska.pl|przegladpiaseczynski.pl
 ! hna.de
@@ -326243,10 +326250,6 @@ goodwillfinds.com#%#//scriptlet("set-constant", "_etmc", "emptyArr")
 @@||googletagmanager.com/gtm.js$domain=brita.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/122824
 @@||qualtrics.com/jfe/form/$subdocument
-! https://github.com/AdguardTeam/AdguardFilters/issues/122659
-||api.ipify.org/?format=json$xmlhttprequest,redirect=nooptext,domain=utils.surf
-!+ PLATFORM(ios, ext_android_cb, ext_safari)
-@@||api.ipify.org/?format=json$domain=utils.surf
 ! https://github.com/AdguardTeam/AdguardFilters/issues/122614
 !+ NOT_PLATFORM(windows, mac, android, cli, ext_chromium)
 @@||share.9cdn.net/share/long_cache/js/tracking/tracking.*.min.js$domain=nine.com.au
@@ -330225,6 +330228,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||infinityhedge.com^
 ||informalbook.com^
 ||infrafood.com^
+||inkcoupon.com^
 ||innocentlamp.com^
 ||inputicicle.com^
 ||inquisitiveinvention.com^
@@ -330277,6 +330281,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||jubilantwhisper.com^
 ||juicebard.com^
 ||juiceblocks.com^
+||juicemovement.com^
 ||juicingoasis.com^
 ||jumbochalk.com^
 ||justconfig.com^
