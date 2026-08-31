@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilters.txt
-! Version: 20260901011620
-! Last modified: 2026/09/01 01:16:20
-! Blocked Filters: 385763
+! Version: 20260901060611
+! Last modified: 2026/09/01 06:06:11
+! Blocked Filters: 385772
 !
 ###AC_ad
 ###AD_160
@@ -277617,6 +277617,7 @@ guandianzhiku.com##.jconfirm-open
 guard.io##.cookie-banner-component
 guard.io#%#//scriptlet('set-cookie', 'cookie_consent_seen', '1')
 guardatv.it,sedirekte.com###cookiewarningcontainer
+guazimanhua.com##.reader-app-card
 guba.eastmoney.com##.redian
 gubdaily.ru##div[class^="ai-viewport"]:has(> .code-block > .gub-ad-article)
 gubdaily.ru#$?#.gub-ad-mob { remove: true; }
@@ -287614,6 +287615,8 @@ jove.com##.css-ad08s1
 jove.com#%#//scriptlet('set-local-storage-item', 'displayCookiesBanner', 'false')
 jovemnerd.com.br##.container-banner-cookie
 jovemnerd.com.br##footer + div[class=""][style*="background-color"][style*="position: fixed"]
+jovempan.com.br###jp-esportes-cta
+jovempan.com.br###jp-follow-cta
 jovempan.com.br##.cta-model
 jovempan.com.br##.custom-container-lgpd
 jovencitas.gratis##.med
@@ -290653,6 +290656,7 @@ kyoceradocumentsolutions.*#$?#div[data-gdpr] { remove: true; }
 kyoceradocumentsolutions.*#%#//scriptlet('remove-attr', 'inert')
 kyoceradocumentsolutions.us#%#//scriptlet('set-cookie', 'essentialsCookies', 'true')
 kyodo-d.jp,yahoo.co.jp###prm_sapp
+kyodo.co.jp#?#.ranking_archive > div.ranking_archive__content:has(> div.ranking_archive__content--content > a.flex > span.pr:contains(広告))
 kyonavi.kyoto.travel#%#//scriptlet('set-cookie', 'ktaAgreed', 'false')
 kyosyu.pct.brexa.com,butsklep.pl,icom.co.jp,ad-hoc-news.de,mosvodokanal.ru,hardlinenutrition.com,psft.co.jp,history-games.com,elektrobild.org,ankarasigorta.com.tr,aopen.com,new-cosmos.co.jp,splinks.co.jp,gs-yuasa.com,rinspo.jp,takeshobo.co.jp,euroavia.ru,untenshashokuba.go.jp,kataoka.com,publishwhatyoufund.org,yuhi-soln.jp,s-nr.dk,swiftmailgen.com,enexia.co.jp,dropymail.com,6d6f.com,inipulsa.my.id,aleksclinic.ru,kanoner.com,wakuni.shop,txen.de,doblestvekov.ru,tenderstem.co.jp,jast.jp,axelspacehd.com,iddaatahmin11.com,bancontact.com,bontour.ru,etempmail.net,kaffeeverband.de,rozklady.zkkm.pl,eiken.co.jp,kid2youth.com,mzkzg.org,bldmiraishokuhin.jp,advantec.co.jp,fn.se,qbhouse.co.jp,temp.mailsenpai.com,mailtemp.uk,codes.com.ua,gov.hu,cbjinternational.com,garageequipment.co.uk,croatiaairlines.hr,trashinbox.net,proglib.io,trashmail.ws,spambox.xyz,rainmail.xyz,promokod.pravda.com.ua,proantic.com,tel.co.jp,higrosystem.com,tmail.io,ehime-u.ac.jp,webextension.org,dartshopper.it,emecze.pl,oddslivesport.com,tempumail.com,regionalmarke-eifel.de,mennicaeuropejska.pl,supermonety.pl,flowfitonline.com,kolejkowo.pl,disco-polo.eu,bleachpraylove.com,tempinbox.xyz,docmicro.com,kocailem.com,macnica.co.jp,adressmonster.de,bimibrocolis.pt,bimibrocoli.fr,bimiparsakaali.fi,bimi.es,bimibroccoli.*,bimibrokkoli.de,bimibrokkoli.no,fiberatlantic.com,europe-mountains.com,krs-online.com.pl,pap.pl,batimag.ch,hug-baustoffe.ch,mecze24.pl,usehead.ru,plugshare.com,brodrene.eu,taishukan.co.jp,fundacjapolsat.pl,wikibrief.org,bonuspiu.com.tr,order.wreckfestgame.com,brasty.de,goetheweb.jp,prodirectbasketball.com,safe-animal.eu,bangkokbiznews.com,thansettakij.com,komchadluek.net,springnews.co.th,nationtv.tv,tnews.co.th,myoffice.ru,hanet.com.pl,trzmiel.com.pl,1cgames.net,intellinews.com,esselunga.it,vitraglobal.com,uhren4you.de,mecze.com,unwire.hk,daiichisankyo-ep.co.jp,yoyogames.com,logsign.com,astra-honda.com,twist.com.tr,publi24.ro,bauernzeitung.ch,cerrahi.com.tr,lescon.com.tr,europa-lkw.de,kidega.com,kordsa.com,lisacharlotterost.de,lawebdelprogramador.com,lvr.de,ostsee.de,klinik-langenfeld.lvr.de,klinik-koeln.lvr.de,leitz-cloud.com,leib-immobilien.de,activex.com.tr,evyap.com.tr,kobiety.pl,straganzdrowia.pl,e-tesettur.com.tr,suzuki.ch,arkomen.com,deutsches-ausschreibungsblatt.de,negozi.fastweb.it,gaboras.com.tr,sygic.com,add0n.com,8gunhaber.com,proglib.io,antonimy.net,gamedot.pl,teamquest.pl,stema.istore.pl,findeks.com,kube.no,sklep.xerima.com.pl,vitra.com.tr,yamato-scale.co.jp,tmail.io,tel.co.jp###cookie
 kyssfm.com#$#.logo-next-to-logo-container > .logo { display: block!important; height: 50px!important; }
@@ -300807,6 +300811,7 @@ massfans.cc,massrips.cc###banner
 massfans.cc,massrips.cc###banner2
 massfans.cc,massrips.cc###banner4
 massimodutti.com##app-top-notification
+masslive.com##.sharebarBeta-googlePreferredSource-container
 massmail.ficci.com$image
 massschuhmacherei.de,visitprocida.com##.privacywire-wrapper
 mast.az##.xendev-top-banners
@@ -357966,8 +357971,8 @@ ya.ru,yandex.*##div[id^="search-"] > div[class*="__card"] ul.UniSearchList > li.
 ya.ru,yandex.*##div[id^="search-"] > div[class*="__card"]:has(.Organic-AppHeader_extralinks)
 ya.ru,yandex.*##div[id^="search-"] > div[class*="__card"]:has(div.Organic-Subtitle > div.Organic-Path ~ div[class*=" Organic"] > span[class$="-Text"])
 ya.ru,yandex.*##div[id^="search-list-"][id*="-R-I-"]
-ya.ru,yandex.*##ul[id] > li:has(> div.Organic > div.Organic-ContentWrapper ~ div[class*=" Organic"] > span[class$="-Text"])
 ya.ru,yandex.*##ul[id] > li:has(> div.Organic > div.Organic-Subtitle > div.Organic-Path ~ div[class*=" Organic"] > span[class$="-Text"])
+ya.ru,yandex.*##ul[id] > li:has(> div.Organic > div[class*=" Organic"] > span:not([role]))
 ya.ru,yandex.*##ul[id] > li:has(> div.Root_inited > div[class*="Organic"] > div[class$="-Header"] > h2 + div > span)
 ya.ru,yandex.*##ul[id] > li[class*="Organic"]:has(> div.Root a[href*="_crpd"] > div.Organic-OfferThumbWrap)
 ya.ru,yandex.*#$#Distribution_landscape_hidden { display: none !important; }
@@ -370913,6 +370918,9 @@ zzzyk.com###Tinfo
 ||guanggaolianmeng.net/plushuan/ad_js.php?aid=
 ||guangzhoubingqing.com/88888.jpg
 ||guardyoureyes.com/templates/mentalpress/js/subscription.js
+||guazimanhua.com/assets/ad/
+||guazimanhua.com/assets/metrics/
+||guazimanhua.com/assets/reader/mobile*-ad.js
 ||gubagootracking.com^$third-party
 ||guc*-spclient.spotify.com/gabo-receiver-service/public/*/events
 ||guce.yahoo.com/br/collectConsentInline?brandType=nonEu$subdocument
@@ -380983,6 +380991,7 @@ zzzyk.com###Tinfo
 ||static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js
 ||static.danawa.com/globaljs/static/Insight_WebAnalytics_
 ||static.danawa.com/globaljs/static/bdl/dsac.min.js
+||static.danawa.com/globaljs/static/bdl/dsas_client.min.js
 ||static.danawa.com/globaljs/static/logger_Insight_WebAnalytics.js
 ||static.danawa.com/globaljs/static/logger_Insight_WebAnalytics_mobile.js
 ||static.danawa.com/globaljs/static/logger_trackEvent.js
