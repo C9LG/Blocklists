@@ -15,6 +15,8 @@
 !
 !
 !
+||betamountwo.com^
+||sharkvidskr.com^
 ||brightline.tv^$third-party,xmlhttprequest,redirect-rule=noopjson
 ||bycsg.oii.la^
 ||masculine-employment.com^
@@ -11867,6 +11869,7 @@ ad.broadstreetads.com
 ! Bad: /banner.jpg (should be in general_url.txt)
 ! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
 !
+||bbs.xhamster.com^
 ||bbm-ad-stack-production.up.railway.app^
 ||launcher.disconetwork.com^$third-party
 ||serve.affiliate.heurekashopping.sk^
@@ -15233,8 +15236,8 @@ rlxoff.com#%#//scriptlet('prevent-addEventListener', 'load', 'detectAdBlock')
 /^https:\/\/[0-9a-z.]+\/wp-content\/litespeed\/js\/[0-9a-f]{32}\.js\?ver=/$script,~third-party,match-case,replace=/function _0x[a-z0-9]{3}536\(\)\{[\s\S]*?\}/function _0x242536(){};/
 ||api.gplinks.com/track/js/power-cdn.js$replace=/function _0x[a-z0-9]{3}536\(\)\{[\s\S]*?\}/function _0x242536(){};/
 /track/js/power-cdn.js$domain=birthdaywishnotes.xyz|northmiamiwaterdamage.com
-fakepe.com,rajcet.com#$#div[style^="position: fixed; inset: 0px; z-index: 10001;"] { display: none !important; }
-fakepe.com,rajcet.com#$#body { overflow: auto !important; }
+aquaguardservices.co.in,fakepe.com,rajcet.com#$#div[style^="position: fixed; inset: 0px; z-index: 10001;"] { display: none !important; }
+aquaguardservices.co.in,fakepe.com,rajcet.com#$#body { overflow: auto !important; }
 ! Sync with the rules in Tweaks and BaseFilter specific
 jobskimuu.in,skrresults.com,ignoupur.com,newsckp.com,popaar.com,powergam.online,qrixpe.com,ajazijobs.in,bharti26.in,paidpe.com,mfulecollegewarud.org,parivahansewa.live,tezjobs.in,blacksattaking786.com,niraamjob.in,sparktrail.site,sociallytrendz.online,sanadegreecollege.in,stpaulsschool.org.in,timesnewss.com,oreopix.com,jobernnews.com,abresult.in,merainsurance.xyz,coinnai.com,merainsurance.xyz,emipe.online,sankarmusic.in,examsnews.com,general24news.in,arceusxdownload.com,htmlgames.website,iqmastered.com,jobjankari.online,procinehub.com#$#body { overflow: auto !important; }
 jobskimuu.in,skrresults.com,ignoupur.com,newsckp.com,popaar.com,powergam.online,qrixpe.com,ajazijobs.in,bharti26.in,paidpe.com,mfulecollegewarud.org,parivahansewa.live,tezjobs.in,blacksattaking786.com,niraamjob.in,sparktrail.site,sociallytrendz.online,sanadegreecollege.in,stpaulsschool.org.in,timesnewss.com,oreopix.com,jobernnews.com,abresult.in,merainsurance.xyz,coinnai.com,merainsurance.xyz,emipe.online,sankarmusic.in,examsnews.com,general24news.in,arceusxdownload.com,htmlgames.website,iqmastered.com,jobjankari.online,procinehub.com#$##AdbModel { display: none !important; }
@@ -44740,7 +44743,7 @@ _ad_content.
 !+ NOT_PLATFORM(ext_safari, ios)
 /tghr.js$script
 !
-/services/?ix=*&rt=$third-party,script
+/services/*^ix=*&rt=$third-party,script
 /wp-content/plugins/bw-newstack-addon-monetization/*
 /btag.min.js
 /wp-content/plugins/1shortlink/*
@@ -44997,9 +45000,10 @@ triblive.com###storyContent > div[data-type="float"][data-stn-player]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/238943
 sms24.me#%#//scriptlet('remove-node-text', 'script', ').join(String.fromCharCode')
 sms24.me#%#//scriptlet('remove-attr', 'onerror', 'script[id][onerror]')
+! https://github.com/AdguardTeam/AdguardFilters/issues/239608
 ! https://github.com/AdguardTeam/AdguardFilters/issues/236974
 index.hr#%#//scriptlet('set-constant', 'as_loader_version', '1')
-gamingbible.com,ladbible.com,sportbible.com,thecontentbible.com,tyla.com,unilad.com#%#//scriptlet('remove-node-text', 'script', '"nowprocket"')
+savvytime.com,gamingbible.com,ladbible.com,sportbible.com,thecontentbible.com,tyla.com,unilad.com#%#//scriptlet('remove-node-text', 'script', '"nowprocket"')
 mandiner.hu#%#//scriptlet('set-constant', 'Object.prototype.htmlLoadScriptService.loadScript', 'noopFunc')
 ||mopo.de/view-resources/dachser2/public/mopo/adshield.js
 /script/www.sparkchess.com.js$domain=sparkchess.com
