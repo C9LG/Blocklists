@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilters.txt
-! Version: 20260905210508
-! Last modified: 2026/09/05 21:05:08
-! Blocked Filters: 383146
+! Version: 20260906033801
+! Last modified: 2026/09/06 03:38:01
+! Blocked Filters: 383150
 !
 ###AC_ad
 ###AD_160
@@ -269529,6 +269529,7 @@ forbes.com##.ad-unit
 forbes.com##.adblock-unused
 forbes.com##.article-body .tp-container-inner
 forbes.com##.article-body > div[style^="padding: 20px 0pt; margin: 20px 0pt; border-bottom: 1px solid #DDDDDD;"]
+forbes.com##.article-body-container > div[class]> div[class]:has(> div[class]:only-child > fbs-video[ad-unit-path]:only-child)
 forbes.com##.article-speed-bump
 forbes.com##.channel--ad
 forbes.com##.channel___newsletter-sign-up-container
@@ -269565,6 +269566,7 @@ forbes.com##.vestpocket
 forbes.com##.video-placeholder.sticky-video-placeholder > fbs-video.sticky-video
 forbes.com##[data-id="ad-container"]
 forbes.com##[data-testid="locked-top-ad-container"]
+forbes.com##article .paywall_ribbon
 forbes.com##body fbs-ad:not(#style_important)
 forbes.com##div[class]:has(> fbs-ad)
 forbes.com##div[class]:has(> script[id^="article-"][id*="connatix-"])
@@ -269575,6 +269577,7 @@ forbes.com##div[class^="zephr-event-promotional"]
 forbes.com##div[data-testid="ad-container"]
 forbes.com##div[data-testid^="fbs-ad"]
 forbes.com##div[id^="google_ads_iframe_"]
+forbes.com##fbs-video[ad-unit-path]
 forbes.com##header a[href^="https://account.forbes.com/subscribe"]
 forbes.com#$##forbes-dv { display: none !important; }
 forbes.com#$#.fbs-auth__adblock { display: none !important; }
@@ -350998,6 +351001,7 @@ vodafone.com.tr###header--smart-link
 vodafone.com.tr##div[data-region-id^="header--smart-link"]
 vodafone.com.tr##div[data-widget="StickyAlert"]
 vodafone.cz##.vf-gdpr-settings
+vodafone.de###adbl
 vodafone.de##.mc-content > #adbl
 vodafone.de#$##dip-consent { display: none !important; }
 vodafone.de#$#body { overflow: visible !important; }
