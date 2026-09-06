@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilters.txt
-! Version: 20260906211406
-! Last modified: 2026/09/06 21:14:06
-! Blocked Filters: 385977
+! Version: 20260907034020
+! Last modified: 2026/09/07 03:40:20
+! Blocked Filters: 385982
 !
 ###AC_ad
 ###AD_160
@@ -20005,7 +20005,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /aclib.js$script
 /aclib.js^$script
 /acmsd/*$script
-/acris-cookie-consent-c-s/*$domain=biofitt.com|stoneline.de
+/acris-cookie-consent-c-s/*$domain=biofitt.com|stoneline.de|bikesnboards.de
 /activecampaign-subscription-forms/site_tracking.js
 /ad--unit.htm|
 /ad-blocking-advisor/*$script,stylesheet
@@ -26716,7 +26716,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 2playergames.vip##main > section > div.hidden > div.text-white.text-center
 2plus2.ua#$#body > header { top: 0!important; }
 2q77z2isvi4j5t0x.kdpwizard.app$image
-2rad-lampe.de,bikecenter.de,alpha-bikes.de,fahrrad-riese.de,huebel-bonn.de,gencgazete.net###cookie_information
 2short.club##.mdlAd
 2urs.com#%#//scriptlet('abort-on-property-read', 'ads')
 2v2.io,jns.org,nscreenmedia.com,op.gg,rawinu.com,whoscored.com##.banner-container
@@ -60332,6 +60331,7 @@ ce.cn,chenjiayu.cn,chinabidding.com.cn,eastmoney.com,ieforex.com,laod.cn,likefon
 ceair.com##.cookie-tip-container
 cebhe.info#?#.sidebar > .box_outer:has(> div.widget > h3 > div.box_outer > div.widget > h3.widget_title:contains(Reklam))
 cebhe.info,memohaber.com###rooteto_geri
+cecil-cycle.de,2rad-lampe.de,bikecenter.de,alpha-bikes.de,fahrrad-riese.de,huebel-bonn.de,gencgazete.net###cookie_information
 cecil.de,street-one.de##consent-layer.ng-star-inserted
 cecile.co.jp###rto_bnr_header
 cecile.co.jp###rto_popup_top
@@ -280196,6 +280196,8 @@ hiraethtranslation.com#%#//scriptlet('prevent-addEventListener', 'DOMContentLoad
 hiraethtranslation.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 hiragana46matome.com##.sec-rss
 hiragana46matome.com##.sec-rss-article
+hiraoka.com.pe##.gs_overlay
+hiraoka.com.pe##.hiraoka-footer-newsletter
 hirezstudios.com##.CookieOverlay
 hirezstudios.com##div[class*="CookiePolicycss__"]
 hiro-clinic.or.jp##.FixedMenuSection
@@ -282968,7 +282970,6 @@ ilenta.com##.rounded > div[align="center"] > a[target="_blank"]
 ilenta.com##article > div[style="clear:both; padding:10px 0;"]
 ilenta.com##div[style*="width:620px;"][style*="height:62px;"]
 ilenta.com##div[style="float:right; margin-bottom:10px; width:620px;"]
-ilerigazetesi.com.tr,kamudanhaber.net,turkinform.com.tr,2eylul.com.tr,eskisehirhaberajansi.com,urfanatik.com,politikam.com,sonsoz.com.tr#?#.js-cookie-consent
 ilewazy.pl##.ecomm-content-widget
 ilfattoalimentare.it###frm-mltchnl__popup-container
 ilfattoalimentare.it##.ad
@@ -303401,6 +303402,7 @@ milli.az##.large-ad-holder
 milli.az##div[id^="MILLI_Slot_Mobile"]
 milli.az#$#.info-panel2 { margin-top: 0 !important; }
 milli.az#$#.nav-holder2 { position: static !important; }
+milligazete.com.tr,ilerigazetesi.com.tr,kamudanhaber.net,turkinform.com.tr,2eylul.com.tr,eskisehirhaberajansi.com,urfanatik.com,politikam.com,sonsoz.com.tr#?#.js-cookie-consent
 milliirade.com,sonmuhur.com,yenialanya.com#$#.js-cookie-consent { position: absolute !important; left: -9999px !important; visibility: hidden !important; }
 millionpugs.com#%#//scriptlet('set-local-storage-item', 'cookiesPopUpClosed', 'true')
 millipiyangoonline.com##.freetext:has( > .tab-container a[href="/uygulamayi-indir"])
@@ -318334,10 +318336,11 @@ ping-test.net##div[style^="width: 336px; height: 280px;"]
 ping.chinaz.com##.sth > .col-red
 ping.eu##td > center[style="margin-bottom: 2px;"]
 ping.mg.apexpay.org$image
+ping0.cc###adjright
 ping0.cc###websites-wrap:has([rel$="sponsored"])
 ping0.cc##.aditems
+ping0.cc##.xeeles
 ping0.cc##a[rel="noopener nofollow"][target="_blank"]:has(> [class^="close"])
-ping0.cc#?#div:has(>a>.tipbd)
 pingdom.com##.sw19b-cookie-banner
 pinggu.org##.hdbanner
 pinggu.org##.index-somelinks
@@ -321808,6 +321811,8 @@ prom.ua##div[data-qaid="promo_popup"]
 prom.ua#%#//scriptlet('set-cookie', 'hide_mobile_international_delivery_popup', 'true')
 prom.ua#%#//scriptlet('set-cookie-reload', 'hide_mobile_download_app_popup', 'true')
 prom.ua#%#//scriptlet('trusted-set-local-storage-item', 'hide_mobile_download_app_popup', '{"\u0000":true,"ttl":99999999999999}')
+promart.pe##.subscription-footer-container
+promart.pe##body > div.gh-info-bottom:has(> div.cnt-text-info-cookie)
 promax.com,viaccess-orca.com##.widget-type-blog_subscribe
 promiflash.de##.articleList > .cardContainer + .onlyMobile[style^="margin:"]
 promiflash.de##.sm\:hidden:has(> div[class] > div.adContainer)
@@ -377591,7 +377596,7 @@ zzzyk.com###Tinfo
 ||ping.contactpigeon.com/bi/px/
 ||ping.contactpigeon.com^$cookie=bi
 ||ping.typekit.net/p.gif
-||ping0.cc/images/fx/*.gif
+||ping0.cc/images/gx/*.gif
 ||ping0.cc/static/images/ad/
 ||pingback.issuu.com/ping
 ||pingdom.net^$third-party
