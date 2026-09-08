@@ -100563,6 +100563,10 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||rta2.newscientist.com^
+||ureca.samsungapps.com^
+||orsdls.di.runestone.samsung.com^
+||shealth-analytics-api.samsunghealth.com^
 ||sogu.tripster.ru^
 ||a2.cineflix.st^
 ||tracker.bigl.ua^
@@ -314750,6 +314754,10 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+||bwapi.irunfar.com/log/
+||bwapi.irunfar.com/event/
+harpersbazaar.com##div[aria-labelledby="recirc-heading"]
+na2ka4.blog.fc2.com###inner2 > div.section2:has(> div.ninja-recommend-block)
 ||otrium.*/static/newrelic.js
 ||otrium.*/measure/
 ||tellows.jp/ping.php?p=
@@ -324236,6 +324244,9 @@ d4?appid*type*
 !@@||mc.yandex.ru/metrika/watch.js$domain=
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/240759
+! Fixed bookmark button on Japanese version
+@@||assetsconfigcdn.org/v1/initialize?k=$domain=bloomberg.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/240636
 @@||cdn.jsdelivr.net/npm/@thumbmarkjs/thumbmarkjs/dist/thumbmark.umd.js$domain=archive.is
 ! https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1618326670/308
