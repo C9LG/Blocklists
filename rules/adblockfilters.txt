@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilters.txt
-! Version: 20260916222504
-! Last modified: 2026/09/16 22:25:04
-! Blocked Filters: 383805
+! Version: 20260917043118
+! Last modified: 2026/09/17 04:31:18
+! Blocked Filters: 383819
 !
 ###AC_ad
 ###AD_160
@@ -71009,6 +71009,9 @@ der-schweighofer.de###newsletterLayerForm
 deraktionaer.de###flyin-banner
 derby.com.tr###f-cookie-alert
 derechadiario.com.ar#?#div[class^="jsx-"] > h2[class]:contains(Newsletter):upward(2)
+derevo.by,gamelegends.it,mirage.ru,mywifequitherjob.com#$#.mfp-bg { display: none !important; }
+derevo.by,gamelegends.it,mirage.ru,mywifequitherjob.com#$#.mfp-wrap { display: none !important; }
+derevo.by,gamelegends.it,mirage.ru,mywifequitherjob.com#$#html[style*="overflow:"] { overflow: auto !important; margin-right: 0 !important; }
 derimod.com.tr##.cc-window[aria-label="cookie bar"]
 deriv.com##.cookies_background-wrapper
 derivative-calculator.net##.center > .middle-right-col > div[style^="width: 728px; margin:"]
@@ -269166,6 +269169,7 @@ flixscans.net##.adblock
 flixway.ru#%#//scriptlet('trusted-set-local-storage-item', 'flixway-community-popup-last-shown', '9999999999999')
 flixzy.online##.fixed.inset-0:has(> .bg-netflix-black)
 flo.com.tr##.fancybox-container
+flo.com.tr##div.flex-container > div.js-product-vertical:has(> a[href^="https://app.adjust.com/"])
 flocktory.com##.base-cookie
 flocktory.com##.sc-CookiesNotification
 flog.pl##.adlnk
@@ -272329,9 +272333,6 @@ gameleaks.org##.widget_mobile_ad
 gameleaks.org##iframe[id^="IFTG"]
 gameleap.com##core-banner
 gamelegends.it##div[id^="gamelegends-dsk_"]
-gamelegends.it,mirage.ru,mywifequitherjob.com#$#.mfp-bg { display: none !important; }
-gamelegends.it,mirage.ru,mywifequitherjob.com#$#.mfp-wrap { display: none !important; }
-gamelegends.it,mirage.ru,mywifequitherjob.com#$#html[style*="overflow:"] { overflow: auto !important; margin-right: 0 !important; }
 gamelegends.it,prajwaldesai.com,rdphostings.com##.entry-newsletter
 gamelevate.com##[data-adpath]
 gamelib.app,salonsecret.ru##div[class^="CookieWarning_"]
@@ -275968,7 +275969,12 @@ gorenje.com#$#body { overflow: auto !important; padding-right: 0 !important; }
 gorentals.com#%#//scriptlet('set-cookie', 'GoRentalsJSXCookie', 'true')
 gori.me###primecaster-ad_slot_XaON
 gori.me##.ad-below-single-header
+gori.me##.ad_SummaryBelow
+gori.me##.gm-pswish
+gori.me##.gorime-cta
+gori.me##.gorime-hub
 gori.me##.mobile_adsense_archive
+gori.me##.post-reactions
 gori.me##.ranking > li:has(> div[id^="div-gpt-"])
 gori.me##article.single-normal > div[style]:not([class]):has(> a[href^="https://ad2.trafficgate.net/"])
 gori.me##div[style*="min-height:250px;"]
@@ -281925,6 +281931,7 @@ igi-global.com##.banner-carousel-item
 igi-global.com##.margin-bottom-15.inline-block-100
 igi-global.com##.width-100
 igiftcards.de#?##content-container > aside:has(> div.container > div.box > div > p > a[href="/legal/privacy"])
+igitems.com##div.fixed.bottom-3:has(a[href="/legal/privacy-policy#pp-cookies"])
 igizmo.it##body > a[href^="https://igizmo.it/linkto/"][target="_blank"] > img
 igmetall.de##body.cookie-overlay::before
 igmetall.de#%#//scriptlet('remove-class', 'cookie-overlay', 'body.cookie-overlay')
@@ -282064,6 +282071,7 @@ iiyama.com#%#//scriptlet('set-cookie', 'newsletter_closed', 'true')
 ijavtorrent.com#%#//scriptlet('prevent-window-open')
 ijiandao.cn,ijiandao.com,jojf.cn##.index-ad
 ikan6.vip,www.1111modruba.cc##IMG[src$='.gif']
+ikanbot.com#%#//scriptlet('prevent-window-open', '_blank')
 ikandy.fun##.stui-banner__pic[href="/statics/js/ky-a.html"]
 ikandy1.com##a[href*="/ky-a.html"]
 ikar.aero##.notification-panel-wrapper > div.notification-panel:has(> div > a[href="/legal/privacy-policy#cookie"])
@@ -317528,6 +317536,8 @@ pinterest.com##body > div[style="z-index: 1000;"] > div > div[name="trap-focus"]
 pinterest.com##body > div[style^="z-index:"]:has(> div[style] > div[style] > div > span[class] > a[href="https://www.pinterest.com/_/_/policy/cookies/"])
 pinterest.com##div[class^="AppUpsellHeader"]
 pinterest.com##div[data-grid-item]:has([data-test-pin-id] [data-test-id^="one-tap-desktop"] > a[href^="http"][rel="nofollow"]):not(body > div)
+pinterest.com##div[data-grid-item]:has(a[rel="nofollow"][href^="http"])
+pinterest.com##div[data-grid-item]:has(div[data-test-id="pinrep-video"]):has(a[rel="nofollow"][href^="http"])
 pinterest.com#%#//scriptlet('set-session-storage-item', 'showedAppUpsellCurrentSession', 'true')
 pinterest.com#%#//scriptlet('trusted-set-local-storage-item', 'appUpsell', '$now$')
 pinzuba.news##.m-instream
@@ -330410,6 +330420,9 @@ smallshorts.com##iframe[src="https://smallshorts.com/task.php"]
 smart-flash.jp##.preferredButton
 smart-flash.jp##iframe[src^="https://smart-flash.jp/wp-content/themes/original/embed/FoneH"]
 smart-flash.jp##iframe[src^="https://smart-flash.jp/wp-content/themes/original/embed/yahoo_ad"]
+smart-flash.jp#$#.imageRankingBlock li:last-child { border-bottom: none !important; }
+smart-flash.jp#$#.imageRankingBlock { margin-bottom: 0px !important; padding-bottom: 0px !important; }
+smart-flash.jp#$#.listNewestImage .itemInfo { padding: 10px 40px 0px !important; }
 smart-flash.jp#$?#.ads_sp_image_slider { remove: true; }
 smart-flash.jp#@#.leftAds
 smart-flash.jp#@#.rightAds
@@ -339757,6 +339770,7 @@ thewindowsclub.com#?#footer > div.widget:has(> span[id^="ezoic-pub-ad-placeholde
 thewindowsclub.com#?#section.widget:has(> .widget-wrap > .textwidget > span[id^="ezoic-pub-ad"])
 thewindowsclub.com,lesbian8.com,bigtitslust.com,sexe-libre.org##a[rel$="sponsored"]
 thewire.in##.side-article-content > .icp3-wrapper
+thewire.in##.subscribe-banner-widget
 thewire.in##div[id^="ATD_"]
 thewire.in##span[style*="background: rgb(232, 233, 237); text-align: center;"]
 thewitcher.forumcommunity.net##.note
@@ -352344,7 +352358,6 @@ walmart.*#?#div > div[io-id]:contains(Sponsored)
 walmart.*#?#div[role="group"]:has(div:contains(/Sponsored|Commandité/))
 walmart.ca##div[data-testid="layout-container"] > section[role="banner"][class^="bg-white sticky nav-clickable-padded bottom-0"]
 walmart.ca##section[aria-label*="Sponsored"]
-walmart.ca#%#//scriptlet('trusted-set-cookie-reload', 'uxcon', 'enforce=true&p13n=false&ads=false', '', '/', 'walmart.ca')
 walmart.com###hf-feedback-bubble-fixed-link
 walmart.com###vh-app-container
 walmart.com##.WMXOMPAdController
@@ -370745,6 +370758,7 @@ zzzyk.com###Tinfo
 ||ikaclo.jp/api/admin/access_logs
 ||ikaka.com/globalad/
 ||ikame-ads.begamob.com^$app=com.officedocument.word.docx.document.viewer
+||ikanbot.com/resources/common.js?v=$script
 ||ikarishintou.com/js/outLoging*.js
 ||ikisahil.az/iframe/banner
 ||ikisahil.az/images/banner^
@@ -380889,7 +380903,6 @@ zzzyk.com###Tinfo
 ||tracking-v*.a.run.app^
 ||tracking.*.miui.com^
 ||tracking.cds.dmm.$image
-||tracking.geo.*.amazonaws.com^
 ||tracking.ibotta-classic.ipn-ops.net^$app=com.ibotta.android
 ||tracking.narvar.com^$removeparam=src
 ||tracking.olx.
@@ -381651,6 +381664,7 @@ zzzyk.com###Tinfo
 ||vadaszapro.net/banners/
 ||vagalume.com.br/js/lib/modalAgeRestriction.js
 ||vaitotoo.net^$popup
+||valentine.xhamster.*^
 ||validate.onecount.net/js/v_sb.js
 ||validate.onecount.net/onecount/automation/a.php?__cuuid=
 ||valkirum.com^$third-party

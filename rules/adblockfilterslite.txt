@@ -3,8 +3,8 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilterslite.txt
-! Version: 20260916222504
-! Last modified: 2026/09/16 22:25:04
+! Version: 20260917043118
+! Last modified: 2026/09/17 04:31:18
 ! Blocked Filters: 267370
 !
 ###AC_ad
@@ -42060,6 +42060,9 @@ deployhappiness.com,dmitrysotnikov.wordpress.com,faravirusi.com,freedom-shift.ne
 depositfiles.com,depositfiles.org,dfiles.eu,dfiles.ru###member_menu > .submenu
 depositfiles.com,dfiles.eu###cookie_popup
 der-postillon.com,ghacks.net##.mrf-cmp
+derevo.by,gamelegends.it,mirage.ru,mywifequitherjob.com#$#.mfp-bg { display: none !important; }
+derevo.by,gamelegends.it,mirage.ru,mywifequitherjob.com#$#.mfp-wrap { display: none !important; }
+derevo.by,gamelegends.it,mirage.ru,mywifequitherjob.com#$#html[style*="overflow:"] { overflow: auto !important; margin-right: 0 !important; }
 derivefigurine.com,pranarom.fr#$#.cookiesplus-modal { display: none !important; }
 derivefigurine.com,pranarom.fr#$#.cookiesplus-modal ~ div.modal-backdrop { display: none !important; }
 derivefigurine.com,pranarom.fr#$#body { overflow: auto !important; padding-right: 0 !important; }
@@ -233362,9 +233365,6 @@ gameinfo.io,mangatar.framiq.com,skargards.com###cc_dialog
 gameinns.com##a[url^="/api/ads?"]
 gamejksokuhou.com,shoneekapoor.com,extrememanual.net,kakaowebtoon.com,cafe.daum.net,webtoon.kakao.com,page.kakao.com#$#body { -webkit-touch-callout: default!important; -moz-user-select: text!important; -webkit-user-select: auto!important; -ms-user-select: text!important; -o-user-select: auto!important; user-select: auto!important; -khtml-user-select: auto!important; }
 gamelab.com,play.dictionary.com##div[class^="DisplayAd__container_"]
-gamelegends.it,mirage.ru,mywifequitherjob.com#$#.mfp-bg { display: none !important; }
-gamelegends.it,mirage.ru,mywifequitherjob.com#$#.mfp-wrap { display: none !important; }
-gamelegends.it,mirage.ru,mywifequitherjob.com#$#html[style*="overflow:"] { overflow: auto !important; margin-right: 0 !important; }
 gamelegends.it,prajwaldesai.com,rdphostings.com##.entry-newsletter
 gamelib.app,salonsecret.ru##div[class^="CookieWarning_"]
 gameloft.com,jeans-meile.de,sportfm.ru##.fancybox-overlay
@@ -266580,7 +266580,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||tracking-v*.a.run.app^
 ||tracking.*.miui.com^
 ||tracking.cds.dmm.$image
-||tracking.geo.*.amazonaws.com^
 ||tracking.ibotta-classic.ipn-ops.net^$app=com.ibotta.android
 ||tracking.narvar.com^$removeparam=src
 ||tracking.olx.
@@ -266731,6 +266730,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||v.youku.com^$removeparam=ptag
 ||v.youku.com^$removeparam=scm
 ||v.youku.com^$removeparam=spm
+||valentine.xhamster.*^
 ||variflight.com/carnoc/ad/
 ||vast.kidoz.net^$app=com.PSVStudio.HippoDentist
 ||vbr.ru^$cookie=puid
