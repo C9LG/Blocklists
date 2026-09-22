@@ -100592,6 +100592,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||bzr.openai.com^
 ||rlog.baifentan.com^
 ||analytics.laxamentum.tech^
 ||e.missav.
@@ -314809,6 +314810,7 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+||im.np-payment-gateway.com/bff/atone/event/tracking
 ||storage.googleapis.com/*/js/comscore.js
 ||eurozpravy.cz/js/matomo-events.js
 ||footmercato.net/lib/prebid$script
@@ -321010,6 +321012,9 @@ adguard.info,adguard.com,adguard.app#$#.hello_from_adguard_advanced_protection_i
 ! Bad:  ||example.com^$cookie=flat_r_mb (should be in cookies_specific.txt)
 !
 !
+! OpenAI
+! https://developers.openai.com/ads/conversions-api
+$cookie=__obref
 ! tags.creativecdn.com
 $cookie=__rtbh.lid
 $cookie=__rtbh.uid
@@ -321906,6 +321911,8 @@ $cookie=bf_visit
 ! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
 !
 !
+! OpenAI
+$cookie=__oailb,domain=chatgpt.com|openai.com
 ! oita-press.co.jp
 ||oita-press.co.jp^$cookie=guid
 ! https://github.com/AdguardTeam/AdguardFilters/issues/241391
@@ -331120,6 +331127,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||repeatsweater.com^
 ||repfineart.com^
 ||replaceroute.com^
+||replantable.com^
 ||republicfarm.net^
 ||rescueothers.com^
 ||rescuerhino.com^
@@ -331322,6 +331330,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||silentjackal.com^
 ||silentsingle.com^
 ||siliconslow.com^
+||siliconuser.com^
 ||sillyscrew.com^
 ||simplenaming.com^
 ||simplesafari.com^
@@ -331360,6 +331369,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||slinksuggestion.com^
 ||slopesoap.com^
 ||smallershops.com^
+||smartbuildnow.com^
 ||smashquartz.com^
 ||smashshoe.com^
 ||smashsurprise.com^
@@ -331519,6 +331529,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||stomachscience.com^
 ||stonepole.com^
 ||stonetumble.com^
+||stopcast.net^
 ||stopstomach.com^
 ||stormyflower.com^
 ||straightnest.com^
