@@ -324358,6 +324358,10 @@ d4?appid*type*
 !@@||mc.yandex.ru/metrika/watch.js$domain=
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/242142
+comed.com#%#//scriptlet('set-constant', 'setupGoogleAnalytics', 'noopFunc')
+!+ PLATFORM(ios, ext_safari, ext_android_cb)
+@@||blob.core.windows.net/comed/src/js/google-analytics.js$domain=comed.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/242086
 @@||integrations.fitanalytics.com/shop/bergfreunde/pdp.js$domain=bergfreunde.de|berg-freunde.at|berg-freunde.ch|bergfreunde.nl|bergfreunde.be|bergfreunde.it|bergfreunde.es|bergfreunde.eu|bergfreunde.dk|bergfreunde.se|bergfreunde.no|bergfreunde.fi|alpinetrek.co.uk|alpiniste.fr|campz.ie
 @@||widget.fitanalytics.com/widget_zepto.js$domain=bergfreunde.de|berg-freunde.at|berg-freunde.ch|bergfreunde.nl|bergfreunde.be|bergfreunde.it|bergfreunde.es|bergfreunde.eu|bergfreunde.dk|bergfreunde.se|bergfreunde.no|bergfreunde.fi|alpinetrek.co.uk|alpiniste.fr|campz.ie
@@ -331249,6 +331253,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||secretturtle.com^
 ||securityannex.net^
 ||seedscissors.com^
+||seekingdreams.com^
 ||seekingquest.com^
 ||seekremote.com^
 ||seenvault.com^
@@ -331307,6 +331312,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||siderain.com^
 ||sidetrades.com^
 ||sierrakermit.com^
+||signalartists.com^
 ||signalszone.com^
 ||signaturepod.com^
 ||silentcredit.com^
