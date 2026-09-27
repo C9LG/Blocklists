@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilters.txt
-! Version: 20260927151445
-! Last modified: 2026/09/27 15:14:45
-! Blocked Filters: 386514
+! Version: 20260927225218
+! Last modified: 2026/09/27 22:52:18
+! Blocked Filters: 386518
 !
 ###AC_ad
 ###AD_160
@@ -18847,6 +18847,10 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .com/hm/*?*=*$third-party
 .com/i.gif?
 .com/images/102.js
+.com/img/bnnr1_
+.com/img/bnr1_*.gif
+.com/img/bnr2_*.gif
+.com/img/bnr3_*.gif
 .com/in.js$third-party
 .com/in/multy|$xmlhttprequest,third-party
 .com/invoke.js$script,third-party,redirect-rule=noopjs
@@ -18859,8 +18863,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .com/js/ad_
 .com/js/alls_foot.js
 .com/js/alls_top.js
-.com/js/bnnr_
-.com/js/bnr_
 .com/js/customscript.js|$domain=wankoz.com|sleazyneasy.com
 .com/js/ddd.js
 .com/js/discor_list.js
@@ -21699,7 +21701,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /js/htmlka.js
 /js/htmlkb.js
 /js/htmlkc.js
-/js/huath_2.js
 /js/iMAWebCookie.js?
 /js/index_adfloat.js
 /js/j*s*r*u*n*n*e*r.js$~third-party
@@ -21712,7 +21713,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /js/layer1.js$domain=99re.com
 /js/lmdas.js
 /js/mangoIndexBanner.js
-/js/mmdaohang_2.js
 /js/mob/cpc_bottom.js
 /js/mts.js
 /js/mts66.js
@@ -21751,7 +21751,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /js/wherego_tracker.js?
 /js/wlfloat.js
 /js/xiaxuanfu.js
-/js/yueyupp_3.js
 /js/yzgg.js
 /jsAds-1.4.min.js
 /js_php/ajsf.php?id=$third-party
@@ -23872,7 +23871,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 10news.com##.module--email-widget
 10news.com#?#.ob-widget-items-container > li.ob-dynamic-rec-container:has(> a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"])
 10short.com#%#//scriptlet("trusted-replace-node-text", "script", "openLink", "/window.location.href = '.*?';/", "")
-10tv.com,11alive.com,12news.com,12newsnow.com,13newsnow.com,13wmaz.com,5newsonline.com,9news.com,abc10.com,al.com,aol.com,apnews.com,artforum.com,artnews.com,billboard.com,birdsandblooms.com,calgaryherald.com,calgarysun.com,cbs19.tv,cbs8.com,cleveland.com,crooksandliars.com,deadline.com,dpreview.com,driving.ca,edmontonjournal.com,edmontonsun.com,familyhandyman.com,financialpost.com,firstcoastnews.com,fox43.com,fox61.com,futbin.com,goldderby.com,golfdigest.com,gulflive.com,hollywoodreporter.com,indiewire.com,kare11.com,kcentv.com,kens5.com,kgw.com,kiiitv.com,king5.com,krem.com,ktvb.com,kvue.com,lehighvalleylive.com,lfpress.com,localmemphis.com,masslive.com,myfoxzone.com,nationalpost.com,nbcsports.com,newscentermaine.com,newswest9.com,nj.com,oregonlive.com,ottawacitizen.com,ottawasun.com,rd.com,robbreport.com,rollingstone.com,sherdog.com,sidereel.com,superherohype.com,syracuse.com,tasteofhome.com,techcrunch.com,thehealthy.com,thv11.com,torontosun.com,twinfinite.net,vancouversun.com,variety.com,vibe.com,wbir.com,wcnc.com,weareiowa.com,weather.com,wfaa.com,wfmynews2.com,wgrz.com,whas11.com,windsorstar.com,wkyc.com,wltx.com,wnep.com,wqad.com,wthr.com,wtol.com,wtsp.com,wusa9.com,wwd.com,wwltv.com,wzzm13.com#%#//scriptlet('ubo-acs', 'document.getElementsByTagName', '.pubads')
+10tv.com,11alive.com,12news.com,12newsnow.com,13newsnow.com,13wmaz.com,5newsonline.com,9news.com,abc10.com,al.com,aol.com,apnews.com,artforum.com,artnews.com,billboard.com,birdsandblooms.com,calgaryherald.com,calgarysun.com,cbs19.tv,cbs8.com,cleveland.com,crooksandliars.com,deadline.com,dpreview.com,driving.ca,edmontonjournal.com,edmontonsun.com,familyhandyman.com,financialpost.com,firstcoastnews.com,fox43.com,fox61.com,futbin.com,goldderby.com,golfdigest.com,gulflive.com,hollywoodreporter.com,indiewire.com,kare11.com,kcentv.com,kens5.com,kgw.com,khou.com,kiiitv.com,king5.com,krem.com,ktvb.com,kvue.com,lehighvalleylive.com,lfpress.com,localmemphis.com,masslive.com,myfoxzone.com,nationalpost.com,nbcsports.com,newscentermaine.com,newswest9.com,nj.com,oregonlive.com,ottawacitizen.com,ottawasun.com,rd.com,robbreport.com,rollingstone.com,sherdog.com,sidereel.com,superherohype.com,syracuse.com,tasteofhome.com,techcrunch.com,thehealthy.com,thv11.com,torontosun.com,twinfinite.net,vancouversun.com,variety.com,vibe.com,wbir.com,wcnc.com,weareiowa.com,weather.com,wfaa.com,wfmynews2.com,wgrz.com,whas11.com,windsorstar.com,wkyc.com,wltx.com,wnep.com,wqad.com,wthr.com,wtol.com,wtsp.com,wusa9.com,wwd.com,wwltv.com,wzzm13.com#%#//scriptlet('ubo-acs', 'document.getElementsByTagName', '.pubads')
 10web.io##.entry-content > div[id^="ctablocks_scrollbox_"]
 11005.sock-qa1.marketingcloudqaops.com$image
 1101.com#$#body[style="padding-top: 72px;"] { padding-top: 0 !important; }
@@ -31982,6 +31981,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||cdn.adsafeprotected.com/*.*.js$domain=gentside.com|gentside.de|gentside.co.uk|gentside.com.br|maxisciences.com|ohmymag.com|ohmymag.de
 @@||cdn.adsafeprotected.com/*.js$domain=gentside.com|ohmymag.com
 @@||cdn.adsafeprotected.com^$domain=tio.ch
+@@||cdn.adsbetnet.com/libs/$script,domain=naijavault.com
 @@||cdn.adsninja.ca/ads_initiator.js$domain=polygon.com
 @@||cdn.adsninja.ca/ads_injector.js$domain=polygon.com
 @@||cdn.adsninja.ca/adsninja_client.js$domain=androidpolice.com
@@ -50203,6 +50203,7 @@ app.real.discount#?#.container .row > div[class^="col-md-"] > .card[style] > .ad
 app.real.discount#?#.container-fluid > .row > .col-lg-5 > div[style]:not([class]):not([id]) > .adsbygoogle:upward(1)
 app.real.discount#?#.container-fluid > .row > .col-lg-7 > .card > .adsbygoogle:upward(1)
 app.scre.io#%#//scriptlet('set-local-storage-item', 'cookieConsent', '1')
+app.short.io,pixelcut.ai##div[data-testid="consent-banner-card"]
 app.slack.com##.p-download_modal
 app.slack.com##.p-ia__workspace_banner
 app.socios.com#%#//scriptlet('set-local-storage-item', 'deviceId', '$remove$')
@@ -60505,7 +60506,6 @@ chargedretail.co.uk##.subscribe1
 chargedretail.co.uk,foodstuffsa.co.za,thinkcomputers.org##.apPluginContainer
 chargeiq.com.tr,kobelco-fpc.com,liki.ua,halkbank.com.tr,nacalai.co.jp,zenit.ru,ccb.ru,ipracujzdalnie.pl,plus.usio.co.jp,upc-osaka.ac.jp,seims.co.jp,etelecom.ru,fujiyakuhin.co.jp,toyota-odesa.com.ua,inteltoys.ru,domik-v-derevne.com,evorkshop.com,avic.jp,sms-activate.*,investcapital.com.mt,kamrti.com,gorenje-ru.ru,italiadomani.gov.it,msvsphere-os.ru,sms-activate.page,u-mama.ru,visionexpress.pl,psoriaz.life,poisknews.ru##.cookie
 chargepoint.com#@#.cookie-consent
-chargingtime.de##div[consent-skip-blocker]
 charismanews.com###FrontpageFeatureRightColumn
 charismanews.com###articles > article.article:has(> div.contentBoxWrap a[href^="https://servedby.aqua-adserver.com/"])
 charismanews.com###homepageSortbarNewsletterSignup
@@ -281220,6 +281220,7 @@ hoteldesigns.net##.n2-ss-slider
 hotelearche.pl,termabania.pl,arlamow.pl##div[data-el="cookie-monster"]
 hotelier101.com##.alert-dismissible[data-notify-position="bottom-right"]
 hotelnikkochangshu.com,shibaparkhotel.com###macaron_cookie_box
+hotelnovalis6419.live-website.com,chargingtime.de##div[consent-skip-blocker]
 hotels.com#%#//scriptlet('set-cookie-reload', 'cbShown', '1')
 hotelscombined.jp,kayak.com,momondo.com###mobile-app-promo-banner
 hotgirlclub.com##.spnsrd-block-aside-250
@@ -307586,6 +307587,10 @@ naijanews.com###bl_banner
 naijaprey.tv##div.entry-content > div.naija-entity-placement > div[align="center"]
 naijaprey.tv,np-downloader.com#%#//scriptlet('prevent-window-open', '_blank')
 naijaray.com.ng##.code-block > a[onclick] > img
+naijavault.com#$##adblock-backdrop { display: none !important; }
+naijavault.com#$##adblock-modal { display: none !important; }
+naijavault.com#$#body { overflow: auto !important; }
+naijavault.com#@#.ad-unit:not(.textads)
 nairaland.com##.vertipics
 nairametrics.com##.code-block.code-block-2
 nairametrics.com##.jeg_ad
@@ -318800,7 +318805,6 @@ pixalate.com##div[aria-describedby="subscribeDialog"]
 pixalate.com#?#.row-fluid > div.widget-type-cell:has(> div.row-fluid-wrapper > div.row-fluid  > div.widget-type-cell > div.row-fluid-wrapper > div.row-fluid > div.vcenter-outer > div.widget-type-cell > div.row-fluid-wrapper > div.row-fluid > div.widget-type-cell > div.row-fluid-wrapper > div.row-fluid > div.widget-type-blog_subscribe)
 pixalate.com#?#.widget-type-cell > div.row-fluid-wrapper:has(> div.row-fluid > div.sticky-item-wrapper > div.widget-type-custom_widget > div.widget-type-blog_subscribe)
 pixalate.com#?#.widget-type-cell > div.row-fluid-wrapper:has(> div.row-fluid > div.widget-type-cell > div.row-fluid-wrapper > div.row-fluid  > div.widget-type-cell > div.row-fluid-wrapper > div.row-fluid  > div.widget-type-blog_subscribe)
-pixelcut.ai##div[data-testid="consent-banner-card"]
 pixeldrain-bypass.cybar.xyz##body #games4uorg:not(#style_important)
 pixeldrain.com##.intro_popup
 pixeldrain.com##.skyscraper
