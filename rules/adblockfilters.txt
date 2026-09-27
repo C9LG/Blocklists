@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilters.txt
-! Version: 20260927225218
-! Last modified: 2026/09/27 22:52:18
-! Blocked Filters: 386518
+! Version: 20260928043110
+! Last modified: 2026/09/28 04:31:10
+! Blocked Filters: 386523
 !
 ###AC_ad
 ###AD_160
@@ -36251,6 +36251,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||googletagmanager.com/gtm.js$domain=sferis.pl
 @@||googletagmanager.com/gtm.js$domain=shieldsgazette.com
 @@||googletagmanager.com/gtm.js$domain=shockwave.com
+@@||googletagmanager.com/gtm.js$domain=shonenjumpplus.com
 @@||googletagmanager.com/gtm.js$domain=shop-apotheke.com
 @@||googletagmanager.com/gtm.js$domain=shop.kyivstar.ua
 @@||googletagmanager.com/gtm.js$domain=shop.mango.com
@@ -367691,6 +367692,9 @@ zzzyk.com###Tinfo
 ||cyberlink.pro^$popup
 ||cybermodding.it/gdpr_agree.js
 ||cybernews.com/images/tools/*/banner/
+||cybernews.com^$removeparam=campaign
+||cybernews.com^$removeparam=medium
+||cybernews.com^$removeparam=source
 ||cyberpedia.su/count.php
 ||cyberprivacy.pro^$popup
 ||cyberscoop.com/advertising/
@@ -372680,6 +372684,7 @@ zzzyk.com###Tinfo
 ||ign.com/s/js/zad.js
 ||ignals.com^$popup
 ||igniteandship.com/js/adcashign.js
+||igorslab.de/wp-content/*/ajax-handler.php$image
 ||igrit.pl/api/py/$xmlhttprequest
 ||igromania.ru^$removeparam=from_button_waterfall_knb
 ||iguru.gr^$removeparam=_unique_id
