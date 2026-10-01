@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilterslite.txt
-! Version: 20261002004435
-! Last modified: 2026/10/02 00:44:35
-! Blocked Filters: 267587
+! Version: 20261002060354
+! Last modified: 2026/10/02 06:03:54
+! Blocked Filters: 267592
 !
 ###AC_ad
 ###AD_160
@@ -32153,7 +32153,7 @@ Mplay/kk1.js
 [$path=/strefapilota]pilot.wp.pl#%#//scriptlet("abort-on-property-write", "Object.prototype.callBids")
 [$path=/strefapilota]pilot.wp.pl#%#//scriptlet("abort-on-property-write", "Object.prototype.directOnly")
 [$path=/tag/]www.nicovideo.jp##.nicodicNicoadVideoList
-[$path=/tv]youtube.com#%#//scriptlet('json-prune', 'playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots', '', '/https:\/\/www\.youtube\.com\/s\/player\/.*\/tv-player-ias\.vflset\/tv-player-ias\.js:/')
+[$path=/tv]youtube.com#%#//scriptlet('json-prune', 'playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots', '', '/https:\/\/www\.youtube\.com\/s\/player\/.*\/(?:tv-player-ias\.vflset\/tv-player-ias\.js|tv-player-ias-tcl\.vflset\/tv-player-ias-tcl\.js):/')
 [$path=/umadori0726]blog.livedoor.jp###headline
 [$path=/video/search]yandex.ru##.prevention_instance_rknWarning
 [$path=/video]dzen.ru##div[class*="item-info__videoViewerItemInfo-"] + div:not([class])
@@ -35059,7 +35059,7 @@ bikeradar.com,radiotimes.com##.sidebar__item-spacer--advert-top
 bikyonyu-bijo-zukan.com,channel-jk.com##.rss2-iframe
 bikyonyu-bijo-zukan.com,nofootynolife.net,gfoodd.com##div[class^="blogroll_"]
 bild.de#$?#article:has(> a:only-child[target="_blank"][href*="source"]) { remove: true; }
-bildderfrau.de,rlptoday.de,gutefrage.net#%#//scriptlet('trusted-click-element', '#cmpbntyestxt')
+bildderfrau.de,gutefrage.net#%#//scriptlet('trusted-click-element', '#cmpbntyestxt')
 bildirim.*#%#//scriptlet("set-constant", "Notification", "undefined")
 bilecik.edu.tr,stepfordcountyrailway.co.uk,normalsozluk.com,alu.jp,lenovostore.gr,thephuketnews.com,dogruhaber.com.tr,central1.com,parklot.pl,ilkha.com,modoko.com.tr##.fixed-bottom
 bilezikci.com,viherpeukalot.fi#$#.fancybox-active { overflow: auto !important; }
@@ -42120,6 +42120,7 @@ deliveroo.*##[class^="Carousel"] li[class^="Slide-"]:has(div[style*="d815008c-8a
 deliveroo.*##div[class^="HomeFeedScrollTracker-"]:has(div[data-testid="sponsored-badge"] > p[data-testid="sponsored-tag"])
 deliveroo.*##div[class^="HomeFeedScrollTracker-"]:has(p[data-testid="sponsored-rating-distance"] > span[data-testid="label-prefix"])
 deliveroo.*##div[class^="MobileBanner"]
+deliveroo.*##li:not(:has(li)):has([data-testid="promotional-sponsor-label"])
 deliveroo.*##li[class^="Slide-"]:has(div[data-testid="sponsored-tag"] > p[data-testid="label"])
 deliveroo.*##li[class^="Slide-"]:has(div[data-testid="sponsored-tag"] > p[data-testid="sponsored-tag-label"])
 deliveroo.*#?#a[role="button"]:has(p:contains(Sponsored))
@@ -43098,7 +43099,7 @@ ebroker.pl,opinie24.pl##.rodo_cookies_popup
 ecchizen.com,chosun.com##iframe[title="Advertisement"]
 echinacities.com##.bottomPrivacyAll
 echinacities.com##.newVisitor
-echo-online.de,ka-news.de,insideevs.de,de.motor1.com,rlptoday.de,news.de,mainpost.de,aufderbuehne.de,trainingsworld.com,zaubertopf.de,maclife.de,kuechengoetter.de,survivethis.news,prad.de,infranken.de,nachrichten.at,moviejones.de,np-coburg.de,frankenpost.de,insuedthueringen.de,augsburger-allgemeine.de,4fansites.de,general-anzeiger-bonn.de,kurier.de,knuddels.de,fumsmagazin.de,reisefrage.net,motorradfrage.net,autofrage.net,sportlerfrage.net,gesundheitsfrage.net,finanzfrage.net,wer-weiss-was.de,spielfilm.de,jappy.com,serienjunkies.de,woxikon.de,wize.life,computerfrage.net,gutefrage.net,teckbote.de,ligainsider.de,woxikon.de,rp-online.de,frag-mutti.de,ksta.de,sol.de,noz.de,mopo.de,express.de,berliner-kurier.de,berliner-zeitung.de#@#.full_AD
+echo-online.de,ka-news.de,insideevs.de,de.motor1.com,news.de,mainpost.de,aufderbuehne.de,trainingsworld.com,zaubertopf.de,maclife.de,kuechengoetter.de,survivethis.news,prad.de,infranken.de,nachrichten.at,moviejones.de,np-coburg.de,frankenpost.de,insuedthueringen.de,augsburger-allgemeine.de,4fansites.de,general-anzeiger-bonn.de,kurier.de,knuddels.de,fumsmagazin.de,reisefrage.net,motorradfrage.net,autofrage.net,sportlerfrage.net,gesundheitsfrage.net,finanzfrage.net,wer-weiss-was.de,spielfilm.de,jappy.com,serienjunkies.de,woxikon.de,wize.life,computerfrage.net,gutefrage.net,teckbote.de,ligainsider.de,woxikon.de,rp-online.de,frag-mutti.de,ksta.de,sol.de,noz.de,mopo.de,express.de,berliner-kurier.de,berliner-zeitung.de#@#.full_AD
 echo.msk.ru#$?#.header_top:not(:has(> .wrapper)) { margin-top: -30px !important; }
 echo.msk.ru#$?#span > div[role]:has(> div[class] > section.content) { margin-top: 0 !important; }
 eclat.hpplus.jp,adult-machiko.com##div[class^="ad_"]
@@ -232657,7 +232658,6 @@ finanzaonline.com,melablog.it,webnews.it,tvblog.it##.partial-newsletter
 finanzas.yahoo.com,finance.yahoo.com##.sdaContainer
 finanzen.at,finanzen.ch##.ad-wrapper
 finanzen.net,vodafone.cz,m.jdsports.co.uk,mmajunkie.com#%#document.cookie="sb-closed=true; path=/;";
-finanzfluss.de,dehner.de,joblo.com,ksat.com,eltrecetv.com.ar,click2houston.com,venturebeat.com,247sports.com,tetsudo.com,gamer.no,urbanize.city,clublexus.com,wsls.com,fox29.com,13newsnow.com,footballtransfers.com,fox35orlando.com,fox61.com,time.com,euobserver.com,citynews.ca,fox32chicago.com,nobelprize.org,vice.com,whattowatch.com,asia.nikkei.com,laptopmag.com,musicradar.com,airmail.news,newsweek.com,zeit.de,currentaffairs.org,financefwd.com,proprivacy.com,bikeperfect.com,bookriot.com,komando.com,tn.com.ar,whathifi.com,futurestud.io,slate.com,businessinsider.de,fastcompany.com,heise.de,history.com,itprotoday.com,jewishjournal.com,king5.com,mic.com,motherjones.com,nydailynews.com,people.com,skyscanner.com.tw##.newsletter-signup
 finanztip.de,b.hatena.ne.jp##.app-banner-container
 find-searcher.com,findresultshere.com,netresultshq.com,netsearchinstant.com,quickresultshq.com,realtimesearchresults.com,resultslandersearch.com,search-nowglobal.com,searchnowexpert.com##.serp-common-top
 find-searcher.com,findresultshere.com,netresultshq.com,netsearchinstant.com,quickresultshq.com,realtimesearchresults.com,resultslandersearch.com,search-nowglobal.com,searchnowexpert.com##.serp-head
@@ -237883,6 +237883,7 @@ laiguana.tv,dopedgeeks.com,victorytale.com,designcorral.com,kolanbritish.com,yub
 laiguana.tv,peliculasgd.net###divFLRALeft
 laiguana.tv,peliculasgd.net###divFLRARight
 laixoo.com,v2rayssr.com##.git_banner
+lakegeorgeassociation.org,finanzfluss.de,dehner.de,joblo.com,ksat.com,eltrecetv.com.ar,click2houston.com,venturebeat.com,247sports.com,tetsudo.com,gamer.no,urbanize.city,clublexus.com,wsls.com,fox29.com,13newsnow.com,footballtransfers.com,fox35orlando.com,fox61.com,time.com,euobserver.com,citynews.ca,fox32chicago.com,nobelprize.org,vice.com,whattowatch.com,asia.nikkei.com,laptopmag.com,musicradar.com,airmail.news,newsweek.com,zeit.de,currentaffairs.org,financefwd.com,proprivacy.com,bikeperfect.com,bookriot.com,komando.com,tn.com.ar,whathifi.com,futurestud.io,slate.com,businessinsider.de,fastcompany.com,heise.de,history.com,itprotoday.com,jewishjournal.com,king5.com,mic.com,motherjones.com,nydailynews.com,people.com,skyscanner.com.tw##.newsletter-signup
 lalal.ai,rivegauche.ru,megamarket.ru,whitebit.com###cookies-notification
 lalsace.fr,dumpert.nl,diariosur.es,frandroid.com,francebleu.fr,strategies.fr,knack.be,ledauphine.com#%#//scriptlet('trusted-click-element', 'button[id="didomi-notice-agree-button"]')
 lalsace.fr,ledauphine.com,dna.fr##.GRDC_newsletters
@@ -248595,6 +248596,7 @@ pornhub-sexfilme.net,pornojenny.net,pornoleon.com#$#aside[id^="wa_"] { display: 
 pornhub-sexfilme.net,pornojenny.net,pornoleon.com#%#//scriptlet('abort-on-stack-trace', 'document.createElement', 'loadNeverBlock')
 pornhub-sexfilme.net,pornojenny.net,pornoleon.com#%#//scriptlet('prevent-setTimeout', 'chatina')
 pornhub-sexfilme.net,pornojenny.net,pornoleon.com,herzporno.net#%#//scriptlet('prevent-setTimeout', '/loadMomoVip|loadExo|includeSpecial/')
+pornhub.*##.networkListContent > li:not(.languageDropdown):has( a:not([href*="pornhub.org"],[href*="help.pornhub.com"]))
 pornhub.com,pornhub.org##.ad-tabSplit
 pornhub.com,pornhub.org##.bottomNav > a[href][target="_blank"]
 pornhub.com,pornhub.org##.eudsaLink
@@ -255150,6 +255152,9 @@ turkuvazradyolar.com,anews.com.tr,yeniasir.com.tr,aspor.com.tr,fikriyat.com,ahab
 turystyka.wp.pl,finanse.wp.pl,film.wp.pl,kobieta.wp.pl,komorkomania.pl,tech.wp.pl,gadzetomania.pl,polygamia.pl,dobreprogramy.pl##div[class*=" "]:has(> img[src*="://v.wpimg.pl/"] + div[class] > style:first-child + div:last-child)
 turystyka.wp.pl,opinie.wp.pl,gry.wp.pl,moto.wp.pl,gwiazdy.wp.pl,tech.wp.pl,kobieta.wp.pl,wiadomosci.wp.pl##div[class*="-"] > div[class*="-"][class*=" "]:has(> img[src="https://i.wpimg.pl/O/56x45/i.wp.pl/a/i/stg/pkf/bg.png"])
 tusf.org.tr,genckizilay.org.tr##.gdpr-settings
+tusk.ua,maxpeedingrods.in.ua#$##cookies-modal { display: none !important; }
+tusk.ua,maxpeedingrods.in.ua#$#.backdrop { display: none !important; }
+tusk.ua,maxpeedingrods.in.ua#$#body { overflow: auto !important; }
 tutonaut.de,sexxlab.com,mario-czaja.de,powerpoint-kurs.com,franken-therme.net,effektivgesund.de,tps-performance.de,jawnylublin.pl,pcelite.pl,fanklockow.pl,blu-ray-rezensionen.net,kieruneknorwegia.pl,jpgames.de,europassitalian.com,philosophia-perennis.com#%#//scriptlet('set-constant', 'realCookieBanner.others.isPreventPreDecision', 'true')
 tutorials-forum.info,smart-tutorials.info,how-to-pc.info,easy-learn-tech.info,one-click-tutorials.info,getintopc.com#%#//scriptlet('set-constant', 'pqdxwidthqt', 'false')
 tutorialsduniya.com,betootaadvocate.com,financefwd.com##.hustle-slidein-position--south
