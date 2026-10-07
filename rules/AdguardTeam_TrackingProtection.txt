@@ -100594,6 +100594,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||data.petri.com^
 ||c3.wildwolf.name^
 ||tips.delt.io^
 ||unami.delt.io^
@@ -314818,6 +314819,8 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+||collector-pxebumdlwe.px-cloud.net/b/s/beacon
+||isratrip.net/platform/api/pub_funnel.php
 ||a.nel.cloudflare.com/report/
 ||delt.io/a/
 v-1.co.il#%#//scriptlet('set-local-storage-item', 'v1_device_id', '$remove$')
@@ -320957,7 +320960,7 @@ adguard.info,adguard.com,adguard.app#$#.hello_from_adguard_advanced_protection_i
 !
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/241008
-@@||echo-online.de^$cookie=_pcus
+@@$cookie=_pcus,domain=buerstaedter-zeitung.de|allgemeine-zeitung.de|lampertheimer-zeitung.de|echo-online.de|main-spitze.de|wiesbadener-kurier.de|wormser-zeitung.de|mittelhessen.de|ruhrnachrichten.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/238722
 @@||hilton.com^$cookie=/^AMCVS?_.*AdobeOrg/
 ! https://github.com/AdguardTeam/AdguardFilters/issues/231330
@@ -324403,6 +324406,10 @@ d4?appid*type*
 !@@||mc.yandex.ru/metrika/watch.js$domain=
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/243528
+@@||rtl.nl/_astro/snowplow.*.js$domain=rtl.nl
+! https://github.com/AdguardTeam/AdguardFilters/issues/243533
+@@||st-*.dynamicyield.com/st?$script,domain=easytoys.pl|easytoys.nl|easytoys.be|easytoys.es|easytoys.it
 ! https://github.com/AdguardTeam/AdguardFilters/issues/243514
 @@||liveapi.yext.com^$domain=answers.business.lloydsbank.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/243470
@@ -329788,6 +329795,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||carpoolqueen.com^
 ||carsarace.com^
 ||cartelsalsa.com^
+||cartersci.com^
 ||cartjoint.com^
 ||cartlug.com^
 ||carvecakes.com^
@@ -332049,6 +332057,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||dengarden.com/.api/admiral
 ||gamedaily.com/.api/admiral
 ||mensjournal.com/.api/admiral
+||parade.com/.api/admiral
 ||paradehomeandgarden.com/.api/admiral
 ||paradepets.com/.api/admiral
 ||skateboarding.com/.api/admiral
