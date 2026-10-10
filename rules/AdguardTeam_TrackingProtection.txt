@@ -324830,7 +324830,7 @@ zonedirector.avadacom.com$image
 /utx?tid=
 /census/RecordHit
 /dwanalytics-
-/cdn-cgi/zaraz/*
+/cdn-cgi/zaraz/*$domain=~abuse.cloudflare.com
 /beacon/error?
 /i?e=pv&url=
 /partner_tracking_min.js
@@ -325326,6 +325326,7 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+search.rakuten.co.jp#%#//scriptlet('prevent-addEventListener', 'mouseup', 'sendClickEvent')
 ||a.wing.st/js/pa-
 ||a.wing.st/api/event
 ||kilo.ai/monitoring?
@@ -340377,6 +340378,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||chipcardice.com^
 ||chipperisle.com^
 ||chivalrouscord.com^
+||choicebump.com^
 ||chubbycreature.com^
 ||chunkycactus.com^
 ||cicdserver.com^
@@ -340536,6 +340538,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||cutsmarter.net^
 ||cyclinghere.com^
 ||cyclopsdial.com^
+||dailydesigned.com^
 ||dailydivision.com^
 ||dailydomino.com^
 ||damagedadvice.com^
@@ -342713,4 +342716,6 @@ aliexpress.com,aliexpress.ru,aliexpress.us#%#//scriptlet('ubo-set', 'OfflineAudi
 aliexpress.com,aliexpress.ru,aliexpress.us#%#//scriptlet('ubo-set', 'navigator.bluetooth', 'undefined')
 ! alfalfalfa.com,matometanews.com
 ||ipcheck.blogsys.jp^$redirect=noopjs,script
+! search.rakuten.co.jp
+search.rakuten.co.jp#%#//scriptlet('ubo-aeld', 'mouseup', 'sendClickEvent')
 
