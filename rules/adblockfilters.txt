@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilters.txt
-! Version: 20261012000002
-! Last modified: 2026/10/12 00:00:02
-! Blocked Filters: 396038
+! Version: 20261012050756
+! Last modified: 2026/10/12 05:07:56
+! Blocked Filters: 396041
 !
 ###AC_ad
 ###AD_160
@@ -31205,6 +31205,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||api.service.cmp.usercentrics.eu/latest/1/cmp/$domain=sporteurope.tv
 @@||api.service.cmp.usercentrics.eu/latest/core/$domain=sporteurope.tv
 @@||api.service.cmp.usercentrics.eu^$domain=personio.com
+@@||api.service.cmp.usercentrics.eu^$domain=rsi.ch
 @@||api.smartystreets.com/lookup$stealth=referrer,domain=att.com
 @@||api.splice.com/www/advertisement/community-explore$domain=splice.com
 @@||api.spotify.com^$stealth=3p-auth
@@ -44824,6 +44825,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||web.cmp.usercentrics.eu/ui/$domain=deepsilver.com
 @@||web.cmp.usercentrics.eu/ui/$domain=sporteurope.tv,script
 @@||web.cmp.usercentrics.eu/ui/$script,domain=gls-pakete.de
+@@||web.cmp.usercentrics.eu/ui/*.js$domain=rsi.ch
 @@||web.cmp.usercentrics.eu/ui/loader.js$script,domain=casino.psk.hr
 @@||web.cmp.usercentrics.eu^$domain=personio.com
 @@||web.map-m.com/*/api?appKey=$domain=toyota.jp,stealth=referrer
@@ -336518,6 +336520,8 @@ rshb.ru###alert.bottom
 rshb.ru##.fixed.lg\:bottom-0
 rshb.ru,turkusowawieza.pl,coder.com#%#//scriptlet('set-local-storage-item', 'cookie', 'true')
 rshrt.com###headlineatas
+rsi.ch#%#//scriptlet('trusted-click-element', '#usercentrics-cmp-ui >>> button.uc-deny-button')
+rsi.ch#%#//scriptlet('trusted-click-element', '#usercentrics-cmp-ui >>> button.uc-more-button')
 rskrf.ru##.buttons_bottom
 rskrf.ru##.page-text > p:has(> a[href="/subscr_edit.php"])
 rskrf.ru##.subscribeBlockFixed
@@ -372580,7 +372584,6 @@ zzzyk.com###Tinfo
 ||announcements.bybit.com^$removeparam=sa_utm_tcn
 ||annual-gamers-choice.com^$popup
 ||anoneko.com^*.*?$image
-||anonymous.qub.ca
 ||anonyviet.com/wp-content/uploads/2017/02/LienHeQuangCao.png
 ||anonyviet.com/wp-content/uploads/2018/05/lmintArtboard-1.svg
 ||anqu.com/b.js
