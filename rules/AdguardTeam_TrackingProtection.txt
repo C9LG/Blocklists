@@ -336974,6 +336974,9 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+||vdrama.fans/js/vd-analytics.js
+||turizmguncel.com/api/track|
+||pixhost.to/m7v2q9/
 ||d.linker-network.me/viewable|
 rtvi.com#%#//scriptlet('set-local-storage-item', 'viewer-id', '$remove$')
 ||click-guard.site/api/collect
@@ -346587,14 +346590,17 @@ d4?appid*type*
 !@@||mc.yandex.ru/metrika/watch.js$domain=
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/243894
+@@||googletagmanager.com/gtm.js$domain=nove.tv
+@@||googletagmanager.com/gtag/$domain=nove.tv
 ! https://github.com/AdguardTeam/AdguardFilters/issues/244055
 @@||show.revico.jp/providejs/tagmanager.js$domain=workman.jp
 ! https://github.com/AdguardTeam/AdguardFilters/issues/244026
 @@||static.vocstatic.com/voonto2/*/voonto.js$domain=elcomercio.es
 ! https://github.com/AdguardTeam/AdguardFilters/issues/243763
-||lf3-data.volccdn.com/obj/data-static/log-sdk/collect/*/collect-rangers-$redirect=noopjs,domain=kimi.com
+||lf3-data.volccdn.com/obj/data-static/log-sdk/collect/*/collect-rangers-$script,redirect=noopjs,domain=kimi.com|kimi.ai
 !+ PLATFORM(ios, ext_safari, ext_android_cb)
-@@||lf3-data.volccdn.com/obj/data-static/log-sdk/collect/*/collect-rangers-$script,domain=kimi.com
+@@||lf3-data.volccdn.com/obj/data-static/log-sdk/collect/*/collect-rangers-$script,domain=kimi.com|kimi.ai
 ! https://github.com/uBlockOrigin/uAssets/issues/34756
 @@||rtoaster.jp^$script,domain=nitori-net.jp
 ! https://github.com/AdguardTeam/AdguardFilters/issues/243528
@@ -352097,6 +352103,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||combcompetition.com^
 ||cometquote.com^
 ||comfortablecheese.com^
+||commitlogs.com^
 ||comparereaction.com^
 ||compilework.com^
 ||condemnedcomb.com^
@@ -352311,6 +352318,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||drydrum.com^
 ||dryerwasher.com^
 ||dualping.com^
+||duetcode.com^
 ||dusthorses.com^
 ||dustydime.com^
 ||dustyhammer.com^
