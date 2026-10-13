@@ -104060,6 +104060,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||tracking.broadpeak.io^
+||a.wing.st^
 ||metrics.elcomercio.es^
 ||sw.vidmoly.
 ||ad-manager.matsukiyococokara-online.com^
@@ -336972,6 +336974,8 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+||d.linker-network.me/viewable|
+rtvi.com#%#//scriptlet('set-local-storage-item', 'viewer-id', '$remove$')
 ||click-guard.site/api/collect
 ||statinside.com/api/add-hit
 ||statinside.com/api/send-heartbeat
@@ -336982,8 +336986,6 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 ||static.vocstatic.com/portalsjs/*/call-metrics.js
 friday.kodansha.co.jp##div[class^="detail_photoSelection"]
 search.rakuten.co.jp#%#//scriptlet('prevent-addEventListener', 'mouseup', 'sendClickEvent')
-||a.wing.st/js/pa-
-||a.wing.st/api/event
 ||kilo.ai/monitoring?
 ||ekitan.com/*-analytics.js
 ||ekitan.com/common/ek-tracker/
@@ -337776,7 +337778,6 @@ kanaloco.jp##.tab_wrap:has(> #recomm_tab1)
 businessinsider.jp##div[class^="premiumRecommend_articles__"]
 ||s.turkiyegazetesi.com.tr/s/js/stats.js
 ||js.iplsc.com/inpl.log/
-||lge.co.kr/lg5-common/js/common/googleHeader.js
 ||tvmaze.com/stats/
 ||static.tvmaze.com/js/paq.js
 ||cdn.sprig.com/shim.js
@@ -344124,6 +344125,8 @@ $cookie=bf_visit
 ! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
 !
 !
+! rtvi.com
+||rtvi.com^$cookie=install_id
 ! v-1.co.il
 ||v-1.co.il^$cookie=visit_id
 ! yanolja.com
@@ -352220,6 +352223,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||dazzlescript.com^
 ||dazzlingbook.com^
 ||dblarson.com^
+||dblendcoatings.com^
 ||dealchocolate.com^
 ||debonairdust.com^
 ||debonairtree.com^
