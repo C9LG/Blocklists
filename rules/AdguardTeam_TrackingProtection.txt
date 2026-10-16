@@ -573,6 +573,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||myweb3id.io^$third-party
+||g.rtbrain.app^
 ||adtasukaru.com^$third-party
 ||manus-analytics.com^
 ||rt.buzzni.com^
@@ -336420,6 +336422,7 @@ zonedirector.avadacom.com$image
 !+ NOT_OPTIMIZED
 /.well-known/private-click-measurement
 !
+/e/*^ip=*^beacon=
 /wp-content/plugins/advanced-ads-tracking/*
 /static/js/tracker.js^
 /api/eventTracking/batchReport.json
@@ -337269,6 +337272,8 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+||bookbear.kr/js/site_log.js
+||yimg.com/*/ymanalytics-core.js
 ||faz.net/api/fpid/
 ||plapi.cdnvideohub.com/*/events
 ||edge.fedy.io^$domain=ensonhaber.com
@@ -346911,8 +346916,7 @@ d4?appid*type*
 ! https://github.com/AdguardTeam/AdguardFilters/issues/244026
 @@||static.vocstatic.com/voonto2/*/voonto.js$domain=elcomercio.es
 ! https://github.com/AdguardTeam/AdguardFilters/issues/243763
-||lf3-data.volccdn.com/obj/data-static/log-sdk/collect/*/collect-rangers-$script,redirect=noopjs,domain=kimi.com|kimi.ai
-!+ PLATFORM(ios, ext_safari, ext_android_cb)
+! https://github.com/AdguardTeam/AdguardFilters/issues/244198#issuecomment-6197338713
 @@||lf3-data.volccdn.com/obj/data-static/log-sdk/collect/*/collect-rangers-$script,domain=kimi.com|kimi.ai
 ! https://github.com/uBlockOrigin/uAssets/issues/34756
 @@||rtoaster.jp^$script,domain=nitori-net.jp
@@ -352807,6 +352811,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||fishspies.com^
 ||fitgreatest.com^
 ||fitnessmapper.com^
+||fitnesssponsor.com^
 ||fitwithalpine.com^
 ||fivesidedsquare.com^
 ||fixedfold.com^
@@ -352875,6 +352880,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||fronttoad.com^
 ||frozekitchen.com^
 ||frugalfiestas.com^
+||ftpmagic.com^
 ||fudgegenie.com^
 ||fuelfever.net^
 ||fuelinspector.com^
