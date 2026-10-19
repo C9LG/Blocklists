@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则。
 ! Homepage: https://github.com/C9LG/Blocklists
 ! Source: https://raw.githubusercontent.com/C9LG/Blocklists/main/rules/adblockfilters.txt
-! Version: 20261020004006
-! Last modified: 2026/10/20 00:40:06
-! Blocked Filters: 415909
+! Version: 20261020054701
+! Last modified: 2026/10/20 05:47:01
+! Blocked Filters: 415917
 !
 ###AC_ad
 ###AD_160
@@ -36254,6 +36254,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||googleads.g.doubleclick.net/pagead/id$domain=guides.magicgameworld.com
 @@||googleads.g.doubleclick.net/pagead/id$domain=rscripts.net
 @@||googleads.g.doubleclick.net/pagead/id$xmlhttprequest,domain=gamemag.ru
+@@||googleads.g.doubleclick.net/pagead/id$xmlhttprequest,domain=luciferdonghua.in
 @@||googleads.g.doubleclick.net/pagead/id$xmlhttprequest,domain=resulthubdtu.com
 @@||googleads.g.doubleclick.net/pagead/id?r=$domain=leeapk.com
 @@||googleads.g.doubleclick.net/pagead/id?slf_rd=1$domain=texture-packs.com
@@ -37604,6 +37605,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=medyaradar.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=meilleurpronostic.fr
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=mirror.co.uk
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=misterdonghua.in
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=mlb.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=mobinozer.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=motorsport.tv
@@ -42066,6 +42068,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||sacheats.com^$generichide
 @@||sadeczanin.info^$generichide
 @@||sadeempc.com^$generichide
+@@||sads.adsboosters.xyz^$xmlhttprequest,domain=luciferdonghua.in
 @@||safebk.shop/?utm_data=$xmlhttprequest,domain=sterham.net
 @@||safeku.com^$generichide
 @@||safelinku.com/admanager.js$script,domain=app.khaddavi.net
@@ -42668,6 +42671,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$xmlhttprequest,domain=devuploads.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$xmlhttprequest,domain=lineup11.net
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$xmlhttprequest,domain=link.rota.cc
+@@||securepubads.g.doubleclick.net/tag/js/gpt.js$xmlhttprequest,domain=luciferdonghua.in
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$xmlhttprequest,domain=weshare.is
 @@||securepubads.g.doubleclick.net^$app=com.walla.wallasports
 @@||securepubads.g.doubleclick.net^$app=jp.naver.line.android
@@ -55015,6 +55019,7 @@ bellinghamherald.com,bnd.com,bradenton.com,centredaily.com,charlotteobserver.com
 belloflostsouls.net##div[id^="ad-container-"]
 belloflostsouls.net#?#span.text-secondary:contains(Advertisement)
 belloflostsouls.net,ginx.tv,paladins.guru,smite.guru,theloadout.com##.vm-placement
+belloflostsouls.net,mc-web.jp,relazo.net,japan.hani.co.kr,stadt-bremerhaven.de##div[google-add-preferred-source-btn]
 bellroy.com###FlyoutSignupModalWrapper
 bellroy.com##.NewsletterSignupFooter
 bellroy.com#$#body { overflow-y: auto !important; }
@@ -57770,7 +57775,6 @@ bollywoodshaadis.com,mumsnet.com###feed-ad-3
 bolnews.com##.adsheading
 bolnews.com##.adspadding
 bolnews.com#?#[style*="center"]:contains(Ad)
-bolognatoday.it##a[href^="//www.google.com/preferences/source?q="]
 bolognatoday.it#%#//scriptlet('prevent-setTimeout', 'adblock')
 bolognatoday.it#@##ad-top
 bolognatoday.it#@##ad_banner
@@ -74258,6 +74262,7 @@ dotyk.cz,fitzivot.cz,kafe.cz,poznatsvet.cz,iglanc.cz,kondice.cz,nationalgeograph
 dotyk.cz,fitzivot.cz,kafe.cz,poznatsvet.cz,iglanc.cz,kondice.cz,nationalgeographic.cz,kvety.cz,ireceptar.cz,vlasta.cz,dumazahrada.cz##.content-box-wrap::before
 dotyk.cz,fitzivot.cz,kafe.cz,poznatsvet.cz,iglanc.cz,kondice.cz,nationalgeographic.cz,kvety.cz,ireceptar.cz,vlasta.cz,dumazahrada.cz##.content-box-wrap__inner--placeholder
 dou.ua###max-header-adv-id
+douban.com###landing-bar
 douban.com##.channel_promo
 douban.com##.lnk-doubanapp
 douban.com##.rec_topics_name[href^="https://erebor.douban."]
@@ -324388,6 +324393,7 @@ lucidsamples.com###blocksplash
 luciferdonghua.in###afu-ab
 luciferdonghua.in###sidebar > .widget_text:has(> .custom-html-widget > div[style^="width:350px"])
 luciferdonghua.in###sidebar > div.widget_text:has(> div.textwidget a.telegramim_button)
+luciferdonghua.in###w2p5ortzc
 luciferdonghua.in##.afu-banner
 luciferdonghua.in##.announ
 luciferdonghua.in##.kln
@@ -330157,7 +330163,6 @@ mbs.jp##.common-wrap--ranking
 mbs.jp##.common-wrap--recommend
 mc-at.org#%#//scriptlet("prevent-setTimeout", "showads", "7000")
 mc-at.org#@#.showads
-mc-web.jp,relazo.net,japan.hani.co.kr,stadt-bremerhaven.de##div[google-add-preferred-source-btn]
 mc.163.com###NIE-topBar-news
 mc.163.com##.down-box
 mc.pldthome.com$image
@@ -332853,6 +332858,8 @@ missouribotanicalgarden.org#%#//scriptlet('set-cookie-reload', '13400', 'True')
 misspompadour.de###mp-app-cookie-banner
 misspompadour.de,nw.de###nl-box
 missyuan.com##.spaceborder
+misterdonghua.in#%#//scriptlet('google-ima3')
+misterdonghua.in#%#//scriptlet('prevent-element-src-loading', 'script', 'imasdk.googleapis.com')
 mistergadget.tech#?#body > #overlay:has(> #newsletter-popup)
 misterhorse.com###cookies-start-modal
 misterrunning.com###site-message
@@ -343464,6 +343471,7 @@ paddle.com##.o-article__footer--newsletter
 paddle.com##.o-article__newsletter
 padelgo.tv##div[class*="mediaCardAd_"]
 padelgo.tv##div[class^="eventCardAd_"]
+padovaoggi.it,bolognatoday.it##a[href^="//www.google.com/preferences/source?q="]
 paesenews.it##.background-cover
 paesenews.it##.pum-overlay
 paesenews.it##.shailan_banner_widget
