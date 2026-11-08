@@ -8,7 +8,7 @@ env:
   TZ: Asia/Shanghai
   SMARTDNS_URL: https://github.com/pymumu/smartdns/releases/download/Release46.1/smartdns-x86_64
   SMARTDNS_PATH: /tmp/smartdns
-  DB_URL: https://github.com/217heidai/adblockfilters/releases/download/domain/domain.db
+  DB_URL: https://github.com/C9LG/Blocklists/releases/download/domain/domain.db
 
 jobs:
   Generate_Blacklist:
@@ -74,4 +74,4 @@ jobs:
         uses: Mattraks/delete-workflow-runs@v2
         with:
           retain_days: 1
-          keep_minimum_runs: 5
+          keep_minimum_runs: 2

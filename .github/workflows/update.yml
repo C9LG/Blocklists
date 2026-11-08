@@ -2,12 +2,12 @@ name: Update Filters
 on: 
   workflow_dispatch:
   schedule:
-  - cron: 0 */8 * * *
+  - cron: 0 2/8 * * *
 
 env:
   TZ: Asia/Shanghai
-  SINGBOX_VERSION: 1.12.12
-  MIHOMO_VERSION: 1.19.16
+  # SINGBOX_VERSION: 1.12.12
+  # MIHOMO_VERSION: 1.19.16
 
 jobs:
   Update_Filters:
@@ -17,21 +17,21 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v7
       
-      - name: Checkout domain-list-community
-        uses: actions/checkout@v7
-        with:
-          repository: v2fly/domain-list-community
-          path: domain-list-community
+      # - name: Checkout domain-list-community
+      #   uses: actions/checkout@v7
+      #   with:
+      #     repository: v2fly/domain-list-community
+      #     path: domain-list-community
 
       - name: Setup Python
         uses: actions/setup-python@v6
         with:
           python-version: '3.14'
       
-      - name: Setup Go
-        uses: actions/setup-go@v7
-        with:
-          go-version-file: domain-list-community/go.mod
+      # - name: Setup Go
+      #   uses: actions/setup-go@v7
+      #   with:
+      #     go-version-file: domain-list-community/go.mod
 
       - name: Install Dependencies
         run: |
@@ -48,12 +48,12 @@ jobs:
           curl -fsSL --retry 3 -o .cache/domain/black.txt \
             "https://github.com/${{ github.repository }}/releases/download/domain/black.txt" \
             || curl -fsSL --retry 3 -o .cache/domain/black.txt \
-            "https://github.com/217heidai/adblockfilters/releases/download/domain/black.txt" \
+            "https://github.com/C9LG/Blocklists/releases/download/domain/black.txt" \
             || : > .cache/domain/black.txt
           curl -fsSL --retry 3 -o .cache/domain/china.txt \
             "https://github.com/${{ github.repository }}/releases/download/domain/china.txt" \
             || curl -fsSL --retry 3 -o .cache/domain/china.txt \
-            "https://github.com/217heidai/adblockfilters/releases/download/domain/china.txt" \
+            "https://github.com/C9LG/Blocklists/releases/download/domain/china.txt" \
             || : > .cache/domain/china.txt
           cp rules/white.txt .cache/domain/ || true
           cp rules/myblock.txt .cache/source/ || true
@@ -66,39 +66,39 @@ jobs:
           rm -rf app/__pycache__
           echo "message=$(date)" >> $GITHUB_OUTPUT
 
-      - name: Compile Sing-Box filters
-        run: |
-          wget https://github.com/SagerNet/sing-box/releases/download/v${{env.SINGBOX_VERSION}}/sing-box-${{env.SINGBOX_VERSION}}-linux-amd64.tar.gz
-          tar -zxvf sing-box-${{env.SINGBOX_VERSION}}-linux-amd64.tar.gz
-          chmod +x sing-box-${{env.SINGBOX_VERSION}}-linux-amd64/sing-box
-          ./sing-box-${{env.SINGBOX_VERSION}}-linux-amd64/sing-box rule-set compile --output .cache/out/adblocksingbox.srs     .cache/out/adblocksingbox.json
-          ./sing-box-${{env.SINGBOX_VERSION}}-linux-amd64/sing-box rule-set compile --output .cache/out/adblocksingboxlite.srs .cache/out/adblocksingboxlite.json
-          rm -rf sing-box*
+      # - name: Compile Sing-Box filters
+      #   run: |
+      #     wget https://github.com/SagerNet/sing-box/releases/download/v${{env.SINGBOX_VERSION}}/sing-box-${{env.SINGBOX_VERSION}}-linux-amd64.tar.gz
+      #     tar -zxvf sing-box-${{env.SINGBOX_VERSION}}-linux-amd64.tar.gz
+      #     chmod +x sing-box-${{env.SINGBOX_VERSION}}-linux-amd64/sing-box
+      #     ./sing-box-${{env.SINGBOX_VERSION}}-linux-amd64/sing-box rule-set compile --output .cache/out/adblocksingbox.srs     .cache/out/adblocksingbox.json
+      #     ./sing-box-${{env.SINGBOX_VERSION}}-linux-amd64/sing-box rule-set compile --output .cache/out/adblocksingboxlite.srs .cache/out/adblocksingboxlite.json
+      #     rm -rf sing-box*
       
-      - name: Compile mihomo filters
-        run: |
-          wget https://github.com/MetaCubeX/mihomo/releases/download/v${{env.MIHOMO_VERSION}}/mihomo-linux-amd64-v${{env.MIHOMO_VERSION}}.gz
-          gzip -d mihomo-linux-amd64-v${{env.MIHOMO_VERSION}}.gz
-          chmod +x mihomo-linux-amd64-v${{env.MIHOMO_VERSION}}
-          ./mihomo-linux-amd64-v${{env.MIHOMO_VERSION}} convert-ruleset domain yaml .cache/out/adblockmihomo.yaml     .cache/out/adblockmihomo.mrs
-          ./mihomo-linux-amd64-v${{env.MIHOMO_VERSION}} convert-ruleset domain yaml .cache/out/adblockmihomolite.yaml .cache/out/adblockmihomolite.mrs
-          rm -rf mihomo*
+      # - name: Compile mihomo filters
+      #   run: |
+      #     wget https://github.com/MetaCubeX/mihomo/releases/download/v${{env.MIHOMO_VERSION}}/mihomo-linux-amd64-v${{env.MIHOMO_VERSION}}.gz
+      #     gzip -d mihomo-linux-amd64-v${{env.MIHOMO_VERSION}}.gz
+      #     chmod +x mihomo-linux-amd64-v${{env.MIHOMO_VERSION}}
+      #     ./mihomo-linux-amd64-v${{env.MIHOMO_VERSION}} convert-ruleset domain yaml .cache/out/adblockmihomo.yaml     .cache/out/adblockmihomo.mrs
+      #     ./mihomo-linux-amd64-v${{env.MIHOMO_VERSION}} convert-ruleset domain yaml .cache/out/adblockmihomolite.yaml .cache/out/adblockmihomolite.mrs
+      #     rm -rf mihomo*
       
-      - name: Compile v2ray/xray filters
-        run: |
-          mkdir -p domain-list-community/adblock
-          cp .cache/out/adblockv2ray.txt domain-list-community/adblock/category-ads-all
-          cd domain-list-community
-          go run ./ --datapath=adblock
-          cd ..
-          cp domain-list-community/dlc.dat .cache/out/adblockv2ray.dat
-          mkdir -p domain-list-community/adblocklite
-          cp .cache/out/adblockv2raylite.txt domain-list-community/adblocklite/category-ads-all
-          cd domain-list-community
-          go run ./ --datapath=adblocklite
-          cd ..
-          cp domain-list-community/dlc.dat .cache/out/adblockv2raylite.dat
-          rm -rf domain-list-community
+      # - name: Compile v2ray/xray filters
+      #   run: |
+      #     mkdir -p domain-list-community/adblock
+      #     cp .cache/out/adblockv2ray.txt domain-list-community/adblock/category-ads-all
+      #     cd domain-list-community
+      #     go run ./ --datapath=adblock
+      #     cd ..
+      #     cp domain-list-community/dlc.dat .cache/out/adblockv2ray.dat
+      #     mkdir -p domain-list-community/adblocklite
+      #     cp .cache/out/adblockv2raylite.txt domain-list-community/adblocklite/category-ads-all
+      #     cd domain-list-community
+      #     go run ./ --datapath=adblocklite
+      #     cd ..
+      #     cp domain-list-community/dlc.dat .cache/out/adblockv2raylite.dat
+      #     rm -rf domain-list-community
       
       - name: Upload rules to release
         uses: softprops/action-gh-release@v3
@@ -138,4 +138,4 @@ jobs:
         uses: Mattraks/delete-workflow-runs@v2
         with:
           retain_days: 1
-          keep_minimum_runs: 5
+          keep_minimum_runs: 2
