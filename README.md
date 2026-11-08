@@ -1,3 +1,15 @@
+## 订阅链接
+1. 规则x’为规则x的 Lite 版，仅针对国内域名拦截，体积较小
+2. AdGuard Home 等 DNS 拦截服务使用规则1
+3. AdGuard 等浏览器插件使用规则1 + 规则2（规则2为规则1的补充，仅适用浏览器插件）
+
+| 规则 | 原始链接 | 加速链接1 | 加速链接2 | 加速链接3 | 适配说明 |
+|:-|:-|:-|:-|:-|:-|
+| 规则1 | [原始链接](https://github.com/C9LG/Blocklists/releases/download/rule/adblockdns.txt) | [加速链接1](https://gh-proxy.com/https://github.com/C9LG/Blocklists/releases/download/rule/adblockdns.txt) | [加速链接2](https://ghfast.top/https://github.com/C9LG/Blocklists/releases/download/rule/adblockdns.txt) | [加速链接3](https://github.boki.moe/https://github.com/C9LG/Blocklists/releases/download/rule/adblockdns.txt) | AdGuard、AdGuard Home 等 |
+| 规则1' | [原始链接](https://github.com/C9LG/Blocklists/releases/download/rule/adblockdnslite.txt) | [加速链接1](https://gh-proxy.com/https://github.com/C9LG/Blocklists/releases/download/rule/adblockdnslite.txt) | [加速链接2](https://ghfast.top/https://github.com/C9LG/Blocklists/releases/download/rule/adblockdnslite.txt) | [加速链接3](https://github.boki.moe/https://github.com/C9LG/Blocklists/releases/download/rule/adblockdnslite.txt) | AdGuard、AdGuard Home 等 |
+| 规则2 | [原始链接](https://github.com/C9LG/Blocklists/releases/download/rule/adblockfilters.txt) | [加速链接1](https://gh-proxy.com/https://github.com/C9LG/Blocklists/releases/download/rule/adblockfilters.txt) | [加速链接2](https://ghfast.top/https://github.com/C9LG/Blocklists/releases/download/rule/adblockfilters.txt) | [加速链接3](https://github.boki.moe/https://github.com/C9LG/Blocklists/releases/download/rule/adblockfilters.txt) | AdGuard 等 |
+| 规则2' | [原始链接](https://github.com/C9LG/Blocklists/releases/download/rule/adblockfilterslite.txt) | [加速链接1](https://gh-proxy.com/https://github.com/C9LG/Blocklists/releases/download/rule/adblockfilterslite.txt) | [加速链接2](https://ghfast.top/https://github.com/C9LG/Blocklists/releases/download/rule/adblockfilterslite.txt) | [加速链接3](https://github.boki.moe/https://github.com/C9LG/Blocklists/releases/download/rule/adblockfilterslite.txt) | AdGuard 等 |
+
 ## 上游规则源
 
 | 规则 | 类型 | 原始链接 | 加速链接1 | 加速链接2 | 加速链接3 | 更新日期 |
