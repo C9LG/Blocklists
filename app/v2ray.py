@@ -28,10 +28,10 @@ class V2ray(APPBase):
                 f.write("#\n")
                 if isLite:
                     f.write("# Title: AdBlock V2ray/Xray Lite\n")
-                    f.write("# Description: 适用于 V2ray、Xray 的去广告合并规则，每 8 个小时更新一次。规则源：%s。Lite 版仅针对国内域名拦截。\n"%(self.sourceRule))
+                    f.write("# Description: 适用于 V2ray、Xray 的去广告合并规则。Lite 版仅针对国内域名拦截。\n")
                 else:
                     f.write("# Title: AdBlock V2ray/Xray\n")
-                    f.write("# Description: 适用于 V2ray、Xray 的去广告合并规则，每 8 个小时更新一次。规则源：%s。\n"%(self.sourceRule))
+                    f.write("# Description: 适用于 V2ray、Xray 的去广告合并规则。\n")
                 f.write("# Homepage: %s\n"%(self.homepage))
                 f.write("# Source: %s/%s\n"%(self.source, os.path.basename(fileName)))
                 f.write("# Version: %s\n"%(self.version))
