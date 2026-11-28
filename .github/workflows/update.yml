@@ -2,12 +2,12 @@ name: Update Filters
 on: 
   workflow_dispatch:
   schedule:
-  - cron: 0 */8 * * *
+    - cron: 0 2/8 * * *
 
 env:
   TZ: Asia/Shanghai
-  SINGBOX_VERSION: 1.12.12
-  MIHOMO_VERSION: 1.19.16
+  # SINGBOX_VERSION: 1.12.12
+  # MIHOMO_VERSION: 1.19.16
 
 jobs:
   Update_Filters:
@@ -44,7 +44,7 @@ jobs:
       - name: Install Dependencies
         run: |
           sudo apt-get update -y
-          sudo apt-get install -y wget gzip
+          # sudo apt-get install -y wget gzip
           sudo timedatectl set-timezone "$TZ"
           python -m pip install --upgrade pip
           pip install -U tld IPy dnspython httpx loguru
@@ -56,12 +56,12 @@ jobs:
           curl -fsSL --retry 3 -o .cache/domain/black.txt \
             "https://github.com/${{ github.repository }}/releases/download/domain/black.txt" \
             || curl -fsSL --retry 3 -o .cache/domain/black.txt \
-            "https://github.com/217heidai/adblockfilters/releases/download/domain/black.txt" \
+            "https://github.com/C9LG/Blocklists/releases/download/domain/black.txt" \
             || : > .cache/domain/black.txt
           curl -fsSL --retry 3 -o .cache/domain/china.txt \
             "https://github.com/${{ github.repository }}/releases/download/domain/china.txt" \
             || curl -fsSL --retry 3 -o .cache/domain/china.txt \
-            "https://github.com/217heidai/adblockfilters/releases/download/domain/china.txt" \
+            "https://github.com/C9LG/Blocklists/releases/download/domain/china.txt" \
             || : > .cache/domain/china.txt
           cp rules/white.txt .cache/domain/ || true
           cp rules/myblock.txt .cache/source/ || true
@@ -104,25 +104,25 @@ jobs:
             echo "- 上游源下载失败: $(test -f .cache/failed_sources.txt && paste -sd', ' .cache/failed_sources.txt || echo 无)"
           } >> $GITHUB_STEP_SUMMARY
 
-      - name: Compile Sing-Box filters
-        if: steps.update.outputs.updated == 'true'
-        run: |
-          wget https://github.com/SagerNet/sing-box/releases/download/v${{env.SINGBOX_VERSION}}/sing-box-${{env.SINGBOX_VERSION}}-linux-amd64.tar.gz
-          tar -zxvf sing-box-${{env.SINGBOX_VERSION}}-linux-amd64.tar.gz
-          chmod +x sing-box-${{env.SINGBOX_VERSION}}-linux-amd64/sing-box
-          ./sing-box-${{env.SINGBOX_VERSION}}-linux-amd64/sing-box rule-set compile --output .cache/out/adblocksingbox.srs     .cache/out/adblocksingbox.json
-          ./sing-box-${{env.SINGBOX_VERSION}}-linux-amd64/sing-box rule-set compile --output .cache/out/adblocksingboxlite.srs .cache/out/adblocksingboxlite.json
-          rm -rf sing-box*
+      # - name: Compile Sing-Box filters
+      #   if: steps.update.outputs.updated == 'true'
+      #   run: |
+      #     wget https://github.com/SagerNet/sing-box/releases/download/v${{env.SINGBOX_VERSION}}/sing-box-${{env.SINGBOX_VERSION}}-linux-amd64.tar.gz
+      #     tar -zxvf sing-box-${{env.SINGBOX_VERSION}}-linux-amd64.tar.gz
+      #     chmod +x sing-box-${{env.SINGBOX_VERSION}}-linux-amd64/sing-box
+      #     ./sing-box-${{env.SINGBOX_VERSION}}-linux-amd64/sing-box rule-set compile --output .cache/out/adblocksingbox.srs     .cache/out/adblocksingbox.json
+      #     ./sing-box-${{env.SINGBOX_VERSION}}-linux-amd64/sing-box rule-set compile --output .cache/out/adblocksingboxlite.srs .cache/out/adblocksingboxlite.json
+      #     rm -rf sing-box*
       
-      - name: Compile mihomo filters
-        if: steps.update.outputs.updated == 'true'
-        run: |
-          wget https://github.com/MetaCubeX/mihomo/releases/download/v${{env.MIHOMO_VERSION}}/mihomo-linux-amd64-v${{env.MIHOMO_VERSION}}.gz
-          gzip -d mihomo-linux-amd64-v${{env.MIHOMO_VERSION}}.gz
-          chmod +x mihomo-linux-amd64-v${{env.MIHOMO_VERSION}}
-          ./mihomo-linux-amd64-v${{env.MIHOMO_VERSION}} convert-ruleset domain yaml .cache/out/adblockmihomo.yaml     .cache/out/adblockmihomo.mrs
-          ./mihomo-linux-amd64-v${{env.MIHOMO_VERSION}} convert-ruleset domain yaml .cache/out/adblockmihomolite.yaml .cache/out/adblockmihomolite.mrs
-          rm -rf mihomo*
+      # - name: Compile mihomo filters
+      #   if: steps.update.outputs.updated == 'true'
+      #   run: |
+      #     wget https://github.com/MetaCubeX/mihomo/releases/download/v${{env.MIHOMO_VERSION}}/mihomo-linux-amd64-v${{env.MIHOMO_VERSION}}.gz
+      #     gzip -d mihomo-linux-amd64-v${{env.MIHOMO_VERSION}}.gz
+      #     chmod +x mihomo-linux-amd64-v${{env.MIHOMO_VERSION}}
+      #     ./mihomo-linux-amd64-v${{env.MIHOMO_VERSION}} convert-ruleset domain yaml .cache/out/adblockmihomo.yaml     .cache/out/adblockmihomo.mrs
+      #     ./mihomo-linux-amd64-v${{env.MIHOMO_VERSION}} convert-ruleset domain yaml .cache/out/adblockmihomolite.yaml .cache/out/adblockmihomolite.mrs
+      #     rm -rf mihomo*
       
       - name: Compile v2ray/xray filters
         if: steps.update.outputs.updated == 'true'
